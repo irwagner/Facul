@@ -1,0 +1,208 @@
+{
+  "robots_ds": {
+    "url": "https://ds.amizade777.com/robots.txt",
+    "status": 200,
+    "size": 24,
+    "headers": {
+      "Content-Type": "text/plain",
+      "Content-Length": "24",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "Last-Modified": "Fri, 05 Sep 2025 15:11:19 GMT",
+      "Accept-Ranges": "bytes",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"68bafd97-18\"",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 b853dddfed202a7f7af3c6a139df5b46.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P3",
+      "X-Amz-Cf-Id": "rnGhFVH2t69ihCFI7lHdLPdeWKiTQoQ3Osu3rJhvCIyi5BVDb0y9iA=="
+    },
+    "body_text": "User-agent: *\nDisallow:\n"
+  },
+  "robots_m": {
+    "url": "https://m.amizade777.com/robots.txt",
+    "status": 200,
+    "size": 24,
+    "headers": {
+      "Content-Type": "text/plain",
+      "Content-Length": "24",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "Last-Modified": "Fri, 09 Feb 2024 09:36:45 GMT",
+      "Accept-Ranges": "bytes",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"65c5f22d-18\"",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 fda232edb27c46ba3adb4815f018aea2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P4",
+      "X-Amz-Cf-Id": "32WeXViKWi-odmrkC4nAUJ7K3zYRrvoFTJi8Rwd94-1TsgfrbkI8ZA=="
+    },
+    "body_text": "User-agent: *\nDisallow:\n"
+  },
+  "manifest_ds": {
+    "url": "https://ds.amizade777.com/manifest.json",
+    "status": 200,
+    "size": 403,
+    "headers": {
+      "Content-Type": "application/json",
+      "Content-Length": "403",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "Last-Modified": "Fri, 05 Sep 2025 15:11:19 GMT",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"68bafd97-193\"",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 9b4b6b623660f15e619b0428e8407ea2.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P3",
+      "X-Amz-Cf-Id": "XgcYJNIkN9CDNubAcBExHBpw-UhbwYwYoq_Ag4TtxIPZ5HWHEDojrw=="
+    },
+    "body_text": "{\n  \"name\": \"Amizade 777\",\n  \"short_name\": \"Amizade 777\",\n  \"description\": \"Cassino Responsável\",\n  \"start_url\": \"/\",\n  \"display\": \"standalone\",\n  \"background_color\": \"#0f1132\",\n  \"theme_color\": \"#fff\",\n  \"icons\": [\n    {\n      \"src\": \"./192.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\"\n    },\n    {\n      \"src\": \"./512.png\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/png\"\n    }\n  ]\n}"
+  },
+  "manifest_m": {
+    "url": "https://m.amizade777.com/manifest.json",
+    "status": 200,
+    "size": 448,
+    "headers": {
+      "Content-Type": "application/json",
+      "Content-Length": "448",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "Last-Modified": "Fri, 05 Sep 2025 15:25:29 GMT",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"68bb00e9-1c0\"",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 3f68c1db84551911393b02d5ab1a01ec.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P4",
+      "X-Amz-Cf-Id": "Mtv_IkPLaWvTsjewOjUcWoJxiS-1Lo3JNp-V9fJx3enFWN7EYN5q8g=="
+    },
+    "body_text": "{\n    \"name\": \"Amizade 777\",\n    \"short_name\": \"Amizade 777\",\n    \"description\": \"Cassino Responsável\",\n    \"start_url\": \"/\",\n    \"display\": \"standalone\",\n    \"background_color\": \"#0D131C\",\n    \"theme_color\": \"#fff\",\n    \"icons\": [\n      {\n        \"src\": \"./logo.png\",\n        \"sizes\": \"192x192\",\n        \"type\": \"image/png\"\n      },\n      {\n        \"src\": \"./logo.png\",\n        \"sizes\": \"512x512\",\n        \"type\": \"image/png\"\n      }\n    ]\n  }\n  "
+  },
+  "japi_ds": {
+    "url": "https://ds.amizade777.com/japi/",
+    "status": 200,
+    "size": 44,
+    "headers": {
+      "Content-Type": "application/json",
+      "Content-Length": "44",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "Vary": "Access-Control-Request-Headers",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 982f68e5ce0c5125bcf7f53bb28a7988.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P3",
+      "X-Amz-Cf-Id": "y_XkxlXyzbfHsrmip_0DMjsRitLNM7AHdJnuAJl_-Ge5MsKYaHL_tw=="
+    },
+    "body_text": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}"
+  },
+  "japi_m": {
+    "url": "https://m.amizade777.com/japi/",
+    "status": 200,
+    "size": 44,
+    "headers": {
+      "Content-Type": "application/json",
+      "Content-Length": "44",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "Vary": "Access-Control-Request-Headers",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 e09adab5f2c0b994b1a507ad05d8970c.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P4",
+      "X-Amz-Cf-Id": "fMjF-svtMo-r1VJGBPhyrF_iM37uDmV8A_oW8057LixNpXtaJwtlOA=="
+    },
+    "body_text": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}"
+  },
+  "home_ds": {
+    "url": "https://ds.amizade777.com/",
+    "status": 200,
+    "size": 6166,
+    "headers": {
+      "Content-Type": "text/html",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:20 GMT",
+      "content-encoding": "gzip",
+      "Last-Modified": "Fri, 05 Sep 2025 15:12:08 GMT",
+      "ETag": "W/\"68bafdc8-1816\"",
+      "Vary": "Accept-Encoding",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 f523332a97eb0a0810e8f4e2debfe1de.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P3",
+      "X-Amz-Cf-Id": "RvgUICBUuotM8t-pMkxB5or6z_A2wwAj5hhg61y_4QMitkEx6spMBw=="
+    },
+    "body_text": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\" />\n  <link rel=\"icon\" href=\"/favicon.ico\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>Amizade 777</title>\n  <link rel=\"manifest\" href=\"/manifest.json\">\n  <meta name=\"keywords\"\n    content=\"Pg,Mega,CC,Pgoline,Slots,Brasil,Slotbrasil,Tiger,Saopaulo,Instagram,Cassinobrasileiro,Slot,sSotsonline,Slotonline,Cassinoonline,Jogo,Jogoonline,Jdb,Tada,Jili,Pp,IPL, Aviator, Crash,Crash game,Free Spins, Amazing Prizes, Casino\">\n  <!-- Open Graph (适用于 Telegram 和 WhatsApp) -->\n  <meta property=\"og:title\" content=\"Amizade 777, CC Grupo - Parceiro Oficial PG\" />\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:image\" content=\"https://xb-web.s3.amazonaws.com/h5Res/amizade777.jpg\" />\n  <meta property=\"og:image\" content=\"https://xb-web.s3.amazonaws.com/h5Res/amizade777.jpg\" />\n  <meta property=\"og:url\" content=\"https://m.amizade777.com\" />\n  <meta property=\"og:type\" content=\"website\" />\n  <meta property=\"og:description\" content=\"1. Os jogos da PG são 100% reais, sem limite de tempo, valor, volume de apostas ou taxas para saques.\n2. Certificação SIGAP - segurança e confiabilidade garantidas.\n3. Aproveite uma ampla variedade de caça-níqueis, jackpots e apostas emocionantes no nosso cassino online. Oferecemos jogos de caça-níqueis com travamento, rodadas grátis e prêmios incríveis. Explore temas como fantasia, aventura, 3D e muito mais. Seja você fã de história, cinema, gastronomia ou futebol, temos o jogo perfeito para sua diversão!\n4. Novas promoções e eventos serão lançados continuamente - fique de olho!\" />\n  <meta name=\"description\" content=\"1. Os jogos da PG são 100% reais, sem limite de tempo, valor, volume de apostas ou taxas para saques.\n2. Certificação SIGAP - segurança e confiabilidade garantidas.\n3. Aproveite uma ampla variedade de caça-níqueis, jackpots e apostas emocionantes no nosso cassino online. Oferecemos jogos de caça-níqueis com travamento, rodadas grátis e prêmios incríveis. Explore temas como fantasia, aventura, 3D e muito mais. Seja você fã de história, cinema, gastronomia ou futebol, temos o jogo perfeito para sua diversão!\n4. Novas promoções e eventos serão lançados continuamente - fique de olho!\" />\n  <script type=\"module\" crossorigin src=\"/assets/index.76929613.js\"></script>\n  <link rel=\"stylesheet\" href=\"/assets/index.f6ea575c.css\">\n  <script type=\"module\">try{import.meta.url;import(\"_\").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>\n  <script type=\"module\">!function(){if(window.__vite_is_modern_browser)return;console.warn(\"vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored\");var e=document.getElementById(\"vite-legacy-polyfill\"),n=document.createElement(\"script\");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>\n</head>\n\n<body>\n  <div id=\"app\">\n    <div class=\"preloader-item-bg\">\n      <div class=\"preloader-inner\">\n        <img src=\"https://xb-web.s3.amazonaws.com/package/amizade777_logo.png\" alt=\"\">\n        <div class=\"loadingx\"></div>\n      </div>\n    </div>\n  </div>\n  <style>\n    body {\n      padding: 0;\n      margin: 0;\n    }\n\n    #app {\n      background-color: #0D131C;\n      min-height: 100vh;\n    }\n\n    .preloader-item-bg {\n      position: fixed;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      overflow: hidden;\n    }\n\n    .preloader-item-bg img {\n      width: 180px;\n      display: block;\n      margin: 0 auto 20px auto;\n    }\n\n    .preloader-inner {\n      position: absolute;\n      top: 45%;\n      left: 50%;\n      -webkit-transform: translate(-50%, -50%);\n      transform: translate(-50%, -50%);\n      /* display: flex;\n      align-items: center; */\n    }\n\n\n    .loadingx {\n      width: 250px;\n      height: 12px;\n      margin: 20px auto;\n      background-color: #151c26;\n      border-radius: 6px;\n      position: relative;\n      overflow: hidden;\n      z-index: 1;\n    }\n\n    .loadingx:before {\n      content: '';\n      width: 50px;\n      height: 12px;\n      position: absolute;\n      transform: translateX(400px);\n      border-radius: 6px;\n      background-color: #F32E54;\n      animation: animationx 1.8s infinite ease;\n    }\n\n    @keyframes animationx {\n      0% {\n        transform: translateX(-100px);\n      }\n\n      50% {\n        transform: translateX(350px);\n      }\n\n      100% {\n        transform: translateX(-100px);\n      }\n\n    }\n  </style>\n  \n  <script>\n    const domainStr = window.location.origin.replace('://ds.', '://m.');\n    if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE|Nubia/.test(navigator.userAgent))) {\n      if (getQueryString('gfs')) {\n        window.location.href = `${domainStr}/?gfs=${getQueryString('gfs')}`\n      } else {\n        window.location.href = domainStr\n      }\n    }\n    function getQueryString(name) {\n      var reg = new RegExp(\"(^|&)\" + name + \"=([^&]*)(&|$)\", \"i\")\n      var r = window.location.search.substr(1).match(reg)\n      if (r != null) return decodeURI(r[2])\n      return null\n    }\n  </script>\n  <script src=\"/js/protobuf.js\"></script>\n  <script src=\"/js/message.js\"></script>\n  <script src=\"/js/finger_1.0.0.js\"></script>\n  <script nomodule>!function(){var e=document,t=e.createElement(\"script\");if(!(\"noModule\"in t)&&\"onbeforeload\"in t){var n=!1;e.addEventListener(\"beforeload\",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute(\"nomodule\")||!n)return;e.preventDefault()}),!0),t.type=\"module\",t.src=\".\",e.head.appendChild(t),t.remove()}}();</script>\n  <script nomodule crossorigin id=\"vite-legacy-polyfill\" src=\"/assets/polyfills-legacy.c88b29ae.js\"></script>\n  <script nomodule crossorigin id=\"vite-legacy-entry\" data-src=\"/assets/index-legacy.ef78d3e0.js\">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>\n</body>\n\n\n</html>"
+  },
+  "home_m": {
+    "url": "https://m.amizade777.com/",
+    "status": 200,
+    "size": 5716,
+    "headers": {
+      "Content-Type": "text/html",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Server": "nginx/1.24.0",
+      "Date": "Mon, 08 Jun 2026 18:00:21 GMT",
+      "content-encoding": "gzip",
+      "Last-Modified": "Fri, 05 Sep 2025 15:26:07 GMT",
+      "ETag": "W/\"68bb010f-1654\"",
+      "Vary": "Accept-Encoding",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 f3d66dd6903122e5440aadd45dc50cc4.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "GIG51-P4",
+      "X-Amz-Cf-Id": "Mkv7MNcEIwxN104Bsxbg23gIayaQvBMhdTReCBKzhNYRNXLqEMscXQ=="
+    },
+    "body_text": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <script type=\"module\" crossorigin src=\"/assets/polyfills-41ef3fbd.js\"></script>\n\n  <meta charset=\"UTF-8\" />\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.ico\" />\n  <!-- 主屏幕名字 -->\n  <meta name=\"Amizade 777\" id=\"base_meta_title\">\n  <!-- 开启导航栏 -->\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n  <!-- 添加到主屏幕的引导图标 -->\n  <link rel=\"icon\" id=\"base_link_icon\" href=\"/logo.png\">\n  <!-- 桌面应用图标： -->\n  <link rel=\"apple-touch-icon\" id=\"apple_touch_icon\" href=\"/logo.png\">\n  <!-- 开启全屏显示 -->\n  <meta name=\"mobile-web-app-capable\" content=\"yes\">\n  <meta name=\"viewport\"\n    content=\"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no\" />\n  <link rel=\"stylesheet\" href=\"/resource/loading.css\" />\n  <link rel=\"manifest\" href=\"/manifest.json\">\n  <title>Amizade 777</title>\n\n  <meta name=\"keywords\" content=\"Pg,Mega,CC,Pgoline,Slots,Brasil,Slotbrasil,Tiger,Saopaulo,Instagram,Cassinobrasileiro,Slot,sSotsonline,Slotonline,Cassinoonline,Jogo,Jogoonline,Jdb,Tada,Jili,Pp,IPL, Aviator, Crash,Crash game,Free Spins, Amazing Prizes, Casino\">\n\n  <!-- Open Graph (适用于 Telegram 和 WhatsApp) -->\n  <meta property=\"og:title\" content=\"Amizade 777, CC Grupo - Parceiro Oficial PG\" />\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:image\" content=\"https://xb-web.s3.amazonaws.com/h5Res/amizade777.jpg\" />\n  <meta property=\"og:image\" content=\"https://xb-web.s3.amazonaws.com/h5Res/amizade777.jpg\" />\n  <meta property=\"og:url\" content=\"https://m.amizade777.com\" />\n  <meta property=\"og:type\" content=\"website\" />\n  <meta property=\"og:description\" content=\"1. Os jogos da PG são 100% reais, sem limite de tempo, valor, volume de apostas ou taxas para saques.\n2. Certificação SIGAP - segurança e confiabilidade garantidas.\n3. Aproveite uma ampla variedade de caça-níqueis, jackpots e apostas emocionantes no nosso cassino online. Oferecemos jogos de caça-níqueis com travamento, rodadas grátis e prêmios incríveis. Explore temas como fantasia, aventura, 3D e muito mais. Seja você fã de história, cinema, gastronomia ou futebol, temos o jogo perfeito para sua diversão!\n4. Novas promoções e eventos serão lançados continuamente - fique de olho!\" />\n  <meta name=\"description\" content=\"1. Os jogos da PG são 100% reais, sem limite de tempo, valor, volume de apostas ou taxas para saques.\n2. Certificação SIGAP - segurança e confiabilidade garantidas.\n3. Aproveite uma ampla variedade de caça-níqueis, jackpots e apostas emocionantes no nosso cassino online. Oferecemos jogos de caça-níqueis com travamento, rodadas grátis e prêmios incríveis. Explore temas como fantasia, aventura, 3D e muito mais. Seja você fã de história, cinema, gastronomia ou futebol, temos o jogo perfeito para sua diversão!\n4. Novas promoções e eventos serão lançados continuamente - fique de olho!\" />\n  <script type=\"module\" crossorigin src=\"/assets/index-e7dd841c.js\"></script>\n  <link rel=\"stylesheet\" href=\"/assets/index-7a797002.css\">\n  <script type=\"module\">import.meta.url;import(\"_\").catch(()=>1);async function* g(){};if(location.protocol!=\"file:\"){window.__vite_is_modern_browser=true}</script>\n  <script type=\"module\">!function(){if(window.__vite_is_modern_browser)return;console.warn(\"vite: loading legacy chunks, syntax error above and the same error below should be ignored\");var e=document.getElementById(\"vite-legacy-polyfill\"),n=document.createElement(\"script\");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>\n</head>\n\n<body>\n  <div id=\"app\">\n    <div class='loading_bj' id='CI-loading'>\n      <div class=\"spinner2\">\n        <div class=\"rect1\"></div>\n        <div class=\"rect2\"></div>\n        <div class=\"rect3\"></div>\n        <div class=\"rect4\"></div>\n        <div class=\"rect5\"></div>\n      </div>\n    </div>\n  </div>\n\n  <script>\n    const isPCSimple = () => {\n      return !/mobile|android|iphone|ipod|ipad|windows phone/i.test(\n        navigator.userAgent.toLowerCase()\n      );\n    }\n    const getUrlParams = (name) => {\n      return (\n        decodeURIComponent(\n          (new RegExp(\"[?|&]\" + name + \"=\" + \"([^&;]+?)(&|#|;|$)\").exec(\n            location.href\n          ) || [, \"\"])[1].replace(/\\+/g, \"%20\")\n        ) || null\n      );\n    };\n\n    const code = getUrlParams(\"gfs\");\n    code && window.localStorage.setItem(\"inviteCode\", code);\n    let domainStr = window.location.origin.replace(/:\\/\\/(m|www)\\./, '://ds.');\n    if (isPCSimple()) {\n      const hasSubdomain = /:\\/\\/ds\\./.test(domainStr);\n      if(!hasSubdomain) {\n        domainStr = 'https://ds.' + window.location.host\n      } \n      window.location.href = code\n        ? `${domainStr}/?gfs=${code}`\n        : domainStr;\n    }\n  </script>\n  \n  <script src=\"/protobuf.js\"></script>\n  <script src=\"/message.js\"></script>\n  <script src=\"/finger_1.0.0.js\"></script>\n  <script nomodule>!function(){var e=document,t=e.createElement(\"script\");if(!(\"noModule\"in t)&&\"onbeforeload\"in t){var n=!1;e.addEventListener(\"beforeload\",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute(\"nomodule\")||!n)return;e.preventDefault()}),!0),t.type=\"module\",t.src=\".\",e.head.appendChild(t),t.remove()}}();</script>\n  <script nomodule crossorigin id=\"vite-legacy-polyfill\" src=\"/assets/polyfills-legacy-46429604.js\"></script>\n  <script nomodule crossorigin id=\"vite-legacy-entry\" data-src=\"/assets/index-legacy-3828497c.js\">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>\n</body>\n\n</html>"
+  },
+  "rdns_m": {
+    "18.161.205.121": "server-18-161-205-121.gig51.r.cloudfront.net",
+    "18.161.205.55": "server-18-161-205-55.gig51.r.cloudfront.net",
+    "18.161.205.56": "server-18-161-205-56.gig51.r.cloudfront.net",
+    "18.161.205.69": "server-18-161-205-69.gig51.r.cloudfront.net"
+  },
+  "rdns_ds": {
+    "18.64.207.110": "server-18-64-207-110.gig51.r.cloudfront.net",
+    "18.64.207.51": "server-18-64-207-51.gig51.r.cloudfront.net",
+    "18.64.207.79": "server-18-64-207-79.gig51.r.cloudfront.net",
+    "18.64.207.87": "server-18-64-207-87.gig51.r.cloudfront.net"
+  },
+  "aws_classification": {
+    "18.64.207.51": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.64.207.79": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.64.207.87": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.64.207.110": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.161.205.55": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.161.205.56": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.161.205.69": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ],
+    "18.161.205.121": [
+      "AMAZON/GLOBAL",
+      "CLOUDFRONT/GLOBAL"
+    ]
+  }
+}

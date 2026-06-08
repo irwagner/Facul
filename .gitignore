@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtualenvs
+venv/
+.venv/
+env/
+ENV/
+
+# Cache de testes
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Mantém os arquivos do Kiro versionados (são importantes para a faculdade)
+!.kiro/
+
+# APK extraído (pode ser regerado a partir do .apk)
+apk_extracted/
+
+# Logs grandes que podem ser regenerados
+*.log

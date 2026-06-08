@@ -1,0 +1,1148 @@
+{
+  "megaslott": {
+    "apex": "megaslott.com",
+    "dns": {
+      "sx.megaslott.com": [
+        "54.240.184.23",
+        "54.240.184.50",
+        "54.240.184.70",
+        "54.240.184.94"
+      ],
+      "api.megaslott.com": [
+        "54.207.65.155"
+      ],
+      "test.megaslott.com": [
+        "52.67.28.188"
+      ]
+    },
+    "apk_head": {
+      "status": 200,
+      "content_length": "5554230",
+      "content_type": "application/vnd.android.package-archive",
+      "last_modified": "Thu, 15 Feb 2024 09:18:39 GMT",
+      "server": "AmazonS3"
+    }
+  },
+  "japi_brute": [
+    {
+      "path": "/japi/admin",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/user",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/user/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/player",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/player/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/recharge",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/withdraw",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/finance",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/config",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/log",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/logs",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/admin/audit",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/system",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/system/admin",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/system/info",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/system/status",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/system/health",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/system/log",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/system/config",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/manage",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/manage/user",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/manage/player",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/manager",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/manager/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/operator",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/operator/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/agent",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/agent/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/staff",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/internal",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/backoffice",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/back",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/debug",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/dev",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/test",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/info",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/version",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/health",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/healthz",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/health",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/env",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/heapdump",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/mappings",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/info",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/configprops",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/beans",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/threaddump",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/actuator/loggers",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/swagger-ui.html",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/swagger",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/swagger.json",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/v2/api-docs",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/v3/api-docs",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/api-docs",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/openapi.json",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/openapi",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/docs",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/finance",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/finance/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/payment",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/payment/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/recharge",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/recharge/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/withdraw",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/withdraw/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/order",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/order/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/wallet",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/wallet/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/transaction",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/transaction/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/user",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/list",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/all",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/search",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/info",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/info/1",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/profile",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/user/profile/1",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/users",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/users/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/player",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/player/1",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/player/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/account",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/account/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/game",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/game/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/games",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/bet",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/bet/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/invite",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/invite/list",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/invite/admin",
+      "status": 200,
+      "size": 45,
+      "ctype": "application/json",
+      "body": "{\"code\":401,\"msg\":\"token is empty\",\"total\":0}",
+      "interesting": true,
+      "is_401": true,
+      "is_500_404": false
+    },
+    {
+      "path": "/japi/.env",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/config",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/config.json",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/jdbc.properties",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/application.yml",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/application.properties",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    },
+    {
+      "path": "/japi/.git/HEAD",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "interesting": false,
+      "is_401": false,
+      "is_500_404": true
+    }
+  ],
+  "captcha": {
+    "calls": [
+      {
+        "call": 0,
+        "size": 3495,
+        "first_bytes_hex": "ffd8ffe000104a464946000102000001",
+        "set_cookie": null
+      },
+      {
+        "call": 1,
+        "size": 3630,
+        "first_bytes_hex": "ffd8ffe000104a464946000102000001",
+        "set_cookie": null
+      },
+      {
+        "call": 2,
+        "size": 3625,
+        "first_bytes_hex": "ffd8ffe000104a464946000102000001",
+        "set_cookie": null
+      },
+      {
+        "call": 3,
+        "size": 3622,
+        "first_bytes_hex": "ffd8ffe000104a464946000102000001",
+        "set_cookie": null
+      },
+      {
+        "call": 4,
+        "size": 3656,
+        "first_bytes_hex": "ffd8ffe000104a464946000102000001",
+        "set_cookie": null
+      }
+    ]
+  },
+  "redpacket": {
+    "currentRedPacketRainActivityList": {
+      "code": 200,
+      "msg": null,
+      "data": {
+        "systemTime": 1780942013674,
+        "rewardVoList": [
+          {
+            "activityName": "redPacketRain02-20260608-0-amizade777",
+            "startTime": "12:00:00",
+            "endTime": "12:59:59",
+            "status": 2,
+            "receive": false
+          },
+          {
+            "activityName": "redPacketRain02-20260608-1-amizade777",
+            "startTime": "18:00:00",
+            "endTime": "18:59:59",
+            "status": 0,
+            "receive": false
+          },
+          {
+            "activityName": "redPacketRain02-20260608-2-amizade777",
+            "startTime": "21:00:00",
+            "endTime": "21:59:59",
+            "status": 0,
+            "receive": false
+          }
+        ]
+      },
+      "total": 0
+    },
+    "redPacketRainActivityList": {
+      "code": 200,
+      "msg": null,
+      "data": [
+        {
+          "mainName": "redPacketRain",
+          "name": "redPacketRain02",
+          "remark": "红包雨02",
+          "rule": "{\n\t\t\"dateRange\":\"1-31\",\n\t\t\"ruleRelation\": \"and\",\n        \"weekRule\":[],\n\t\t\"maxAmount\":10000000,\n        \"times\":3,\n\t\t\"timeMap\":{\n\t\t\t\"0\":{\n\t\t\t\t\"start\":\"12:00:00\",\n\t\t\t\t\"end\":\"12:59:59\"\n\t\t\t},\n\t\t\t\"1\":{\n\t\t\t\t\"start\":\"18:00:00\",\n\t\t\t\t\"end\":\"18:59:59\"\n\t\t\t},\n\t\t\t\"2\":{\n\t\t\t\t\"start\":\"21:00:00\",\n\t\t\t\t\"end\":\"21:59:59\"\n\t\t\t}\n\t\t}\n\t}"
+        }
+      ],
+      "total": 0
+    }
+  }
+}

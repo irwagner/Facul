@@ -1,0 +1,1250 @@
+{
+  "targets": {
+    "ds.amizade777.com": {
+      "html_size": 6120,
+      "bundles_referenced": [
+        "https://ds.amizade777.com/assets/index-legacy.ef78d3e0.js",
+        "https://ds.amizade777.com/assets/index.76929613.js",
+        "https://ds.amizade777.com/assets/index.f6ea575c.css",
+        "https://ds.amizade777.com/assets/polyfills-legacy.c88b29ae.js",
+        "https://ds.amizade777.com/js/finger_1.0.0.js",
+        "https://ds.amizade777.com/js/message.js",
+        "https://ds.amizade777.com/js/protobuf.js",
+        "https://ds.amizade777.com/manifest.json"
+      ],
+      "bundle_results": [
+        {
+          "url": "https://ds.amizade777.com/assets/index-legacy.ef78d3e0.js",
+          "status": 200,
+          "size": 2248752,
+          "sha256_16": "47d86ea35168bec7",
+          "ctype": "application/javascript",
+          "saved_as": "ds.amizade777.com_index-legacy.ef78d3e0.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/assets/index.76929613.js",
+          "status": 200,
+          "size": 1362505,
+          "sha256_16": "14a4ddc962f5dbb4",
+          "ctype": "application/javascript",
+          "saved_as": "ds.amizade777.com_index.76929613.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/assets/index.f6ea575c.css",
+          "status": 200,
+          "size": 804209,
+          "sha256_16": "f6ea575cad818605",
+          "ctype": "text/css",
+          "saved_as": "ds.amizade777.com_index.f6ea575c.css"
+        },
+        {
+          "url": "https://ds.amizade777.com/assets/polyfills-legacy.c88b29ae.js",
+          "status": 200,
+          "size": 130329,
+          "sha256_16": "a94727cc0d401b6b",
+          "ctype": "application/javascript",
+          "saved_as": "ds.amizade777.com_polyfills-legacy.c88b29ae.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/js/finger_1.0.0.js",
+          "status": 200,
+          "size": 9541,
+          "sha256_16": "6a6c5964346f037d",
+          "ctype": "application/javascript",
+          "saved_as": "ds.amizade777.com_finger_1.0.0.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/js/message.js",
+          "status": 200,
+          "size": 3699198,
+          "sha256_16": "3193efdd18ef07a1",
+          "ctype": "application/javascript",
+          "saved_as": "ds.amizade777.com_message.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/js/protobuf.js",
+          "status": 200,
+          "size": 272649,
+          "sha256_16": "da3251a7c859871b",
+          "ctype": "application/javascript",
+          "saved_as": "ds.amizade777.com_protobuf.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/manifest.json",
+          "status": 200,
+          "size": 403,
+          "sha256_16": "e517d57b9d7775ba",
+          "ctype": "application/json",
+          "saved_as": "ds.amizade777.com_manifest.json"
+        },
+        {
+          "url": "https://ds.amizade777.com/assets/index.js",
+          "status": 200,
+          "size": 6166,
+          "sha256_16": "06d15b8a49bbdf58",
+          "ctype": "text/html",
+          "saved_as": "ds.amizade777.com_index.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/assets/main.js",
+          "status": 200,
+          "size": 6166,
+          "sha256_16": "06d15b8a49bbdf58",
+          "ctype": "text/html",
+          "saved_as": "ds.amizade777.com_main.js"
+        },
+        {
+          "url": "https://ds.amizade777.com/index.js",
+          "status": 200,
+          "size": 6166,
+          "sha256_16": "06d15b8a49bbdf58",
+          "ctype": "text/html",
+          "saved_as": "ds.amizade777.com_index.js"
+        }
+      ],
+      "merged_size": 7740408,
+      "endpoints": [
+        "/japi/activity/redPacketRain/currentRedPacketRainActivityList",
+        "/japi/activity/redPacketRain/getRedPacket",
+        "/japi/activity/redPacketRain/getReward",
+        "/japi/activity/redPacketRain/redPacketRainActivityList",
+        "/japi/invite/api/finger/download?packageName=",
+        "/japi/invite/boxConfig/boxInfo",
+        "/japi/invite/boxConfig/boxReceive",
+        "/japi/invite/boxConfig/boxReceiveRecord",
+        "/japi/invite/userInvite/getFirstRechargeRewardRecord",
+        "/japi/invite/userInvite/getInviteConfig",
+        "/japi/invite/userInvite/getRewardRecordList",
+        "/japi/invite/userInvite/queryInviteDayReportData",
+        "/japi/invite/userInvite/queryInviteRewardData",
+        "/japi/invite/userInvite/queryUnsettleInviteRewardData",
+        "/japi/user/api/signIn/customerSignConfig",
+        "/japi/user/api/signIn/signRecord",
+        "/japi/user/api/signIn/v2/signIn",
+        "/japi/user/balance/querySimpleBalance",
+        "/japi/user/captcha/image",
+        "/japi/user/game/getGameLabel",
+        "/japi/user/game/getGameList",
+        "/japi/user/getDama",
+        "/japi/user/getExtraInfo",
+        "/japi/user/vip/getAllDisplayVo",
+        "/prod-api/global-config/recharge",
+        "/prod-api/invite/getBindRewardRecord",
+        "/prod-api/letters/list",
+        "/prod-api/letters/read",
+        "/prod-api/mail/getMailCount",
+        "/prod-api/notice/list",
+        "/prod-api/otp/ping",
+        "/prod-api/pay-service/bank",
+        "/prod-api/pay-service/recharge",
+        "/prod-api/pay-service/recharge-list",
+        "/prod-api/pay-service/withdraw-limit",
+        "/prod-api/payment/balance-less",
+        "/prod-api/payment/balance-less/list",
+        "/prod-api/playGame/queryUserGameRecord",
+        "/prod-api/player/sign-in",
+        "/prod-api/player/update",
+        "/prod-api/set/get",
+        "/prod-api/set/mains",
+        "/prod-api/vip/info",
+        "http://a/c%20d?a=1&c=3",
+        "http://www.w3.org/1999/xlink",
+        "http://www.w3.org/2000/svg",
+        "http://тест",
+        "https://app.adjust.com",
+        "https://app.adjust.net.in",
+        "https://app.adjust.world",
+        "https://app.eu.adjust.com",
+        "https://app.tr.adjust.com",
+        "https://app.us.adjust.com",
+        "https://gdpr.adjust.com",
+        "https://gdpr.adjust.net.in",
+        "https://gdpr.adjust.world",
+        "https://gdpr.eu.adjust.com",
+        "https://gdpr.tr.adjust.com",
+        "https://gdpr.us.adjust.com",
+        "https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3",
+        "https://github.com/zloirock/core-js",
+        "https://github.com/zloirock/core-js/blob/v3.29.1/LICENSE",
+        "https://m.amizade777.com",
+        "https://t.me/",
+        "https://t.me/${J.content}",
+        "https://www.apptrace.com/api/app/",
+        "https://www.begambleaware.org/",
+        "https://www.gamcare.org.uk/",
+        "https://www.interac.ca/en/",
+        "https://www.skrill.com/pt/",
+        "https://xb-web.s3.amazonaws.com/game3/channel_tg.png",
+        "https://xb-web.s3.amazonaws.com/game3/channel_ws.png",
+        "https://xb-web.s3.amazonaws.com/game3/weekbg.webp",
+        "https://xb-web.s3.amazonaws.com/h5Res/amizade777.jpg",
+        "https://xb-web.s3.amazonaws.com/package/amizade777_logo.png"
+      ],
+      "api_endpoints": [
+        "/japi/activity/redPacketRain/currentRedPacketRainActivityList",
+        "/japi/activity/redPacketRain/getRedPacket",
+        "/japi/activity/redPacketRain/getReward",
+        "/japi/activity/redPacketRain/redPacketRainActivityList",
+        "/japi/invite/api/finger/download?packageName=",
+        "/japi/invite/boxConfig/boxInfo",
+        "/japi/invite/boxConfig/boxReceive",
+        "/japi/invite/boxConfig/boxReceiveRecord",
+        "/japi/invite/userInvite/getFirstRechargeRewardRecord",
+        "/japi/invite/userInvite/getInviteConfig",
+        "/japi/invite/userInvite/getRewardRecordList",
+        "/japi/invite/userInvite/queryInviteDayReportData",
+        "/japi/invite/userInvite/queryInviteRewardData",
+        "/japi/invite/userInvite/queryUnsettleInviteRewardData",
+        "/japi/user/api/signIn/customerSignConfig",
+        "/japi/user/api/signIn/signRecord",
+        "/japi/user/api/signIn/v2/signIn",
+        "/japi/user/balance/querySimpleBalance",
+        "/japi/user/captcha/image",
+        "/japi/user/game/getGameLabel",
+        "/japi/user/game/getGameList",
+        "/japi/user/getDama",
+        "/japi/user/getExtraInfo",
+        "/japi/user/vip/getAllDisplayVo",
+        "/prod-api/global-config/recharge",
+        "/prod-api/invite/getBindRewardRecord",
+        "/prod-api/letters/list",
+        "/prod-api/letters/read",
+        "/prod-api/mail/getMailCount",
+        "/prod-api/notice/list",
+        "/prod-api/otp/ping",
+        "/prod-api/pay-service/bank",
+        "/prod-api/pay-service/recharge",
+        "/prod-api/pay-service/recharge-list",
+        "/prod-api/pay-service/withdraw-limit",
+        "/prod-api/payment/balance-less",
+        "/prod-api/payment/balance-less/list",
+        "/prod-api/playGame/queryUserGameRecord",
+        "/prod-api/player/sign-in",
+        "/prod-api/player/update",
+        "/prod-api/set/get",
+        "/prod-api/set/mains",
+        "/prod-api/vip/info",
+        "https://www.apptrace.com/api/app/"
+      ],
+      "websockets": [],
+      "secrets_regex": {
+        "ethereum_pk": [],
+        "ethereum_addr": [],
+        "aws_access_key": [],
+        "google_api_key": [],
+        "stripe_live": [],
+        "stripe_test": [],
+        "jwt_tokens": [
+          "PlayerBaseInfo.prototype.toJSON",
+          "TurnState.prototype.finishReason",
+          "ShotReward.prototype.area",
+          "AllSeatState.prototype.toJSON",
+          "SeatState.prototype.currentOption",
+          "AnswerEvent.prototype.seat",
+          "Slots1StateReply.prototype.totalBet",
+          "EnterRoomReply.prototype.roomId",
+          "ProtoJlbBlockReq.prototype.toJSON",
+          "ProtoEgyptGameStartReq.prototype.type",
+          "ProtoSJB02GameStartResp.prototype.awardTotalTimes",
+          "BufferReader.prototype._slice",
+          "LongBits.prototype.length",
+          "HistoryResult.prototype.toJSON",
+          "ProtoBullGameStartReq.prototype.type",
+          "TimeOutEvent.prototype.seat",
+          "ProtoAztecGameStartResp.prototype.lineItem",
+          "SwitchTableReq.prototype.toJSON",
+          "QuestionEvent.prototype.title",
+          "question.SendRobotEvent.verify"
+        ],
+        "private_pem": [],
+        "generic_apikey": [],
+        "passwords": [
+          ",rephone:",
+          ",verifyCode:"
+        ]
+      },
+      "secrets_classifier": [
+        {
+          "error": "'str' object has no attribute 'is_success'"
+        }
+      ],
+      "jwt_reports": [
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xb2 in position 2: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 9,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xec in position 4: invalid continuation byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xab in position 4: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 0,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xb1 in position 4: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 6,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xb3 in position 3: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xad in position 3: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 11,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xe7 in position 1: invalid continuation byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0x89 in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (13) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (21) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0x9e in position 2: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 6,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xad in position 2: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 0,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (13) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xaa in position 0: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: 'utf-8' codec can't decode byte 0xe9 in position 1: invalid continuation byte"
+            }
+          ],
+          "pii_hits": {}
+        }
+      ],
+      "version_hits": [
+        "1.1",
+        "1.3.4",
+        "3.29.1",
+        "1.0.0",
+        "3.1.9",
+        "5.6.0"
+      ],
+      "device_hits": [],
+      "config_hits": [
+        "/prod-api"
+      ]
+    },
+    "m.amizade777.com": {
+      "html_size": 5602,
+      "bundles_referenced": [
+        "https://m.amizade777.com/assets/index-7a797002.css",
+        "https://m.amizade777.com/assets/index-e7dd841c.js",
+        "https://m.amizade777.com/assets/index-legacy-3828497c.js",
+        "https://m.amizade777.com/assets/polyfills-41ef3fbd.js",
+        "https://m.amizade777.com/assets/polyfills-legacy-46429604.js",
+        "https://m.amizade777.com/finger_1.0.0.js",
+        "https://m.amizade777.com/manifest.json",
+        "https://m.amizade777.com/message.js",
+        "https://m.amizade777.com/protobuf.js",
+        "https://m.amizade777.com/resource/loading.css"
+      ],
+      "bundle_results": [
+        {
+          "url": "https://m.amizade777.com/assets/index-7a797002.css",
+          "status": 200,
+          "size": 328279,
+          "sha256_16": "7a797002e3675f6b",
+          "ctype": "text/css",
+          "saved_as": "m.amizade777.com_index-7a797002.css"
+        },
+        {
+          "url": "https://m.amizade777.com/assets/index-e7dd841c.js",
+          "status": 200,
+          "size": 1349389,
+          "sha256_16": "619268534f5b253e",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_index-e7dd841c.js"
+        },
+        {
+          "url": "https://m.amizade777.com/assets/index-legacy-3828497c.js",
+          "status": 200,
+          "size": 1655890,
+          "sha256_16": "4f764fdc48278b3d",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_index-legacy-3828497c.js"
+        },
+        {
+          "url": "https://m.amizade777.com/assets/polyfills-41ef3fbd.js",
+          "status": 200,
+          "size": 102989,
+          "sha256_16": "1e596b7d17900f86",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_polyfills-41ef3fbd.js"
+        },
+        {
+          "url": "https://m.amizade777.com/assets/polyfills-legacy-46429604.js",
+          "status": 200,
+          "size": 102055,
+          "sha256_16": "742a4b03c48c3496",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_polyfills-legacy-46429604.js"
+        },
+        {
+          "url": "https://m.amizade777.com/finger_1.0.0.js",
+          "status": 200,
+          "size": 9541,
+          "sha256_16": "6a6c5964346f037d",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_finger_1.0.0.js"
+        },
+        {
+          "url": "https://m.amizade777.com/manifest.json",
+          "status": 200,
+          "size": 448,
+          "sha256_16": "d37e19f666c98f68",
+          "ctype": "application/json",
+          "saved_as": "m.amizade777.com_manifest.json"
+        },
+        {
+          "url": "https://m.amizade777.com/message.js",
+          "status": 200,
+          "size": 3686044,
+          "sha256_16": "d10591e62f8d8332",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_message.js"
+        },
+        {
+          "url": "https://m.amizade777.com/protobuf.js",
+          "status": 200,
+          "size": 272649,
+          "sha256_16": "da3251a7c859871b",
+          "ctype": "application/javascript",
+          "saved_as": "m.amizade777.com_protobuf.js"
+        },
+        {
+          "url": "https://m.amizade777.com/resource/loading.css",
+          "status": 200,
+          "size": 1327,
+          "sha256_16": "8711a74e89fe1887",
+          "ctype": "text/css",
+          "saved_as": "m.amizade777.com_loading.css"
+        },
+        {
+          "url": "https://m.amizade777.com/assets/index.js",
+          "status": 200,
+          "size": 5716,
+          "sha256_16": "31cec15384409cf4",
+          "ctype": "text/html",
+          "saved_as": "m.amizade777.com_index.js"
+        },
+        {
+          "url": "https://m.amizade777.com/assets/main.js",
+          "status": 200,
+          "size": 5716,
+          "sha256_16": "31cec15384409cf4",
+          "ctype": "text/html",
+          "saved_as": "m.amizade777.com_main.js"
+        },
+        {
+          "url": "https://m.amizade777.com/index.js",
+          "status": 200,
+          "size": 5716,
+          "sha256_16": "31cec15384409cf4",
+          "ctype": "text/html",
+          "saved_as": "m.amizade777.com_index.js"
+        }
+      ],
+      "merged_size": 7194065,
+      "endpoints": [
+        "http://a/c%20d?a=1&c=3",
+        "http://www.w3.org/1999/xhtml",
+        "http://www.w3.org/1999/xlink",
+        "http://www.w3.org/2000/svg",
+        "http://тест",
+        "https://app.adjust.com",
+        "https://app.adjust.net.in",
+        "https://app.adjust.world",
+        "https://app.eu.adjust.com",
+        "https://app.tr.adjust.com",
+        "https://app.us.adjust.com",
+        "https://gdpr.adjust.com",
+        "https://gdpr.adjust.net.in",
+        "https://gdpr.adjust.world",
+        "https://gdpr.eu.adjust.com",
+        "https://gdpr.tr.adjust.com",
+        "https://gdpr.us.adjust.com",
+        "https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3",
+        "https://github.com/zloirock/core-js",
+        "https://github.com/zloirock/core-js/blob/v3.30.1/LICENSE",
+        "https://m.amizade777.com",
+        "https://m.amizade777.com/",
+        "https://pgslots.s3.sa-east-1.amazonaws.com/Portrait",
+        "https://www.apptrace.com/api/app/",
+        "https://xb-web.s3.amazonaws.com/game3/channel_tg.png",
+        "https://xb-web.s3.amazonaws.com/game3/channel_ws.png",
+        "https://xb-web.s3.amazonaws.com/h5Res/amizade777.jpg"
+      ],
+      "api_endpoints": [
+        "https://www.apptrace.com/api/app/"
+      ],
+      "websockets": [],
+      "secrets_regex": {
+        "ethereum_pk": [],
+        "ethereum_addr": [],
+        "aws_access_key": [],
+        "google_api_key": [],
+        "stripe_live": [],
+        "stripe_test": [],
+        "jwt_tokens": [
+          "GuideReply.prototype.toJSON",
+          "PlayerBaseInfo.prototype.toJSON",
+          "ProtoSJBGameStartReq.prototype.toJSON",
+          "TableStateEvent.prototype.myAreaBets",
+          "van-button.van-button--primary.van-button--small",
+          "GameStartEvent.prototype.toJSON",
+          "GameBalanceEvent.prototype.updateType",
+          "GameTestResp.prototype.toJSON",
+          "FoulData.prototype.myFoulCount",
+          "ProtoZeus02GameStartReq.prototype.type",
+          "SeatState.prototype.cardSet",
+          "ProtoAztecGameStartReq.prototype.toJSON",
+          "PoolPlayerInfo.prototype.headUrl",
+          "TurnState.prototype.finishReason",
+          "SeatState.prototype.correct",
+          "ShotReward.prototype.area",
+          "AllTableState.prototype.seatStates",
+          "ShotStateEvent.prototype.shotParams",
+          "AllSeatState.prototype.toJSON",
+          "SeatState.prototype.currentOption"
+        ],
+        "private_pem": [],
+        "generic_apikey": [],
+        "passwords": []
+      },
+      "secrets_classifier": [
+        {
+          "error": "'str' object has no attribute 'is_success'"
+        }
+      ],
+      "jwt_reports": [
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xb2 in position 2: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 7,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xa6 in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 0,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xbd in position 0: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: 'utf-8' codec can't decode byte 0xbd in position 0: invalid start byte"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xa9 in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 7,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xa9 in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xa9 in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 8,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 5,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xba in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 5,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0x8a in position 1: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 9,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 5,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 3,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xec in position 4: invalid continuation byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 7,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (13) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 7,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Expecting value: line 1 column 1 (char 0)"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 4,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: 'utf-8' codec can't decode byte 0xab in position 4: invalid start byte"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        },
+        {
+          "valid_structure": false,
+          "header": null,
+          "payload": null,
+          "signature_bytes": 0,
+          "issues": [
+            {
+              "severity": "medium",
+              "code": "bad_header",
+              "message": "Header is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            },
+            {
+              "severity": "medium",
+              "code": "bad_payload",
+              "message": "Payload is not valid base64url JSON: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4"
+            }
+          ],
+          "pii_hits": {}
+        }
+      ],
+      "version_hits": [
+        "1.0.0",
+        "4.7.1",
+        "5.6.0",
+        "3.30.1"
+      ],
+      "device_hits": [],
+      "config_hits": []
+    }
+  }
+}

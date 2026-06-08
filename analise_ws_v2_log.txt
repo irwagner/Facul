@@ -1,0 +1,33 @@
+﻿======================================================================
+WS CAPTURE + PROTO ENUMERATION
+======================================================================
+
+  conectando em wss://ds.amizade777.com/websocket6
+    [text] 54 chars: {"msgtype": 1, "msg": "CJHZgcTqMw==", "errcode": null}
+
+  total 1 frames
+
+  primeiro frame text decodificado:
+{
+  "json": {
+    "msgtype": 1,
+    "msg": "CJHZgcTqMw==",
+    "errcode": null
+  },
+  "msg_b64_decoded_hex": "0891d981c4ea33",
+  "msg_b64_decoded_size": 7,
+  "msg_b64_protobuf_fields": [
+    {
+      "field": 1,
+      "type": "varint",
+      "value": 1780943449233
+    }
+  ]
+}
+
+  message.js: 3699198 chars
+  enum blocks: 0, cmd_map size: 0
+  pares values[i]=name: 0, pares [name]=i: 0
+  protobufjs enum entries: 0
+
+  Salvo em analise_ws_v2.json

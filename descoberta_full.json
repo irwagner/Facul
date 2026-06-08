@@ -1,0 +1,1316 @@
+{
+  "apex": "amizade777.com",
+  "targets": [
+    "ds.amizade777.com",
+    "m.amizade777.com"
+  ],
+  "passive_sources": {
+    "crtsh": [],
+    "alienvault": [],
+    "hackertarget": []
+  },
+  "dns_bruteforce": {
+    "m.amizade777.com": [
+      "18.161.205.121",
+      "18.161.205.55",
+      "18.161.205.56",
+      "18.161.205.69"
+    ],
+    "ds.amizade777.com": [
+      "18.64.207.110",
+      "18.64.207.51",
+      "18.64.207.79",
+      "18.64.207.87"
+    ]
+  },
+  "resolved": {
+    "ds.amizade777.com": {
+      "ips": [
+        "18.64.207.110",
+        "18.64.207.51",
+        "18.64.207.79",
+        "18.64.207.87"
+      ],
+      "cdn": [
+        "cloudfront"
+      ]
+    },
+    "m.amizade777.com": {
+      "ips": [
+        "18.161.205.121",
+        "18.161.205.55",
+        "18.161.205.56",
+        "18.161.205.69"
+      ],
+      "cdn": [
+        "unknown"
+      ]
+    }
+  },
+  "http_probes": [
+    {
+      "target": "ds.amizade777.com",
+      "url": "https://ds.amizade777.com/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx/1.24.0",
+        "Date": "Mon, 08 Jun 2026 17:59:34 GMT",
+        "content-encoding": "gzip",
+        "Last-Modified": "Fri, 05 Sep 2025 15:12:08 GMT",
+        "ETag": "W/\"68bafdc8-1816\"",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 31cb96eb609fe7e044ddb84ad336c356.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "GIG51-P3",
+        "X-Amz-Cf-Id": "CZneR9yxq8IfgHG8eqOSjOu-Z_eNwMFg5uYPuHztCUYVFnXK24Vxqg=="
+      },
+      "set_cookie": [],
+      "waf": {
+        "detected": [
+          "cloudfront"
+        ],
+        "confidence": "high",
+        "matched_signals": [
+          "via='1.1 31cb96eb609fe7e044ddb84ad336c356.cloudfront.net (CloudFront)' matched cloudfront",
+          "x-amz-cf-id='CZneR9yxq8IfgHG8eqOSjOu-Z_eNwMFg5uYPuHztCUYVFnXK24Vxqg==' matched cloudfront",
+          "x-amz-cf-pop='GIG51-P3' matched cloudfront"
+        ],
+        "is_protected": true
+      },
+      "body_len": 6166
+    },
+    {
+      "target": "m.amizade777.com",
+      "url": "https://m.amizade777.com/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx/1.24.0",
+        "Date": "Mon, 08 Jun 2026 17:59:34 GMT",
+        "content-encoding": "gzip",
+        "Last-Modified": "Fri, 05 Sep 2025 15:26:07 GMT",
+        "ETag": "W/\"68bb010f-1654\"",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 3f68c1db84551911393b02d5ab1a01ec.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "GIG51-P4",
+        "X-Amz-Cf-Id": "Dho3fWB8OcQYxE_wMLEzo04lsXB0VOglLWDnefJFNkeDD6lUa9aTRQ=="
+      },
+      "set_cookie": [],
+      "waf": {
+        "detected": [
+          "cloudfront"
+        ],
+        "confidence": "high",
+        "matched_signals": [
+          "via='1.1 3f68c1db84551911393b02d5ab1a01ec.cloudfront.net (CloudFront)' matched cloudfront",
+          "x-amz-cf-id='Dho3fWB8OcQYxE_wMLEzo04lsXB0VOglLWDnefJFNkeDD6lUa9aTRQ==' matched cloudfront",
+          "x-amz-cf-pop='GIG51-P4' matched cloudfront"
+        ],
+        "is_protected": true
+      },
+      "body_len": 5716
+    }
+  ],
+  "sensitive_paths": {
+    "ds.amizade777.com": [
+      {
+        "path": "/.git/config",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.git/HEAD",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.env",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.env.local",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.env.production",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/config.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/config.js",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/config.php",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/composer.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/package.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/package-lock.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/yarn.lock",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/Dockerfile",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.dockerignore",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/docker-compose.yml",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.aws/credentials",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.npmrc",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.htaccess",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/web.config",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/server-status",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/server-info",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/phpinfo.php",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/info.php",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/test.php",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/health",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/healthz",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/healthcheck",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/status",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/metrics",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/health",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/env",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/heapdump",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/mappings",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/swagger-ui.html",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/swagger",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/swagger.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/v2/api-docs",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/v3/api-docs",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/api-docs",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/api/swagger",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/openapi.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "size": 24,
+        "ctype": "text/plain",
+        "interesting": true
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/manifest.json",
+        "status": 200,
+        "size": 403,
+        "ctype": "application/json",
+        "interesting": true
+      },
+      {
+        "path": "/security.txt",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.well-known/security.txt",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/crossdomain.xml",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/clientaccesspolicy.xml",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/admin",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/admin/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/admin/login",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/manage",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/manager",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/console",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/login.json",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/api",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/api/",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/api/v1",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/api/v2",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/prod-api/",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/japi/",
+        "status": 200,
+        "size": 44,
+        "ctype": "application/json",
+        "interesting": true
+      },
+      {
+        "path": "/staging-api/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/dev-api/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/test-api/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/internal",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/debug",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/debug.log",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/error.log",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/access.log",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/backup",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/backup.zip",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/backup.tar.gz",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/dump.sql",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/db.sql",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.svn/entries",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.hg/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.bzr/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/CVS/Entries",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/wp-admin/",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/wp-login.php",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/wp-config.php",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.DS_Store",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/Thumbs.db",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/desktop.ini",
+        "status": 200,
+        "size": 6166,
+        "ctype": "text/html",
+        "interesting": true
+      }
+    ],
+    "m.amizade777.com": [
+      {
+        "path": "/.git/config",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.git/HEAD",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.env",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.env.local",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.env.production",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/config.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/config.js",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/config.php",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/composer.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/package.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/package-lock.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/yarn.lock",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/Dockerfile",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.dockerignore",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/docker-compose.yml",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.aws/credentials",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.npmrc",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.htaccess",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/web.config",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/server-status",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/server-info",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/phpinfo.php",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/info.php",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/test.php",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/health",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/healthz",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/healthcheck",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/status",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/metrics",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/health",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/env",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/heapdump",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/actuator/mappings",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/swagger-ui.html",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/swagger",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/swagger.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/v2/api-docs",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/v3/api-docs",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/api-docs",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/api/swagger",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/openapi.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "size": 24,
+        "ctype": "text/plain",
+        "interesting": true
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/manifest.json",
+        "status": 200,
+        "size": 448,
+        "ctype": "application/json",
+        "interesting": true
+      },
+      {
+        "path": "/security.txt",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.well-known/security.txt",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/crossdomain.xml",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/clientaccesspolicy.xml",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/admin",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/admin/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/admin/login",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/manage",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/manager",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/console",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/login.json",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/api",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/api/",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/api/v1",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/api/v2",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/prod-api/",
+        "status": 404,
+        "size": 0,
+        "ctype": "",
+        "interesting": false
+      },
+      {
+        "path": "/japi/",
+        "status": 200,
+        "size": 44,
+        "ctype": "application/json",
+        "interesting": true
+      },
+      {
+        "path": "/staging-api/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/dev-api/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/test-api/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/internal",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/debug",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/debug.log",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/error.log",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/access.log",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/backup",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/backup.zip",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/backup.tar.gz",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/dump.sql",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/db.sql",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.svn/entries",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.hg/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.bzr/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/CVS/Entries",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/wp-admin/",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/wp-login.php",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/wp-config.php",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/.DS_Store",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/Thumbs.db",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      },
+      {
+        "path": "/desktop.ini",
+        "status": 200,
+        "size": 5716,
+        "ctype": "text/html",
+        "interesting": true
+      }
+    ]
+  }
+}

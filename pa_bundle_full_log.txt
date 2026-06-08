@@ -1,0 +1,74 @@
+﻿  bundles iniciais: 6
+    /static/js/app.3bae0f2c.js
+    /static/css/chunk-elementUI.f92cd1c5.css
+    /static/js/chunk-elementUI.ca7efc62.js
+    /static/css/chunk-libs.3dfb7769.css
+    /static/css/app.d05da3c9.css
+    /static/js/chunk-libs.cdb414f0.js
+
+  chunks no runtime: 6
+  total bundles a baixar: 18
+  [200] https://pa.rainha777slots.com/static/css/app.d05da3c9.css (10328 bytes, sha=8f4d76b9c8f20d7c)
+  [200] https://pa.rainha777slots.com/static/css/chunk-1af0216b.db842319.css (784 bytes, sha=1fcd4ca89fc5b169)
+  [200] https://pa.rainha777slots.com/static/css/chunk-3a66dd30.6f2d5181.css (1632 bytes, sha=857446df260c8569)
+  [200] https://pa.rainha777slots.com/static/css/chunk-94d3c3c4.3c7f5ad9.css (4748 bytes, sha=6ed09a93d6258ce8)
+  [200] https://pa.rainha777slots.com/static/css/chunk-a417e232.210a6778.css (4049 bytes, sha=fb3c14efa07bae06)
+  [200] https://pa.rainha777slots.com/static/css/chunk-c0dd8076.352a5eb9.css (766 bytes, sha=7c62d1e8b5fb688f)
+  [200] https://pa.rainha777slots.com/static/css/chunk-e024b3aa.4e5f94aa.css (671 bytes, sha=1a3d0a9c0ecab599)
+  [200] https://pa.rainha777slots.com/static/css/chunk-elementUI.f92cd1c5.css (240819 bytes, sha=f78d9b1c23700f94)
+  [200] https://pa.rainha777slots.com/static/css/chunk-libs.3dfb7769.css (3568 bytes, sha=b33eb5b49a8bac1c)
+  [200] https://pa.rainha777slots.com/static/js/app.3bae0f2c.js (54072 bytes, sha=a5a44589b013e94c)
+  [200] https://pa.rainha777slots.com/static/js/chunk-1af0216b.db842319.js (4813 bytes, sha=4936e5d17fc56e73)
+  [200] https://pa.rainha777slots.com/static/js/chunk-3a66dd30.6f2d5181.js (4813 bytes, sha=4936e5d17fc56e73)
+  [200] https://pa.rainha777slots.com/static/js/chunk-94d3c3c4.3c7f5ad9.js (4813 bytes, sha=4936e5d17fc56e73)
+  [200] https://pa.rainha777slots.com/static/js/chunk-a417e232.210a6778.js (4813 bytes, sha=4936e5d17fc56e73)
+  [200] https://pa.rainha777slots.com/static/js/chunk-c0dd8076.352a5eb9.js (4813 bytes, sha=4936e5d17fc56e73)
+  [200] https://pa.rainha777slots.com/static/js/chunk-e024b3aa.4e5f94aa.js (4813 bytes, sha=4936e5d17fc56e73)
+  [200] https://pa.rainha777slots.com/static/js/chunk-elementUI.ca7efc62.js (692948 bytes, sha=b26c5b1541064124)
+  [200] https://pa.rainha777slots.com/static/js/chunk-libs.cdb414f0.js (421866 bytes, sha=1e33e2f784a8c2f3)
+
+  total 1,167,648 chars de JS unificado
+
+  api endpoints: 0
+
+  baseURLs: ['/prod-api']
+
+  process.env refs: []
+
+  AWS keys: 0 | Google keys: 0 | PEM: 0
+
+  dominios externos referenciados:
+    dummyimage.com
+    wpimg.wallstcn.com
+    www.w3.org
+
+  keywords:
+    role: 79
+    agent: 8
+    operator: 0
+    admin: 21
+    permission: 0
+    menu: 142
+    router: 42
+    route: 68
+    /login: 2
+    /logout: 3
+    withdraw: 8
+    deposit: 10
+
+  titulos de menu/rota: 6
+    Dashboard
+    menu.dailyReport
+    menu.data
+    menu.divideInto
+    menu.subordinate
+    menu.totalReport
+
+  rotas vue-router: 5
+    /404
+    /dashboard
+    /divided
+    /login
+    /subordinate
+
+  Salvo em pa_bundle_full.json

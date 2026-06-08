@@ -1,0 +1,39 @@
+{
+  "frames_captured": 1,
+  "frame_sizes": [
+    54
+  ],
+  "frame_hex_first_64": [
+    "7b226d736774797065223a20312c20226d7367223a2022434e69422f4d50714d773d3d222c2022657272636f6465223a206e756c6c7d"
+  ],
+  "sign_analysis": {
+    "sign_funcs": [],
+    "md5_calls": [],
+    "sign_snippets": [
+      {
+        "position": 242828,
+        "snippet": "lerType.          * @member {number} handlerType          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.handlerType = 0;          /**          * ServerAuth sign.          * @member {string} sign          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.sign = \"\";          /**          * ServerAuth gameId.          * @"
+      },
+      {
+        "position": 242862,
+        "snippet": "r} handlerType          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.handlerType = 0;          /**          * ServerAuth sign.          * @member {string} sign          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.sign = \"\";          /**          * ServerAuth gameId.          * @member {number} gameId          * "
+      },
+      {
+        "position": 242966,
+        "snippet": "prototype.handlerType = 0;          /**          * ServerAuth sign.          * @member {string} sign          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.sign = \"\";          /**          * ServerAuth gameId.          * @member {number} gameId          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.gameId = 0;     "
+      },
+      {
+        "position": 244761,
+        "snippet": "     if (message.handlerType != null && Object.hasOwnProperty.call(message, \"handlerType\"))                 writer.uint32(/* id 1, wireType 0 =*/8).int32(message.handlerType);             if (message.sign != null && Object.hasOwnProperty.call(message, \"sign\"))                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.sign);             if (message.gameId != null && Object.hasOwnProperty."
+      },
+      {
+        "position": 244814,
+        "snippet": "Property.call(message, \"handlerType\"))                 writer.uint32(/* id 1, wireType 0 =*/8).int32(message.handlerType);             if (message.sign != null && Object.hasOwnProperty.call(message, \"sign\"))                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.sign);             if (message.gameId != null && Object.hasOwnProperty.call(message, \"gameId\"))                 writer.uint3"
+      },
+      {
+        "position": 244894,
+        "snippet": "reType 0 =*/8).int32(message.handlerType);             if (message.sign != null && Object.hasOwnProperty.call(message, \"sign\"))                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.sign);             if (message.gameId != null && Object.hasOwnProperty.call(message, \"gameId\"))                 writer.uint32(/* id 3, wireType 0 =*/24).int32(message.gameId);             if (message.url "
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+﻿
+======================================================================
+  [1/3] api.rainha777slots.com:80 (BACKEND DIRETO, SEM CLOUDFRONT)
+======================================================================
+
+  === HEADERS COMPLETOS DA HOME ===
+  status=200 bytes=44 ms=34
+    Content-Type: application/json
+    content-length: 44
+    connection: close
+
+  === CRUZANDO ENDPOINTS /japi/ ENTRE BACKEND DIRETO E CLOUDFRONT ===
+
+  === POST /japi/player/sign-in com payload simples ===
+  POST /japi/player/sign-in: 200 44b  {"code":500,"msg":"404 NOT_FOUND","total":0}
+  POST /prod-api/player/sign-in: 200 44b  {"code":500,"msg":"404 NOT_FOUND","total":0}
+  POST /japi/user/api/signIn/v2/signIn: 200 44b  {"code":500,"msg":"404 NOT_FOUND","total":0}
+
+======================================================================
+  [2/3] BUNDLE DO pa.rainha777slots.com (PAINEL DE AGENTES)
+======================================================================
+  HTML home: 4813 chars
+  bundles: 0
+
+  total 0 chars de JS unificado
+  api endpoints achados: 0
+
+  keywords no bundle:
+
+  baseURLs / VITE_*: []
+
+  dominios externos: []
+
+======================================================================
+  [3/3] TESTE DE ENDPOINTS DESCOBERTOS NO pa.
+======================================================================
+
+  Salvo em rainha_api_pa.json

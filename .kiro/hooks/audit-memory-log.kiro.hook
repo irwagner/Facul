@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "name": "Atualizar memória da sessão",
+  "description": "Quando arquivos do toolkit ou docs principais mudarem, lembra de adicionar uma entrada nova em .kiro/memory/session_log.md para preservar o contexto.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/toolkit/**/*.py",
+      "tests/**/*.py",
+      "CONTEXTO_PROJETO.md",
+      "PASSO_A_PASSO_MANUAL.md",
+      ".kiro/specs/web-security-audit-toolkit/*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Um arquivo importante do projeto Web Security Audit Toolkit foi modificado.\n\nAntes de finalizar a tarefa atual, abra `.kiro/memory/session_log.md` e adicione uma nova entrada (em append, no topo da seção \"Sessões\") com:\n\n1. Data e identificação da sessão\n2. Contexto da mudança (o que o usuário pediu)\n3. Lista dos arquivos modificados/criados\n4. Decisões de design relevantes\n5. Próximos passos sugeridos\n\nNÃO reescreva entradas anteriores — só adicione uma nova. Esse log é a memória persistente entre IAs."
+  }
+}

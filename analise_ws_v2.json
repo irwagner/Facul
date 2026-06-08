@@ -1,0 +1,25 @@
+{
+  "frames_count": 1,
+  "first_payload": {
+    "json": {
+      "msgtype": 1,
+      "msg": "CJHZgcTqMw==",
+      "errcode": null
+    },
+    "msg_b64_decoded_hex": "0891d981c4ea33",
+    "msg_b64_decoded_size": 7,
+    "msg_b64_protobuf_fields": [
+      {
+        "field": 1,
+        "type": "varint",
+        "value": 1780943449233
+      }
+    ]
+  },
+  "enum": {
+    "enum_classes": {},
+    "raw_pairs_a": [],
+    "raw_pairs_b": [],
+    "cmd_map": {}
+  }
+}

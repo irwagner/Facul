@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-security-audit-toolkit"
+version = "0.1.0"
+description = "Academic web application security auditing framework"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "httpx>=0.27.0",
+    "dnspython>=2.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-cov>=5.0.0",
+    "hypothesis>=6.100.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.hypothesis]
+max_examples = 100

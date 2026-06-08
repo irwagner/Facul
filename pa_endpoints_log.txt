@@ -1,0 +1,66 @@
+﻿Total: 1,167,648 chars de 9 arquivos
+
+Endpoints API: 16
+  /invite/admin/invite/getBindRewardRecord
+  /invite/admin/invite/getFirstRechargeRewardRecord
+  /invite/admin/invite/getInviteConfig
+  /invite/admin/invite/getRewardRecordList
+  /invite/admin/invite/getUserInviteList
+  /invite/admin/invite/queryInviteDayReportData
+  /invite/admin/invite/queryInviteRewardData
+  /invite/admin/invite/queryInviteRewardNoSettle
+  /invite/admin/invite/queryUnsettleInviteRewardData
+  /login
+  /system/user/gsf/login
+  /system/user/gsf/logout
+  /vue-admin-template/user/info
+  /vue-admin-template/user/info.*
+  /vue-admin-template/user/login
+  /vue-admin-template/user/logout
+
+Todos os paths/urls (>= 5 chars): 20
+  /dashboard
+  /divided
+  /invite/admin/invite/getBindRewardRecord
+  /invite/admin/invite/getFirstRechargeRewardRecord
+  /invite/admin/invite/getInviteConfig
+  /invite/admin/invite/getRewardRecordList
+  /invite/admin/invite/getUserInviteList
+  /invite/admin/invite/queryInviteDayReportData
+  /invite/admin/invite/queryInviteRewardData
+  /invite/admin/invite/queryInviteRewardNoSettle
+  /invite/admin/invite/queryUnsettleInviteRewardData
+  /login
+  /subordinate
+  /system/user/gsf/login
+  /system/user/gsf/logout
+  /vue-admin-template/table/list
+  /vue-admin-template/user/info
+  /vue-admin-template/user/info.*
+  /vue-admin-template/user/login
+  /vue-admin-template/user/logout
+
+=== axios.create config ===
+
+=== baseUrl / $api / VUE_APP_ ===
+  baseURL:"/prod-api"
+  baseURL&&!u(t.url)&&(t.url=s(t.baseURL
+
+=== Menu structure / role logic ===
+
+=== Strings de login ===
+  /vue-admin-template/user/login
+  Verification failed, please Login again.
+  /login
+  /login
+  user/resetToken
+  /login?redirect=
+  /login?redirect=
+  /login?redirect=
+  /login
+  /login
+  Re-Login
+  user/resetToken
+  /system/user/gsf/login
+
+=== Locale file referenced ===

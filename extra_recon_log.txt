@@ -1,0 +1,109 @@
+﻿
+======================================================================
+  [1/4] DESCOBERTA DE megaslott.com (achado no /japi/invite/api/finger/download)
+======================================================================
+    [DNS] sx.megaslott.com -> 54.240.184.23, 54.240.184.50, 54.240.184.70, 54.240.184.94
+    [DNS] api.megaslott.com -> 54.207.65.155
+    [DNS] test.megaslott.com -> 52.67.28.188
+    apex nao resolve
+
+    [403] https://sx.megaslott.com/  bytes=263  ctype=application/xml
+        via: 1.1 ab78b75ca1cf451cf34716e304727452.cloudfront.net (CloudFront)
+    [---] https://api.megaslott.com/  erro
+    [---] https://test.megaslott.com/  erro
+
+    HEAD em https://sx.megaslott.com/download/Amizade777.apk
+      status=200  size=5554230
+      content-type: application/vnd.android.package-archive
+      last-modified: Thu, 15 Feb 2024 09:18:39 GMT
+      server: AmazonS3
+
+======================================================================
+  [2/4] BRUTE FORCE EM /japi/ EM ds.amizade777.com
+======================================================================
+
+  0/104 paths nao retornaram '404 NOT_FOUND' nem 401 padrao:
+
+  PATHS QUE SO PEDIRAM TOKEN (18):
+    /japi/system
+    /japi/system/admin
+    /japi/system/info
+    /japi/system/status
+    /japi/system/health
+    /japi/system/log
+    /japi/system/config
+    /japi/user
+    /japi/user/list
+    /japi/user/all
+    /japi/user/search
+    /japi/user/info
+    /japi/user/info/1
+    /japi/user/profile
+    /japi/user/profile/1
+    /japi/invite
+    /japi/invite/list
+    /japi/invite/admin
+
+======================================================================
+  [3/4] CAPTCHA: bypass de sessao
+======================================================================
+  Repete o GET 5 vezes sem cookies pra ver se cada call retorna captcha distinto
+    call 0: status=200 size=3495 first_bytes=ffd8ffe000104a46... cookie=None
+    call 1: status=200 size=3630 first_bytes=ffd8ffe000104a46... cookie=None
+    call 2: status=200 size=3625 first_bytes=ffd8ffe000104a46... cookie=None
+    call 3: status=200 size=3622 first_bytes=ffd8ffe000104a46... cookie=None
+    call 4: status=200 size=3656 first_bytes=ffd8ffe000104a46... cookie=None
+
+======================================================================
+  [4/4] DETALHE DAS ATIVIDADES redPacketRain
+======================================================================
+
+  --- currentRedPacketRainActivityList ---
+{
+  "code": 200,
+  "msg": null,
+  "data": {
+    "systemTime": 1780942013674,
+    "rewardVoList": [
+      {
+        "activityName": "redPacketRain02-20260608-0-amizade777",
+        "startTime": "12:00:00",
+        "endTime": "12:59:59",
+        "status": 2,
+        "receive": false
+      },
+      {
+        "activityName": "redPacketRain02-20260608-1-amizade777",
+        "startTime": "18:00:00",
+        "endTime": "18:59:59",
+        "status": 0,
+        "receive": false
+      },
+      {
+        "activityName": "redPacketRain02-20260608-2-amizade777",
+        "startTime": "21:00:00",
+        "endTime": "21:59:59",
+        "status": 0,
+        "receive": false
+      }
+    ]
+  },
+  "total": 0
+}
+
+  --- redPacketRainActivityList ---
+{
+  "code": 200,
+  "msg": null,
+  "data": [
+    {
+      "mainName": "redPacketRain",
+      "name": "redPacketRain02",
+      "remark": "þ║óÕîàÚø¿02",
+      "rule": "{\n\t\t\"dateRange\":\"1-31\",\n\t\t\"ruleRelation\": \"and\",\n        \"weekRule\":[],\n\t\t\"maxAmount\":10000000,\n        \"times\":3,\n\t\t\"timeMap\":{\n\t\t\t\"0\":{\n\t\t\t\t\"start\":\"12:00:00\",\n\t\t\t\t\"end\":\"12:59:59\"\n\t\t\t},\n\t\t\t\"1\":{\n\t\t\t\t\"start\":\"18:00:00\",\n\t\t\t\t\"end\":\"18:59:59\"\n\t\t\t},\n\t\t\t\"2\":{\n\t\t\t\t\"start\":\"21:00:00\",\n\t\t\t\t\"end\":\"21:59:59\"\n\t\t\t}\n\t\t}\n\t}"
+    }
+  ],
+  "total": 0
+}
+
+  Salvo em extra_recon.json

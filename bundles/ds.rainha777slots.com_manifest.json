@@ -1,0 +1,21 @@
+{
+  "name": "Rainha 777 Slots",
+  "short_name": "Rainha 777 Slots",
+  "description": "Cassino Responsável",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1132",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "./192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Pasta para dumps brutos.
+# Coloque aqui:
+#  - HAR exports do navegador
+#  - JSON cru do Burp (Save items)
+#  - prints (.png)
+#  - logs grandes

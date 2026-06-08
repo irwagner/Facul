@@ -1,0 +1,388 @@
+{
+  "ws_path": {
+    "candidate_paths": [],
+    "candidate_urls": [],
+    "probes": [
+      {
+        "path": "/notice",
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:34 GMT",
+          "content-encoding": "gzip",
+          "Last-Modified": "Fri, 05 Jun 2026 11:16:50 GMT",
+          "ETag": "W/\"6a22b022-11eb\"",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Miss from cloudfront",
+          "Via": "1.1 51158841c723e632f97378d03e100c70.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "yZyDoPKnoLOBMJQgJ5QcBqyKSonPBaFadAxq61Qb9HNI59_JlbuQ3w=="
+        },
+        "body": "<!DOCTYPE html> <html lang=\"en\">  <head>   <meta charset=\"UTF-8\" />   <link rel="
+      },
+      {
+        "path": "/notify",
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:34 GMT",
+          "content-encoding": "gzip",
+          "Last-Modified": "Fri, 05 Jun 2026 11:16:50 GMT",
+          "ETag": "W/\"6a22b022-11eb\"",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Miss from cloudfront",
+          "Via": "1.1 bf28a47ec95bcfb05a5c23f085a10024.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "ZN-NgD07kebOwjECZoZSS2bVXezYBECKJ9wrfAvuxSbG8_Co2CNO0w=="
+        },
+        "body": "<!DOCTYPE html> <html lang=\"en\">  <head>   <meta charset=\"UTF-8\" />   <link rel="
+      },
+      {
+        "path": "/socket",
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:34 GMT",
+          "content-encoding": "gzip",
+          "Last-Modified": "Fri, 05 Jun 2026 11:16:50 GMT",
+          "ETag": "W/\"6a22b022-11eb\"",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Miss from cloudfront",
+          "Via": "1.1 ac15a65d95485e6f79ac5467c6d59f7a.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "dvN6NqarDx4u0lvLdwF22wSz7JCDRzYMWXIyuQQ2JtLGSpZ5nDzPDw=="
+        },
+        "body": "<!DOCTYPE html> <html lang=\"en\">  <head>   <meta charset=\"UTF-8\" />   <link rel="
+      },
+      {
+        "path": "/socket.io",
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:35 GMT",
+          "content-encoding": "gzip",
+          "Last-Modified": "Fri, 05 Jun 2026 11:16:50 GMT",
+          "ETag": "W/\"6a22b022-11eb\"",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Miss from cloudfront",
+          "Via": "1.1 a3ab3d68383a22a0443d5d169ebd6584.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "XLDUmiZnzgIVL4BoOcsln0pcqYqzRTo4ab3p7kJI37Rc43YkSvN5cA=="
+        },
+        "body": "<!DOCTYPE html> <html lang=\"en\">  <head>   <meta charset=\"UTF-8\" />   <link rel="
+      },
+      {
+        "path": "/websocket10",
+        "status": 404,
+        "headers": {
+          "Content-Type": "text/html",
+          "Content-Length": "555",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:38 GMT",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Error from cloudfront",
+          "Via": "1.1 5fcd0b76b3c801e894da03166e1b83da.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "7YfLu3wzPqEtbI_jTrlu6UU9ioA9Kl5Wvlc_WFG3cyD02kg95lINRQ=="
+        },
+        "body": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not F"
+      },
+      {
+        "path": "/websocket6",
+        "status": 404,
+        "headers": {
+          "Content-Type": "text/html",
+          "Content-Length": "555",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:41 GMT",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Error from cloudfront",
+          "Via": "1.1 3d3a41ecd67676d07b6cb7d78b46df78.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "Cl9gfzYIC6iGVfbbVtC6OnuEYEpOD9zG8y7JvQPZnCL4BRCSnuMI7w=="
+        },
+        "body": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not F"
+      },
+      {
+        "path": "/websocket7",
+        "status": 404,
+        "headers": {
+          "Content-Type": "text/html",
+          "Content-Length": "555",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:44 GMT",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Error from cloudfront",
+          "Via": "1.1 a867f43ff5585d8ee4d6654f3815f7ea.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "9681txIVq0FyOgRDYJsjepb5cF69-BU8074ON3VxWMhgcmewirVyFg=="
+        },
+        "body": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not F"
+      },
+      {
+        "path": "/websocket8",
+        "status": 404,
+        "headers": {
+          "Content-Type": "text/html",
+          "Content-Length": "555",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:48 GMT",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Error from cloudfront",
+          "Via": "1.1 8cb11c288233b7e355da3babfe95b47e.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "p_AL6_lcIpiTMMIyWo_PXjRJOrMPWNXUc8tWUyIKARh_mnqEAMhGLw=="
+        },
+        "body": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not F"
+      },
+      {
+        "path": "/websocket9",
+        "status": 404,
+        "headers": {
+          "Content-Type": "text/html",
+          "Content-Length": "555",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:51 GMT",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Error from cloudfront",
+          "Via": "1.1 709f34277187c93d96e34d53494efaf6.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "IUr0ptyysLYl64haGH3ZSrPBI6PaIwc1CIaMylkL4jtJ_ttJa5trPA=="
+        },
+        "body": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not F"
+      },
+      {
+        "path": "/ws",
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:51 GMT",
+          "content-encoding": "gzip",
+          "Last-Modified": "Fri, 05 Jun 2026 11:16:50 GMT",
+          "ETag": "W/\"6a22b022-11eb\"",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Miss from cloudfront",
+          "Via": "1.1 864102b3b31eaf8f9e907b8884eab7ac.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "QsaSzDstNJLxDxO7yj48q3pgWJ13K46zs38XoT7ZRxZz6TnW6oviBw=="
+        },
+        "body": "<!DOCTYPE html> <html lang=\"en\">  <head>   <meta charset=\"UTF-8\" />   <link rel="
+      },
+      {
+        "path": "/wss",
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Server": "nginx/1.22.1",
+          "Date": "Mon, 08 Jun 2026 19:11:51 GMT",
+          "content-encoding": "gzip",
+          "Last-Modified": "Fri, 05 Jun 2026 11:16:50 GMT",
+          "ETag": "W/\"6a22b022-11eb\"",
+          "Vary": "Accept-Encoding",
+          "X-Cache": "Miss from cloudfront",
+          "Via": "1.1 bf28a47ec95bcfb05a5c23f085a10024.cloudfront.net (CloudFront)",
+          "X-Amz-Cf-Pop": "FOR50-P4",
+          "X-Amz-Cf-Id": "l4dPHtHOKUNo2_3N7lNseIdrP0dAq1pRZQ9KWQLPoEiSW177S8aCRA=="
+        },
+        "body": "<!DOCTYPE html> <html lang=\"en\">  <head>   <meta charset=\"UTF-8\" />   <link rel="
+      }
+    ]
+  },
+  "pa_and_m": {
+    "pa.rainha777slots.com": {
+      "status": 200,
+      "title": "Agente"
+    },
+    "m.rainha777slots.com": {
+      "status": 200,
+      "title": "Rainha 777 Slots"
+    }
+  },
+  "bundle_compare": [
+    {
+      "base": "finger_1",
+      "identical": true,
+      "files": [
+        {
+          "file": "ds.amizade777.com_finger_1.0.0.js",
+          "sha": "6a6c5964346f037d",
+          "size": 9541
+        },
+        {
+          "file": "ds.rainha777slots.com_finger_1.0.0.js",
+          "sha": "6a6c5964346f037d",
+          "size": 9541
+        },
+        {
+          "file": "m.amizade777.com_finger_1.0.0.js",
+          "sha": "6a6c5964346f037d",
+          "size": 9541
+        }
+      ]
+    },
+    {
+      "base": "index",
+      "identical": false,
+      "files": [
+        {
+          "file": "ds.amizade777.com_index.76929613.js",
+          "sha": "14a4ddc962f5dbb4",
+          "size": 1362505
+        },
+        {
+          "file": "ds.amizade777.com_index.js",
+          "sha": "06d15b8a49bbdf58",
+          "size": 6166
+        },
+        {
+          "file": "ds.rainha777slots.com_index.6665dae8.js",
+          "sha": "d17b84cb6b58b225",
+          "size": 362558
+        },
+        {
+          "file": "m.amizade777.com_index.js",
+          "sha": "31cec15384409cf4",
+          "size": 5716
+        }
+      ]
+    },
+    {
+      "base": "index-legacy",
+      "identical": false,
+      "files": [
+        {
+          "file": "ds.amizade777.com_index-legacy.ef78d3e0.js",
+          "sha": "47d86ea35168bec7",
+          "size": 2248752
+        },
+        {
+          "file": "ds.rainha777slots.com_index-legacy.b67df586.js",
+          "sha": "8388e755fcc1f801",
+          "size": 959671
+        }
+      ]
+    },
+    {
+      "base": "main",
+      "identical": false,
+      "files": [
+        {
+          "file": "ds.amizade777.com_main.js",
+          "sha": "06d15b8a49bbdf58",
+          "size": 6166
+        },
+        {
+          "file": "m.amizade777.com_main.js",
+          "sha": "31cec15384409cf4",
+          "size": 5716
+        }
+      ]
+    },
+    {
+      "base": "message",
+      "identical": false,
+      "files": [
+        {
+          "file": "ds.amizade777.com_message.js",
+          "sha": "3193efdd18ef07a1",
+          "size": 3699198
+        },
+        {
+          "file": "ds.rainha777slots.com_message.js",
+          "sha": "3193efdd18ef07a1",
+          "size": 3699198
+        },
+        {
+          "file": "m.amizade777.com_message.js",
+          "sha": "d10591e62f8d8332",
+          "size": 3686044
+        }
+      ]
+    },
+    {
+      "base": "polyfills-legacy",
+      "identical": false,
+      "files": [
+        {
+          "file": "ds.amizade777.com_polyfills-legacy.c88b29ae.js",
+          "sha": "a94727cc0d401b6b",
+          "size": 130329
+        },
+        {
+          "file": "ds.rainha777slots.com_polyfills-legacy.e940345d.js",
+          "sha": "98b163e81a7ca8db",
+          "size": 130815
+        }
+      ]
+    },
+    {
+      "base": "protobuf",
+      "identical": true,
+      "files": [
+        {
+          "file": "ds.amizade777.com_protobuf.js",
+          "sha": "da3251a7c859871b",
+          "size": 272649
+        },
+        {
+          "file": "ds.rainha777slots.com_protobuf.js",
+          "sha": "da3251a7c859871b",
+          "size": 272649
+        },
+        {
+          "file": "m.amizade777.com_protobuf.js",
+          "sha": "da3251a7c859871b",
+          "size": 272649
+        }
+      ]
+    }
+  ],
+  "api_ports": {
+    "ip": "15.229.53.171",
+    "ports": {
+      "80": "open",
+      "443": "refused (ConnectionRefusedError)",
+      "3000": "refused (TimeoutError)",
+      "3001": "refused (ConnectionRefusedError)",
+      "5000": "refused (TimeoutError)",
+      "8000": "refused (TimeoutError)",
+      "8080": "refused (ConnectionRefusedError)",
+      "8443": "refused (TimeoutError)",
+      "8888": "refused (TimeoutError)",
+      "9000": "refused (TimeoutError)",
+      "9090": "refused (TimeoutError)"
+    }
+  },
+  "ws_capture": [
+    {
+      "path": "/notice",
+      "error": "ERR: InvalidStatus: server rejected WebSocket connection: HTTP 200"
+    },
+    {
+      "path": "/websocket",
+      "error": "ERR: InvalidStatus: server rejected WebSocket connection: HTTP 200"
+    }
+  ]
+}

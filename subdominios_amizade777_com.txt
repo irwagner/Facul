@@ -1,0 +1,7 @@
+Subdomínios encontrados para: amizade777.com
+
+=== ONLINE ===
+ds.amizade777.com | IP: 18.64.207.79 | HTTP: True | HTTPS: True
+m.amizade777.com | IP: 18.161.205.69 | HTTP: True | HTTPS: True
+
+=== RESOLVEM DNS MAS OFFLINE ===

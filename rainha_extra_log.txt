@@ -1,0 +1,137 @@
+﻿
+======================================================================
+  [1/5] PATH REAL DO WEBSOCKET (ds.rainha777slots.com)
+======================================================================
+  bundles candidatos: 6
+  paths ws candidatos: []
+  urls ws candidatos: []
+
+  testando 11 paths via HTTP upgrade:
+    200 /notice                   <!DOCTYPE html> <html lang="en">  <head>   <meta charset="UT
+    200 /notify                   <!DOCTYPE html> <html lang="en">  <head>   <meta charset="UT
+    200 /socket                   <!DOCTYPE html> <html lang="en">  <head>   <meta charset="UT
+    200 /socket.io                <!DOCTYPE html> <html lang="en">  <head>   <meta charset="UT
+    404 /websocket10              <html>
+ <head><title>404 Not Found</title></head>
+ <body>
+ <
+    404 /websocket6               <html>
+ <head><title>404 Not Found</title></head>
+ <body>
+ <
+    404 /websocket7               <html>
+ <head><title>404 Not Found</title></head>
+ <body>
+ <
+    404 /websocket8               <html>
+ <head><title>404 Not Found</title></head>
+ <body>
+ <
+    404 /websocket9               <html>
+ <head><title>404 Not Found</title></head>
+ <body>
+ <
+    200 /ws                       <!DOCTYPE html> <html lang="en">  <head>   <meta charset="UT
+    200 /wss                      <!DOCTYPE html> <html lang="en">  <head>   <meta charset="UT
+
+======================================================================
+  [2/5] PROBE FOCADO EM pa. e m. (rainha777slots)
+======================================================================
+
+  --- pa.rainha777slots.com ---
+    home: status=200 bytes=4813 title='Agente'
+    200  4813b  /japi/                            <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /japi/user/game/getGameList       <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /japi/admin                       <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /japi/system/admin                <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /japi/user/list                   <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /japi/operator                    <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /admin/login                      <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /painel                           <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /panel                            <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /affiliate                        <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /agent                            <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /dashboard                        <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /login                            <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+    200  4813b  /login.html                       <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible   <--
+
+  --- m.rainha777slots.com ---
+    home: status=200 bytes=5407 title='Rainha 777 Slots'
+    manifest: name='Rainha 777 Slots'
+    200    44b  /japi/                            {"code":500,"msg":"404 NOT_FOUND","total":0}
+    200    63b  /japi/user/game/getGameList       {"code":200,"msg":null,"data":{"label":[],"type":{}},"total":0}  <--
+    200    44b  /japi/admin                       {"code":500,"msg":"404 NOT_FOUND","total":0}
+    200    45b  /japi/system/admin                {"code":401,"msg":"token is empty","total":0}  <--
+    200    45b  /japi/user/list                   {"code":401,"msg":"token is empty","total":0}  <--
+    200    44b  /japi/operator                    {"code":500,"msg":"404 NOT_FOUND","total":0}
+    200  5407b  /admin/login                      <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /painel                           <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /panel                            <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /affiliate                        <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /agent                            <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /dashboard                        <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /login                            <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+    200  5407b  /login.html                       <!DOCTYPE html> <html lang="en">  <head>   <script type="module" crossorigin src  <--
+
+======================================================================
+  [3/5] COMPARATIVO DE BUNDLES ÔÇö amizade777 vs rainha777slots
+======================================================================
+
+  === finger_1 <-- IDENTICO
+    ds.amizade777.com_finger_1.0.0.js                       sha=6a6c5964346f037d size=9,541
+    ds.rainha777slots.com_finger_1.0.0.js                   sha=6a6c5964346f037d size=9,541
+    m.amizade777.com_finger_1.0.0.js                        sha=6a6c5964346f037d size=9,541
+
+  === index
+    ds.amizade777.com_index.76929613.js                     sha=14a4ddc962f5dbb4 size=1,362,505
+    ds.amizade777.com_index.js                              sha=06d15b8a49bbdf58 size=6,166
+    ds.rainha777slots.com_index.6665dae8.js                 sha=d17b84cb6b58b225 size=362,558
+    m.amizade777.com_index.js                               sha=31cec15384409cf4 size=5,716
+
+  === index-legacy
+    ds.amizade777.com_index-legacy.ef78d3e0.js              sha=47d86ea35168bec7 size=2,248,752
+    ds.rainha777slots.com_index-legacy.b67df586.js          sha=8388e755fcc1f801 size=959,671
+
+  === main
+    ds.amizade777.com_main.js                               sha=06d15b8a49bbdf58 size=6,166
+    m.amizade777.com_main.js                                sha=31cec15384409cf4 size=5,716
+
+  === message
+    ds.amizade777.com_message.js                            sha=3193efdd18ef07a1 size=3,699,198
+    ds.rainha777slots.com_message.js                        sha=3193efdd18ef07a1 size=3,699,198
+    m.amizade777.com_message.js                             sha=d10591e62f8d8332 size=3,686,044
+
+  === polyfills-legacy
+    ds.amizade777.com_polyfills-legacy.c88b29ae.js          sha=a94727cc0d401b6b size=130,329
+    ds.rainha777slots.com_polyfills-legacy.e940345d.js      sha=98b163e81a7ca8db size=130,815
+
+  === protobuf <-- IDENTICO
+    ds.amizade777.com_protobuf.js                           sha=da3251a7c859871b size=272,649
+    ds.rainha777slots.com_protobuf.js                       sha=da3251a7c859871b size=272,649
+    m.amizade777.com_protobuf.js                            sha=da3251a7c859871b size=272,649
+
+======================================================================
+  [4/5] api.rainha777slots.com EM PORTAS ALTERNATIVAS
+======================================================================
+  api.rainha777slots.com -> 15.229.53.171
+       80/tcp ABERTA
+
+  HTTP em api.rainha777slots.com (porta 443) com Host headers:
+    Host=api.rainha777slots.com              http  200 {"code":500,"msg":"404 NOT_FOUND","total":0}
+    Host=rainha777slots.com                  http  200 {"code":500,"msg":"404 NOT_FOUND","total":0}
+    Host=ds.rainha777slots.com               http  200 {"code":500,"msg":"404 NOT_FOUND","total":0}
+    Host=pa.rainha777slots.com               http  200 {"code":500,"msg":"404 NOT_FOUND","total":0}
+    Host=internal.rainha777slots.com         http  200 {"code":500,"msg":"404 NOT_FOUND","total":0}
+    Host=admin.rainha777slots.com            http  200 {"code":500,"msg":"404 NOT_FOUND","total":0}
+
+======================================================================
+  [5/5] CAPTURA DE FRAME DO WS (paths encontrados)
+======================================================================
+
+  tentando wss://ds.rainha777slots.com/notice
+    ERR: InvalidStatus: server rejected WebSocket connection: HTTP 200
+
+  tentando wss://ds.rainha777slots.com/websocket
+    ERR: InvalidStatus: server rejected WebSocket connection: HTTP 200
+
+  Salvo em rainha_extra.json

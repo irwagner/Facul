@@ -1,0 +1,157 @@
+{
+  "host": "pa.rainha777slots.com",
+  "bundles_count": 18,
+  "bundles": [
+    {
+      "url": "https://pa.rainha777slots.com/static/css/app.d05da3c9.css",
+      "size": 10328,
+      "sha": "8f4d76b9c8f20d7c",
+      "saved": "pa.rainha777slots.com_app.d05da3c9.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-1af0216b.db842319.css",
+      "size": 784,
+      "sha": "1fcd4ca89fc5b169",
+      "saved": "pa.rainha777slots.com_chunk-1af0216b.db842319.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-3a66dd30.6f2d5181.css",
+      "size": 1632,
+      "sha": "857446df260c8569",
+      "saved": "pa.rainha777slots.com_chunk-3a66dd30.6f2d5181.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-94d3c3c4.3c7f5ad9.css",
+      "size": 4748,
+      "sha": "6ed09a93d6258ce8",
+      "saved": "pa.rainha777slots.com_chunk-94d3c3c4.3c7f5ad9.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-a417e232.210a6778.css",
+      "size": 4049,
+      "sha": "fb3c14efa07bae06",
+      "saved": "pa.rainha777slots.com_chunk-a417e232.210a6778.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-c0dd8076.352a5eb9.css",
+      "size": 766,
+      "sha": "7c62d1e8b5fb688f",
+      "saved": "pa.rainha777slots.com_chunk-c0dd8076.352a5eb9.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-e024b3aa.4e5f94aa.css",
+      "size": 671,
+      "sha": "1a3d0a9c0ecab599",
+      "saved": "pa.rainha777slots.com_chunk-e024b3aa.4e5f94aa.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-elementUI.f92cd1c5.css",
+      "size": 240819,
+      "sha": "f78d9b1c23700f94",
+      "saved": "pa.rainha777slots.com_chunk-elementUI.f92cd1c5.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/css/chunk-libs.3dfb7769.css",
+      "size": 3568,
+      "sha": "b33eb5b49a8bac1c",
+      "saved": "pa.rainha777slots.com_chunk-libs.3dfb7769.css"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/app.3bae0f2c.js",
+      "size": 54072,
+      "sha": "a5a44589b013e94c",
+      "saved": "pa.rainha777slots.com_app.3bae0f2c.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-1af0216b.db842319.js",
+      "size": 4813,
+      "sha": "4936e5d17fc56e73",
+      "saved": "pa.rainha777slots.com_chunk-1af0216b.db842319.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-3a66dd30.6f2d5181.js",
+      "size": 4813,
+      "sha": "4936e5d17fc56e73",
+      "saved": "pa.rainha777slots.com_chunk-3a66dd30.6f2d5181.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-94d3c3c4.3c7f5ad9.js",
+      "size": 4813,
+      "sha": "4936e5d17fc56e73",
+      "saved": "pa.rainha777slots.com_chunk-94d3c3c4.3c7f5ad9.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-a417e232.210a6778.js",
+      "size": 4813,
+      "sha": "4936e5d17fc56e73",
+      "saved": "pa.rainha777slots.com_chunk-a417e232.210a6778.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-c0dd8076.352a5eb9.js",
+      "size": 4813,
+      "sha": "4936e5d17fc56e73",
+      "saved": "pa.rainha777slots.com_chunk-c0dd8076.352a5eb9.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-e024b3aa.4e5f94aa.js",
+      "size": 4813,
+      "sha": "4936e5d17fc56e73",
+      "saved": "pa.rainha777slots.com_chunk-e024b3aa.4e5f94aa.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-elementUI.ca7efc62.js",
+      "size": 692948,
+      "sha": "b26c5b1541064124",
+      "saved": "pa.rainha777slots.com_chunk-elementUI.ca7efc62.js"
+    },
+    {
+      "url": "https://pa.rainha777slots.com/static/js/chunk-libs.cdb414f0.js",
+      "size": 421866,
+      "sha": "1e33e2f784a8c2f3",
+      "saved": "pa.rainha777slots.com_chunk-libs.cdb414f0.js"
+    }
+  ],
+  "merged_size": 1167648,
+  "api_endpoints": [],
+  "base_urls": [
+    "/prod-api"
+  ],
+  "env_refs": [],
+  "aws_keys": [],
+  "google_keys": [],
+  "pem_keys": [],
+  "external_domains": [
+    "dummyimage.com",
+    "wpimg.wallstcn.com",
+    "www.w3.org"
+  ],
+  "role_keyword_hits": {
+    "role": 79,
+    "agent": 8,
+    "operator": 0,
+    "admin": 21,
+    "permission": 0,
+    "menu": 142,
+    "router": 42,
+    "route": 68,
+    "/login": 2,
+    "/logout": 3,
+    "withdraw": 8,
+    "deposit": 10
+  },
+  "menu_titles": [
+    "Dashboard",
+    "menu.dailyReport",
+    "menu.data",
+    "menu.divideInto",
+    "menu.subordinate",
+    "menu.totalReport"
+  ],
+  "vue_routes": [
+    "/404",
+    "/dashboard",
+    "/divided",
+    "/login",
+    "/subordinate"
+  ]
+}

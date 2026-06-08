@@ -1,0 +1,409 @@
+{
+  "ssrf": {
+    "vulnerable": false,
+    "findings": [],
+    "timing_suspects": []
+  },
+  "cache_poison": {
+    "vulnerable": true,
+    "findings": [
+      {
+        "target_url": "https://ds.amizade777.com/",
+        "header": "X-Internal",
+        "value": "1",
+        "severity": "medium",
+        "confidence": "medium",
+        "reason": "injected value reflected in body"
+      },
+      {
+        "target_url": "https://ds.amizade777.com/",
+        "header": "X-Debug",
+        "value": "1",
+        "severity": "medium",
+        "confidence": "medium",
+        "reason": "injected value reflected in body"
+      }
+    ]
+  },
+  "cors": {
+    "https://ds.amizade777.com/japi/user/captcha/image": {
+      "vulnerable": true,
+      "probes": 14,
+      "findings": [
+        {
+          "origin": "https://evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://attacker.example.org",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://attacker.example.org",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "null",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "null",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://target.com.evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://target.com.evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://eviltarget.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://eviltarget.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "http://evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "http://evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "file://",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "file://",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        }
+      ]
+    },
+    "https://ds.amizade777.com/japi/activity/redPacketRain/redPacketRainActivityList": {
+      "vulnerable": true,
+      "probes": 14,
+      "findings": [
+        {
+          "origin": "https://evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://attacker.example.org",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://attacker.example.org",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "null",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "null",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://target.com.evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://target.com.evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://eviltarget.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://eviltarget.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "http://evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "http://evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "file://",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "file://",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        }
+      ]
+    },
+    "https://ds.amizade777.com/japi/invite/api/finger/download?packageName=com.slots.big": {
+      "vulnerable": true,
+      "probes": 14,
+      "findings": [
+        {
+          "origin": "https://evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://attacker.example.org",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://attacker.example.org",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "null",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "null",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://target.com.evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://target.com.evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://eviltarget.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "https://eviltarget.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "http://evil.example.com",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "http://evil.example.com",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "file://",
+          "method": "GET",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        },
+        {
+          "origin": "file://",
+          "method": "OPTIONS",
+          "severity": "medium",
+          "confidence": "medium",
+          "reason": "ACAO=* — public read enabled (verify endpoint exposes user data)"
+        }
+      ]
+    }
+  },
+  "ws": {
+    "frames": [
+      {
+        "text_envelope": {
+          "msgtype": 1,
+          "msg": "CIravsTqMw==",
+          "errcode": null
+        },
+        "inner_summary": {
+          "size": 7,
+          "fields_parsed": 1,
+          "decode_error": null,
+          "has_timestamp_ms": true,
+          "timestamp_field": 1,
+          "first_3_fields": [
+            {
+              "field": 1,
+              "type": "varint",
+              "preview": "1780944448778"
+            }
+          ]
+        }
+      }
+    ],
+    "catalog": {
+      "total": 276,
+      "by_suffix": {
+        "Event": 80,
+        "Req": 124,
+        "Resp": 66,
+        "Notice": 2,
+        "Msg": 4
+      },
+      "first_30": [
+        "ABBatchBetEvent",
+        "ABBetEvent",
+        "ABBetReq",
+        "ABGameEndEvent",
+        "ABGameStartEvent",
+        "ABTableStateEvent",
+        "AnswerEvent",
+        "AnswerReq",
+        "BetEvent",
+        "BetReq",
+        "ButtonSeatEvent",
+        "BuyInRangeReq",
+        "BuyInReq",
+        "ChatExpressionEvent",
+        "ChatExpressionReq",
+        "ChatVoiceEvent",
+        "ChatVoiceReq",
+        "CrashPlayersEvent",
+        "DealCardsEvent",
+        "DeclareEvent",
+        "EnterRoomReq",
+        "ExitRoomReq",
+        "GameBalanceEvent",
+        "GameDataReq",
+        "GameEndEvent",
+        "GameStartEvent",
+        "GameStartReq",
+        "GameStartResp",
+        "GameTestReq",
+        "GameTestResp"
+      ]
+    }
+  }
+}

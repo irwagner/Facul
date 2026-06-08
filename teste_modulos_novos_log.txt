@@ -1,0 +1,111 @@
+﻿
+======================================================================
+  [1/4] SSRF DETECTOR ÔÇö endpoints publicos do /japi/
+======================================================================
+  alvo: https://ds.amizade777.com/japi/activity/redPacketRain/redPacketRainActivityList
+  parametros padrao: ('url', 'uri', 'redirect', 'redirect_url', 'target')...
+  payloads padrao: 25 entradas
+
+  attempts: 8
+    http://127.0.0.1/                                  -> status=200 ms=146
+    http://127.0.0.1:80/                               -> status=200 ms=75
+    http://localhost/                                  -> status=200 ms=75
+    http://[::1]/                                      -> status=200 ms=86
+    http://0.0.0.0/                                    -> status=200 ms=96
+    http://10.0.0.1/                                   -> status=200 ms=105
+    http://172.16.0.245:3001/api                       -> status=200 ms=80
+    http://172.16.0.245:3001/internal                  -> status=200 ms=86
+
+  vulneravel: False
+  timing oracle suspeitos: 0
+
+======================================================================
+  [2/4] CACHE POISONING ÔÇö home de ds.amizade777.com
+======================================================================
+  baseline status=200 size=6120
+  probes: 18
+  vulneravel: True
+
+  FINDINGS (2):
+    [medium] X-Internal=1
+        razao: injected value reflected in body
+    [medium] X-Debug=1
+        razao: injected value reflected in body
+
+======================================================================
+  [3/4] CORS MISCONFIG ÔÇö endpoints publicos
+======================================================================
+
+  https://ds.amizade777.com/japi/user/captcha/image
+    probes: 14, vulneravel: True
+      origin='https://evil.example.com' method=GET acao='*' acac=None
+      origin='https://evil.example.com' method=OPTIONS acao='*' acac=None
+    [medium] GET from https://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://attacker.example.org: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://attacker.example.org: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from null: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from null: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://target.com.evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://target.com.evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://eviltarget.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://eviltarget.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from http://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from http://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from file://: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from file://: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+
+  https://ds.amizade777.com/japi/activity/redPacketRain/redPacketRainActivityList
+    probes: 14, vulneravel: True
+      origin='https://evil.example.com' method=GET acao='*' acac=None
+      origin='https://evil.example.com' method=OPTIONS acao='*' acac=None
+    [medium] GET from https://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://attacker.example.org: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://attacker.example.org: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from null: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from null: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://target.com.evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://target.com.evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://eviltarget.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://eviltarget.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from http://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from http://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from file://: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from file://: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+
+  https://ds.amizade777.com/japi/invite/api/finger/download?packageName=com.slots.big
+    probes: 14, vulneravel: True
+      origin='https://evil.example.com' method=GET acao='*' acac=None
+      origin='https://evil.example.com' method=OPTIONS acao='*' acac=None
+    [medium] GET from https://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://attacker.example.org: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://attacker.example.org: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from null: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from null: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://target.com.evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://target.com.evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from https://eviltarget.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from https://eviltarget.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from http://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from http://evil.example.com: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] GET from file://: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+    [medium] OPTIONS from file://: ACAO=* ÔÇö public read enabled (verify endpoint exposes user data)
+
+======================================================================
+  [4/4] WS PROTOBUF INSPECTOR ÔÇö frame inicial do websocket6
+======================================================================
+  frames capturados: 1
+
+  frame 0 (text): {"msgtype": 1, "msg": "CIravsTqMw==", "errcode": null}
+    inner protobuf summary: {'size': 7, 'fields_parsed': 1, 'decode_error': None, 'has_timestamp_ms': True, 'timestamp_field': 1, 'first_3_fields': [{'field': 1, 'type': 'varint', 'preview': '1780944448778'}]}
+
+  CATALOG do message.js: 276 mensagens
+    Event: 80  amostra: ['ABBatchBetEvent', 'ABBetEvent', 'ABGameEndEvent']
+    Msg: 4  amostra: ['INoticeMsg', 'IPlayerWinMsg', 'NoticeMsg']
+    Notice: 2  amostra: ['GlobalNotice', 'IGlobalNotice']
+    Req: 124  amostra: ['ABBetReq', 'AnswerReq', 'BetReq']
+    Resp: 66  amostra: ['GameStartResp', 'GameTestResp', 'IGameStartResp']
+
+  Salvo em teste_modulos_novos.json

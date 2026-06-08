@@ -1,0 +1,43 @@
+﻿======================================================================
+[1/3] CAPTURA DE FRAMES DO WEBSOCKET (sem auth)
+======================================================================
+
+  conectando em wss://ds.amizade777.com/websocket6
+  conectado, esperando ate 20s pra capturar 5 frames
+    frame 1: 54 bytes  hex=7b226d736774797065223a20312c20226d7367223a2022434e69422f4d50714d773d3d222c2022657272636f6465223a206e756c6c7d
+  timeout depois de capturar 1 frames
+
+  enviando ping/pong proto fake (8 bytes 0x00)
+    sem resposta ou erro: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+
+  capturados 1 frames
+
+[2/3] DECODE PROTOBUF DOS FRAMES CAPTURADOS
+======================================================================
+
+  frame 0 (54 bytes):
+  (sem fields decodificaveis)
+
+[2/3] PROCURANDO LOGICA DE SIGN NO message.js
+  arquivo: ds.amizade777.com_message.js (3699198 chars)
+
+  Funcoes 'sign' definidas: 0
+  Chamadas md5(): 0
+
+  Trechos com 'sign' (primeiros 5):
+    [242828] ...lerType.          * @member {number} handlerType          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.handlerType = 0;          /**          * ServerAuth sign.          * @member {string} sign          * @memberof base.ServerAuth          * @instance    ...
+
+    [242862] ...r} handlerType          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.handlerType = 0;          /**          * ServerAuth sign.          * @member {string} sign          * @memberof base.ServerAuth          * @instance          */         ServerAuth.protot...
+
+    [242966] ...prototype.handlerType = 0;          /**          * ServerAuth sign.          * @member {string} sign          * @memberof base.ServerAuth          * @instance          */         ServerAuth.prototype.sign = "";          /**          * ServerAuth gameId.          * @member {number} gameId          * ...
+
+    [244761] ...     if (message.handlerType != null && Object.hasOwnProperty.call(message, "handlerType"))                 writer.uint32(/* id 1, wireType 0 =*/8).int32(message.handlerType);             if (message.sign != null && Object.hasOwnProperty.call(message, "sign"))                 writer.uint32(/* id 2, ...
+
+    [244814] ...Property.call(message, "handlerType"))                 writer.uint32(/* id 1, wireType 0 =*/8).int32(message.handlerType);             if (message.sign != null && Object.hasOwnProperty.call(message, "sign"))                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.sign);             i...
+
+    [244894] ...reType 0 =*/8).int32(message.handlerType);             if (message.sign != null && Object.hasOwnProperty.call(message, "sign"))                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.sign);             if (message.gameId != null && Object.hasOwnProperty.call(message, "gameId"))     ...
+
+
+  Referencias a msgtype:3 (heartbeat): 0
+
+  Salvo em analise_ws.json

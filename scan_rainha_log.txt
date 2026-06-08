@@ -1,0 +1,244 @@
+﻿
+  ALVO: rainha777slots.com
+
+
+======================================================================
+  [1/8] DNS BRUTE-FORCE ÔÇö rainha777slots.com
+======================================================================
+  [OK] m.rainha777slots.com                     -> 3.174.26.120, 3.174.26.16, 3.174.26.45, 3.174.26.84
+  [OK] ds.rainha777slots.com                    -> 108.139.134.127, 108.139.134.51, 108.139.134.54, 108.139.134.81
+  [OK] api.rainha777slots.com                   -> 15.229.53.171
+
+======================================================================
+  [2/8] FONTES PASSIVAS DE SUBDOMINIO ÔÇö rainha777slots.com
+======================================================================
+  total unico: 4
+    crtsh         :    3 achados
+    hackertarget  :    3 achados
+    rapiddns      :    0 achados
+    alienvault    : ERRO HTTPError: HTTP Error 429: Too Many Requests
+    anubis        : ERRO HTTPError: HTTP Error 403: Forbidden
+    urlscan       :    3 achados
+
+  primeiros 30:
+    ds.rainha777slots.com
+    m.rainha777slots.com
+    pa.rainha777slots.com
+    rainha777slots.com
+
+======================================================================
+  [3/8] DNS RECORDS ÔÇö rainha777slots.com
+======================================================================
+  has_spf=False  has_dmarc=False  has_caa=False
+  A     : erro (NoAnswer)
+  AAAA  : erro (NoAnswer)
+  MX    : erro (NoAnswer)
+  NS    : ns-1355.awsdns-41.org., ns-138.awsdns-17.com., ns-2023.awsdns-60.co.uk.
+  TXT   : erro (NoAnswer)
+  SOA   : ns-1355.awsdns-41.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
+  CNAME : erro (NoAnswer)
+  CAA   : erro (NoAnswer)
+  DMARC : erro (NXDOMAIN)
+
+======================================================================
+  [4/8] ORIGIN-IP FINDER ÔÇö rainha777slots.com
+======================================================================
+  total candidatos: 13
+  promissores (fora CDN): 1
+  atras de CDN: 12
+    PROMISSOR: 15.229.53.171    src=subdomain_dns  host=api.rainha777slots.com
+    cdn cloudfront: 108.139.134.127  host=ds.rainha777slots.com
+    cdn cloudfront: 108.139.134.51   host=ds.rainha777slots.com
+    cdn cloudfront: 108.139.134.54   host=ds.rainha777slots.com
+    cdn cloudfront: 108.139.134.81   host=ds.rainha777slots.com
+    cdn cloudfront: 3.174.26.120     host=m.rainha777slots.com
+    cdn cloudfront: 3.174.26.16      host=m.rainha777slots.com
+    cdn cloudfront: 3.174.26.45      host=m.rainha777slots.com
+    cdn cloudfront: 3.174.26.84      host=m.rainha777slots.com
+
+  alvos principais para probe: ['api.rainha777slots.com', 'ds.rainha777slots.com', 'm.rainha777slots.com', 'pa.rainha777slots.com']
+
+======================================================================
+  [5/8] PROBE HTTP + WAF FINGERPRINT ÔÇö alvos principais
+======================================================================
+  api.rainha777slots.com: ERRO b'<urlopen error [WinError 10061] Nenhuma conex\xc3\xa3o p\xc3\xb4de ser feita porque a m\xc3\xa1quina de destino as recusou ativamente>'
+  ds.rainha777slots.com: status=200 bytes=4587 ms=280 waf=['cloudfront']
+    server: nginx/1.22.1
+    via: 1.1 27e0a8f1dea1712b9b00c1e9e814240c.cloudfront.net (CloudFront)
+    headers seguranca: ['NENHUM']
+  m.rainha777slots.com: status=200 bytes=5407 ms=289 waf=['cloudfront']
+    server: nginx/1.24.0
+    via: 1.1 f856211b5fc45ebea6eeaf78912c4f48.cloudfront.net (CloudFront)
+    headers seguranca: ['NENHUM']
+  pa.rainha777slots.com: status=200 bytes=4813 ms=86 waf=['cloudfront']
+    server: nginx/1.22.1
+    via: 1.1 45ec17d6687d6632e44b4d72dfc37c0e.cloudfront.net (CloudFront)
+    headers seguranca: ['NENHUM']
+
+  alvo principal escolhido para deep scan: ds.rainha777slots.com
+
+======================================================================
+  [6/8] PATHS SENSIVEIS EM ds.rainha777slots.com
+======================================================================
+  baseline size detectado: 4587 bytes
+  paths com conteudo distinto: 7/66
+    200    413b  /manifest.json                       application/json           '{\n  "name": "Rainha 777 Slots",\n  "short_name": "Rainha 777 '
+    200     44b  /japi/                               application/json           '{"code":500,"msg":"404 NOT_FOUND","total":0}'
+    404   1552b  /prod-api/                           text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api                                 text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api/                                text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api/v1                              text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api/v2                              text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+
+======================================================================
+  [6.5/8] ENDPOINTS COMUNS DE API EM ds.rainha777slots.com
+======================================================================
+
+  endpoints com dados sem auth (1):
+    200    63b  /japi/user/game/getGameList
+        body: {"code":200,"msg":null,"data":{"label":[],"type":{}},"total":0}
+
+  endpoints que pedem token (17):
+    /japi/user/balance/querySimpleBalance
+    /japi/user/getDama
+    /japi/user/getExtraInfo
+    /japi/user/vip/getAllDisplayVo
+    /japi/user/api/signIn/customerSignConfig
+    /japi/user/api/signIn/signRecord
+    /japi/user/api/signIn/v2/signIn
+    /japi/invite/boxConfig/boxInfo
+    /japi/invite/boxConfig/boxReceive
+    /japi/invite/boxConfig/boxReceiveRecord
+    /japi/invite/userInvite/getInviteConfig
+    /japi/invite/userInvite/getRewardRecordList
+    /japi/system/admin
+    /japi/system/log
+    /japi/system/config
+    /japi/user/info/1
+    /japi/user/list
+
+======================================================================
+  [6/8] PATHS SENSIVEIS EM ds.rainha777slots.com
+======================================================================
+  baseline size detectado: 4587 bytes
+  paths com conteudo distinto: 7/66
+    200    413b  /manifest.json                       application/json           '{\n  "name": "Rainha 777 Slots",\n  "short_name": "Rainha 777 '
+    200     44b  /japi/                               application/json           '{"code":500,"msg":"404 NOT_FOUND","total":0}'
+    404   1552b  /prod-api/                           text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api                                 text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api/                                text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api/v1                              text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+    404   1552b  /api/v2                              text/html                  '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta ch'
+
+======================================================================
+  [6.5/8] ENDPOINTS COMUNS DE API EM ds.rainha777slots.com
+======================================================================
+
+  endpoints com dados sem auth (1):
+    200    63b  /japi/user/game/getGameList
+        body: {"code":200,"msg":null,"data":{"label":[],"type":{}},"total":0}
+
+  endpoints que pedem token (17):
+    /japi/user/balance/querySimpleBalance
+    /japi/user/getDama
+    /japi/user/getExtraInfo
+    /japi/user/vip/getAllDisplayVo
+    /japi/user/api/signIn/customerSignConfig
+    /japi/user/api/signIn/signRecord
+    /japi/user/api/signIn/v2/signIn
+    /japi/invite/boxConfig/boxInfo
+    /japi/invite/boxConfig/boxReceive
+    /japi/invite/boxConfig/boxReceiveRecord
+    /japi/invite/userInvite/getInviteConfig
+    /japi/invite/userInvite/getRewardRecordList
+    /japi/system/admin
+    /japi/system/log
+    /japi/system/config
+    /japi/user/info/1
+    /japi/user/list
+
+======================================================================
+  [7/8] DOWNLOAD E ANALISE DE BUNDLES JS ÔÇö ds.rainha777slots.com
+======================================================================
+  8 bundles referenciados
+  [200] https://ds.rainha777slots.com/assets/index-legacy.b67df586.js (959671 bytes, sha=8388e755fcc1f801)
+  [200] https://ds.rainha777slots.com/assets/index.6665dae8.js (362558 bytes, sha=d17b84cb6b58b225)
+  [200] https://ds.rainha777slots.com/assets/index.d93e3276.css (584951 bytes, sha=d93e3276199fac43)
+  [200] https://ds.rainha777slots.com/assets/polyfills-legacy.e940345d.js (130815 bytes, sha=98b163e81a7ca8db)
+  [200] https://ds.rainha777slots.com/js/finger_1.0.0.js (9541 bytes, sha=6a6c5964346f037d)
+  [200] https://ds.rainha777slots.com/js/message.js (3699198 bytes, sha=3193efdd18ef07a1)
+  [200] https://ds.rainha777slots.com/js/protobuf.js (272649 bytes, sha=da3251a7c859871b)
+  [200] https://ds.rainha777slots.com/manifest.json (413 bytes, sha=36df22950b95037e)
+
+  total 5,434,348 chars de JS unificado
+
+  api endpoints: 0
+  websockets:    0
+  dominios:      17
+  AWS keys:      0
+  Google keys:   0
+  PEM keys:      0
+  Eth PKs:       0
+  versoes:       ['1.0.0', '3.1.9', '3.29.1', '5.6.0', '9.2.2']
+  baseURL/api_base: []
+  proto messages (ws_inspector): 282
+    Event: 85
+    Req: 124
+    Resp: 66
+    Notice: 2
+    Msg: 4
+    Push: 1
+
+  dominios externos referenciados:
+    a
+    app.adjust.com
+    app.adjust.net.in
+    app.adjust.world
+    app.eu.adjust.com
+    app.tr.adjust.com
+    app.us.adjust.com
+    gdpr.adjust.com
+    gdpr.adjust.net.in
+    gdpr.adjust.world
+    gdpr.eu.adjust.com
+    gdpr.tr.adjust.com
+    gdpr.us.adjust.com
+    github.com
+    www.apptrace.com
+    www.w3.org
+    x
+
+======================================================================
+  [8/8] MODULOS NOVOS DO TOOLKIT ÔÇö ds.rainha777slots.com
+======================================================================
+
+  CORS check em / e em endpoints publicos...
+    https://ds.rainha777slots.com/: vulnerable=False first_acao=None
+    https://ds.rainha777slots.com/manifest.json: vulnerable=False first_acao=None
+
+  cache-poison check em /...
+    vulnerable=True findings=2
+    [high] X-Internal=1: injected value reflected in body
+    [medium] X-Debug=1: injected value reflected in body
+
+  WS handshake low-level em /websocket6...
+    ERR: InvalidStatus: server rejected WebSocket connection: HTTP 404
+
+======================================================================
+  [wayback] rainha777slots.com
+======================================================================
+  total URLs: 0  sources={'otx': 0}  errors={'wayback': 'TimeoutError: timed out'}
+  endpoints com params: 0
+
+  Resultado completo salvo em: E:\ProjetoScanFacul\scan_rainha777slots_com.json
+
+======================================================================
+  RESUMO RAPIDO
+======================================================================
+  alvo: rainha777slots.com
+  subdominios resolvidos: 3
+  candidatos a IP de origem fora-CDN: 1
+  endpoints abertos sem auth: 1
+  endpoints que pedem token: 17
+  endpoints com CORS aberto: 0
+  cache poisoning vulneravel: True

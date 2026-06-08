@@ -1,0 +1,897 @@
+{
+  "s3_listing": [
+    {
+      "url": "https://sx.megaslott.com/?list-type=2",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GJJ82M6EX3C6JRD5</RequestId><HostId>ABT2Dv5QCKK/vSgtpU9NEX9BpwniB5o+HMZptCUols+Hc3qZj0P/6Sx16Xc5TH5UN8WiGPiGHmWfe1BpenKp/PuhxPG+tylj</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?list-type=2&prefix=",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>GJJ09AWYFVYB2SRC</RequestId><HostId>trT5/KFAMFWux3eRCbrfndaJZw5mqIa11bI+nlLsX2ceqL4hdzdgUaZnY8RAVja+xx6daXYIesvwZDI04t8ELhPf6YUYYduj</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?list-type=2&prefix=download/",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>QNS7B4BFF9ETP4F3</RequestId><HostId>D4w/1m6jv543MluegL6PBRaD86MazzUZbUyyRYtv3BV7FZEwXHyMiwWdgELLcwpdQ4r/spz0OXWTy8mbsaFNY9wLXo6QGAfE</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?list-type=2&max-keys=10",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>0EBKT2VZ1G8XYYCA</RequestId><HostId>7VyRlgEXkALwYyPnyFtwaSOpWcMFbdwsqGdMjBPdsqqxplMq1qI/gA4NPasquE7hWUGms3Licsm1+4JPQPu9X0V+BeNHw4+m</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?prefix=download",
+      "status": 403,
+      "size": 275,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>KYD6X4YNXP7AXAQJ</RequestId><HostId>leLAk7KCnRIujzME1lQHybAAvgT70Ekz7BANiHEFvdU7QhHZw0wGFnCoCzPxCcwciNkM/qZzGCiw50jx3iFeiG8FxznTpppCu56I/jJE4IQ=</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?delimiter=/",
+      "status": 403,
+      "size": 275,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>AJY7FP9EKEN9E7KQ</RequestId><HostId>+sW2wOksKI3k/z70Yb5PBcU3+OpO1qnaCxIvJ8fFZVIInPGnnajlXCyybXuOK8eJlQSTLRvUjul1kUMEBAla2IRK1JUHFAxnJXXwYeBOoSM=</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?delimiter=/&prefix=download/",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>Q7BDSHGM3W9B6YZ8</RequestId><HostId>J9Pbw1NmT82wc4CXGYI8pkN/KoUGBt0gtdg2MTjoYY3SQdGedqt5P0vtfw3mLX7otw671y62ZyH9xTm1S92LAqzUi5JJn5gf</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?marker=Amizade",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>Q7B2A1GH9TYC1FTM</RequestId><HostId>1HsgNzwrZABZXKWA9j5BxuEXgvVWNn36BGLHSvzlOSkUTYDMasxHPydrWICOHhTG+Y40aPvw4EcaO9WGYdeEH9gvTmmtwPAh</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?versions",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>9TBERD39ZYYMX2WV</RequestId><HostId>u17i8vBQ0Njj3GlcH1aVxTLKnvX61W5jE/mP8Evm8UEsXb9ha+Y3qEdk5PF437LLauGzK7bDfPSKZfG+qyqjuIz3yyt77znR</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?policy",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>JKS0MYXZF9Z9ZB8N</RequestId><HostId>U0WImGYX+CG4ndraGy5b5wGt1xSNjGgvdPiw5KikyGhFfo2HVCE9Vwe6AFy9ltxswomQG3li9ESMH6KCnuv/mNmQ5juj78Mm</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?acl",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>02RH22AP3X5TC6S4</RequestId><HostId>uKUzX0lF1O6m8omQxK3KfHpFC6Er8hyNHW5E8Wq0cuLjcPZKftQEv9/cmlYbxe9HtKYUF0HiIGpOZJRMWZAF5Ert+i8eJYbv</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?cors",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>PJB9A6PWXAXF4KM3</RequestId><HostId>kkzzZBRdSAsoyIOdy74/I6KphIK6oHJ9mI8unONTynaPfd97Fz+q61zSBzxmQoT0NnAa92KFgMquXx+y2q6hP3gM3B7shAKi</HostId></Error>"
+    },
+    {
+      "url": "https://sx.megaslott.com/?lifecycle",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>586RPB4E9S84BFE1</RequestId><HostId>fnJQiHRIpXa9RawNkeI3dDm5g/D681QuC3dDUVxq7WQ9pK93USTipXxMV5pF+NnZZO0ebaNfP/+rfUdILbPUTKJsqAO4uAEB</HostId></Error>"
+    },
+    {
+      "url": "https://megaslott-prod.s3.amazonaws.com/?list-type=2",
+      "status": 404,
+      "size": 304,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>megaslott-prod</BucketName><RequestId>7ZAGQZWMHW4BT7KP</RequestId><HostId>WIbKwhXQ/MvZnI0DzHFlS+B4dyeXPxK/lg02Pb24IL0CGzl70oeF/pTZglON2YafQ0vOiV7lAJs=</HostId></Er"
+    },
+    {
+      "url": "https://megaslott.s3.amazonaws.com/?list-type=2",
+      "status": 404,
+      "size": 319,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>megaslott</BucketName><RequestId>7ZAMVY319XSNGBT7</RequestId><HostId>5PvK/sjhn8SYcqsyKACuEVV4kdnoV2f8LgihsUvkvwmJCHNNLNhea51cOprMZ3L7aGIkpGP8V3PYidrPykqq2s/Yc/6waP"
+    },
+    {
+      "url": "https://sx-megaslott.s3.amazonaws.com/?list-type=2",
+      "status": 403,
+      "size": 263,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>JXJSCV0F7FCW6D6R</RequestId><HostId>0nJyV43LEElVYNwMaKs1xLMfnG/mbwa/0w1QfJ+zn1byyYj3nhxfyuTTwjED3EoE05QLxd3l9m+owh4mLyzb9bBYpoI8d+DB</HostId></Error>"
+    },
+    {
+      "url": "https://amizade777.s3.amazonaws.com/?list-type=2",
+      "status": 404,
+      "size": 300,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>amizade777</BucketName><RequestId>JXJQRSM36EP90BGR</RequestId><HostId>j+wU/BHGxBrk39ZeXra+WUbnXO2lHwZwcnFFhvVaN2RmodG0vBXPBoIvbJ1Plq+5g4+eUO1wsE4=</HostId></Error>"
+    },
+    {
+      "url": "https://amizade-prod.s3.amazonaws.com/?list-type=2",
+      "status": 404,
+      "size": 302,
+      "interesting": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>amizade-prod</BucketName><RequestId>9ND5C38556NPS7WT</RequestId><HostId>O4Qk9djyf8rFkm1V426zWCt/UruYynrsZ/I0s2PrNl76hAv83zdOI6bAWiS9DJJr8HJMui6bKsY=</HostId></Erro"
+    }
+  ],
+  "megaslott_ports": {
+    "api.megaslott.com": {
+      "ip": "54.207.65.155",
+      "open_ports": []
+    },
+    "test.megaslott.com": {
+      "ip": "52.67.28.188",
+      "open_ports": []
+    },
+    "sx.megaslott.com": {
+      "ip": "54.240.184.50",
+      "open_ports": [
+        80,
+        443
+      ]
+    }
+  },
+  "vhost": [
+    {
+      "vhost": "admin.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "manage.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "manager.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "console.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "panel.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "painel.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "adm.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "internal.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "intranet.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "staging.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "stage.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "homolog.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "dev.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "test.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "qa.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "uat.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "preview.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "api.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "api-internal.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "operator.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "operador.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "agent.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "agente.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "agentes.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "afiliado.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "backoffice.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "back.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "support.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "suporte.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "system.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "sys.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "monitor.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "metrics.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "grafana.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "kibana.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "prometheus.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "actuator.amizade777.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "admin.megaslott.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "panel.megaslott.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "manage.megaslott.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "internal.megaslott.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    },
+    {
+      "vhost": "operator.megaslott.com",
+      "status": 403,
+      "size": 915,
+      "diff": true,
+      "title": "ERROR: The request could not be satisfied"
+    }
+  ],
+  "cache_poison": [
+    {
+      "header": "X-Forwarded-For",
+      "value": "127.0.0.1",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Forwarded-For",
+      "value": "172.16.0.245",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Forwarded-Host",
+      "value": "evil.example.com",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Forwarded-Host",
+      "value": "internal.amizade777.com",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Forwarded-Proto",
+      "value": "http",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": true,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Original-URL",
+      "value": "/admin",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Rewrite-URL",
+      "value": "/admin",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Real-IP",
+      "value": "172.16.0.245",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Originating-IP",
+      "value": "127.0.0.1",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Custom-IP-Authorization",
+      "value": "127.0.0.1",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Forwarded-Server",
+      "value": "internal.amizade777.com",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Host",
+      "value": "evil.example.com",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "Referer",
+      "value": "http://internal.amizade777.com/",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Backend-Server",
+      "value": "172.16.0.245:3001",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Internal",
+      "value": "1",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": true,
+      "echoed_headers": []
+    },
+    {
+      "header": "X-Debug",
+      "value": "1",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": true,
+      "echoed_headers": []
+    },
+    {
+      "header": "Cluster-Client-IP",
+      "value": "172.16.0.245",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    },
+    {
+      "header": "Forwarded",
+      "value": "for=127.0.0.1; host=evil.example.com",
+      "status": 200,
+      "size": 6166,
+      "diff": false,
+      "reflected": false,
+      "echoed_headers": []
+    }
+  ],
+  "message_js": {
+    "sign_calls": [
+      "prototype.sign",
+      "message.sign",
+      "message.sign",
+      "message.sign",
+      "message.sign",
+      "message.sign",
+      "object.sign",
+      "message.sign",
+      "object.sign",
+      "object.sign",
+      "message.sign",
+      "object.sign",
+      "message.sign"
+    ],
+    "hex16": [],
+    "hex32": [],
+    "hex64": [],
+    "proto_fields": [
+      "roomId",
+      "time",
+      "gameId",
+      "sign",
+      "data"
+    ],
+    "proto_msgs": [
+      "ABBatchBetEvent",
+      "ABBetEvent",
+      "ABBetReq",
+      "ABGameEndEvent",
+      "ABGameStartEvent",
+      "ABTableStateEvent",
+      "AnswerEvent",
+      "AnswerReq",
+      "ButtonSeatEvent",
+      "BuyInRangeReq",
+      "BuyInReq",
+      "ChatExpressionEvent",
+      "ChatExpressionReq",
+      "ChatVoiceEvent",
+      "ChatVoiceReq",
+      "CrashPlayersEvent",
+      "DealCardsEvent",
+      "DeclareEvent",
+      "EnterRoomReq",
+      "ExitRoomReq",
+      "GameBalanceEvent",
+      "GameDataReq",
+      "GameEndEvent",
+      "GameStartEvent",
+      "GameStartReq",
+      "GameStartResp",
+      "GameTestReq",
+      "GameTestResp",
+      "GlobalNotice",
+      "GroupReq",
+      "HistoryEvent",
+      "HistoryResultEvent",
+      "IABBatchBetEvent",
+      "IABBetEvent",
+      "IABBetReq",
+      "IABGameEndEvent",
+      "IABGameStartEvent",
+      "IABTableStateEvent",
+      "IAnswerEvent",
+      "IAnswerReq",
+      "IButtonSeatEvent",
+      "IBuyInRangeReq",
+      "IBuyInReq",
+      "IChatExpressionEvent",
+      "IChatExpressionReq",
+      "IChatVoiceEvent",
+      "IChatVoiceReq",
+      "ICrashPlayersEvent",
+      "IDealCardsEvent",
+      "IDeclareEvent",
+      "IEnterRoomReq",
+      "IExitRoomReq",
+      "IGameBalanceEvent",
+      "IGameDataReq",
+      "IGameEndEvent",
+      "IGameStartEvent",
+      "IGameStartReq",
+      "IGameStartResp",
+      "IGameTestReq",
+      "IGameTestResp",
+      "IGlobalNotice",
+      "IGroupReq",
+      "IHistoryEvent",
+      "IHistoryResultEvent",
+      "INextTurnEvent",
+      "INoticeMsg",
+      "IOperationEvent",
+      "IOperationReq",
+      "IPlayerBalanceEvent",
+      "IPlayerGameDataReq",
+      "IPlayerListEvent",
+      "IPlayerLoginReq",
+      "IPlayerOnlineEvent",
+      "IPlayerSettlementReq",
+      "IPlayerSettlementResp",
+      "IPlayerWinMsg",
+      "IPrivateTableReadyEvent",
+      "IPrivateTableReadyReq",
+      "IProtoAztecBlockReq",
+      "IProtoAztecBlockResp"
+    ],
+    "ws_urls": [],
+    "secret_hits": []
+  },
+  "ws_handshake": {
+    "raw": "HTTP/1.1 101 Switching Protocols\r\nConnection: upgrade\r\nServer: nginx/1.24.0\r\nDate: Mon, 08 Jun 2026 18:27:58 GMT\r\nUpgrade: websocket\r\nSec-Websocket-Accept: SllSN/p5pTB8gMW5Pg5NBe3WXm8=\r\nX-Cache: Miss from cloudfront\r\nVia: 1.1 0633183bc8a7a616d500096f2c54e9fe.cloudfront.net (CloudFront)\r\nX-Amz-Cf-Pop: FOR50-P6\r\nX-Amz-Cf-Id: YSmo3nxm1pMH0LsGBmsOGueKLS_Ssuzx6OSM2i3dORLUbzV1q1A9IA==\r\n\r\n",
+    "size": 385
+  },
+  "actuator": [
+    {
+      "path": "/japi/actuator/",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/info",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/env",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/beans",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/heapdump",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/configprops",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/health",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/mappings",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/threaddump",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/loggers",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/metrics",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/actuator/prometheus",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/..%2factuator/health",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/japi/..;/actuator/health",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/.;/actuator/health",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/..%2f..%2factuator/health",
+      "status": 400,
+      "size": 915,
+      "interesting": true
+    },
+    {
+      "path": "/actuator/health",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/actuator/env",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/api/actuator/health",
+      "status": 404,
+      "size": 1552,
+      "interesting": false
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/info",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/manager/html",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/host-manager/html",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/error",
+      "status": 200,
+      "size": 6166,
+      "interesting": true
+    },
+    {
+      "path": "/japi/error",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "//japi/actuator/health",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi//actuator/health",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    },
+    {
+      "path": "/japi/./actuator/health",
+      "status": 200,
+      "size": 44,
+      "interesting": false
+    }
+  ],
+  "cross_dns": {
+    "test.megaslott.com": [
+      "52.67.28.188"
+    ]
+  }
+}

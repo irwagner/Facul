@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Relatorio Final — MEGASLOTS multi-tenant</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 980px; margin: 24px auto; padding: 0 16px;
+         color: #24292f; line-height: 1.5; background: #f6f8fa; }
+  h1 { border-bottom: 2px solid #0366d6; padding-bottom: 8px; color: #0366d6; }
+  h2 { margin-top: 32px; color: #1f2328; border-bottom: 1px solid #d0d7de; padding-bottom: 4px; }
+  h3 { margin: 0 0 4px 0; color: #1f2328; }
+  .badge { display: inline-block; color: white; padding: 2px 10px;
+           border-radius: 12px; font-size: 11px; font-weight: 700;
+           letter-spacing: 0.5px; }
+  table { border-collapse: collapse; width: 100%; background: white;
+          border: 1px solid #d0d7de; border-radius: 6px; overflow: hidden; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #d0d7de; }
+  th { background: #f6f8fa; }
+  tr:last-child td { border-bottom: none; }
+  .finding { background: white; border: 1px solid #d0d7de;
+              border-radius: 8px; padding: 16px; margin: 16px 0;
+              box-shadow: 0 1px 0 rgba(27,31,36,0.04); }
+  .finding header { display: flex; align-items: center; gap: 12px;
+                   flex-wrap: wrap; margin-bottom: 8px; }
+  blockquote { border-left: 4px solid #0366d6; padding: 8px 12px;
+               background: #f6f8fa; margin: 8px 0; font-style: italic; }
+  ul { background: white; padding: 16px 16px 16px 36px;
+        border: 1px solid #d0d7de; border-radius: 6px; }
+  small { color: #57606a; }
+  code { background: #afb8c133; padding: 2px 4px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Relatorio Final de Pentest — MEGASLOTS (multi-tenant)</h1>
+<p><b>Alvos:</b> amizade777.com, rainha777slots.com, megaslott.com (operador)<br>
+<b>Gerado em:</b> 2026-06-08T16:23:49<br>
+<b>Conduzido por:</b> Web Security Audit Toolkit (Kiro/Claude Sonnet 4.6)</p>
+
+<h2>Sumario Executivo</h2>
+<table><thead><tr><th>Severidade</th><th>Quantidade</th></tr></thead>
+<tbody>
+<tr><td><span class='badge' style='background:#e36209'>ALTA</span></td><td><b>7</b></td></tr><tr><td><span class='badge' style='background:#dbab09'>MEDIA</span></td><td><b>5</b></td></tr><tr><td><span class='badge' style='background:#28a745'>BAIXA</span></td><td><b>5</b></td></tr><tr><td><span class='badge' style='background:#6f42c1'>INFORMATIVA</span></td><td><b>4</b></td></tr>
+<tr><td><b>Total</b></td><td><b>21</b></td></tr>
+</tbody></table>
+
+<h2>Detalhe dos Achados (21)</h2>
+
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-018 — Stack white-label compartilhada (MEGASLOTS) — vulnerabilidades transferiveis</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Bundles JS IDENTICOS (mesmo SHA256) entre ds.amizade777.com e ds.rainha777slots.com: finger_1.0.0.js (sha=6a6c5964346f037d), protobuf.js (sha=da3251a7c859871b), message.js (sha=3193efdd18ef07a1, 3.7 MB). Bundle do painel pa.rainha777slots.com tem <noscript>'MEGASLOTS doesn't work properly without JavaScript'</noscript>. Confirma operador central megaslott.com (descoberto via /japi/invite/api/finger/download).</blockquote>
+          <h4>Impacto</h4>
+          <p>TODA vulnerabilidade encontrada em um tenant existe nos demais. Atacante pode escolher o tenant mais facil de explorar, validar a tecnica, e replicar. Tambem permite enumerar todos os tenants do operador (megaslott vende o white-label).</p>
+          <h4>Proximo passo</h4>
+          <p>Procurar mais tenants via Censys/Shodan: query por SHA do message.js (3193efdd18ef07a1) ou pelo nome 'MEGASLOTS' em <noscript>. Tambem testar quaisquer correcoes pelo amizade777 contra rainha777slots e vice-versa.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-019 — Painel de agentes/afiliados (pa.) com endpoints administrativos expostos</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>pa.rainha777slots.com retorna SPA Vue 'Agente' (vue-element-admin template). Bundle revela 16 endpoints: POST /system/user/gsf/login (login agente), 9x /invite/admin/invite/* (admin de comissoes/relatorios). baseURL=/prod-api. Rotas vue-router: /login /dashboard /divided /subordinate. Menus: Dashboard, dailyReport, data, divideInto, subordinate, totalReport.</blockquote>
+          <h4>Impacto</h4>
+          <p>Painel de afiliados expoe relatorios financeiros (recompensas, comissoes, subordinados, saques nao liquidados). Login estatico /system/user/gsf/login eh alvo prioritario para brute-force. Os endpoints /invite/admin/invite/* sao gerenciais (manipulacao de comissoes).</p>
+          <h4>Proximo passo</h4>
+          <p>1) Brute-force em /system/user/gsf/login com wordlist de senhas comuns (comecar admin/admin, admin/123456, gsf/gsf). 2) Testar /invite/admin/invite/* sem auth pra ver se exigem token de agente. 3) Procurar IDOR em queries (?subordinateId=1).</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-016 — CORS aberto (Access-Control-Allow-Origin: *) em endpoints publicos</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Tres endpoints retornam ACAO=* para qualquer Origin (testado contra 7 origens incluindo evil.example.com, null, file://): /japi/user/captcha/image, /japi/activity/redPacketRain/redPacketRainActivityList, /japi/invite/api/finger/download.</blockquote>
+          <h4>Impacto</h4>
+          <p>Qualquer site na internet pode ler estes endpoints via fetch(). Captcha vaza pra atacante, regras de premio sao consumiveis em massa. ACAC nao esta presente.</p>
+          <h4>Proximo passo</h4>
+          <p>Trocar ACAO=* por allow-list explicita. Configurar via CloudFront response-headers-policy.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-017 — Cache poisoning potencial via X-Internal / X-Debug</h3>
+            <small>Confianca: <b>medium</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Toolkit cache-poison check: 18 headers testados contra https://ds.amizade777.com/ E https://ds.rainha777slots.com/. X-Internal=1 e X-Debug=1 produzem reflexao no body. No rainha777slots a severidade subiu pra HIGH automaticamente.</blockquote>
+          <h4>Impacto</h4>
+          <p>Reflexao confirmada em DOIS tenants. Se o CloudFront aceitar Vary nesses headers, pode envenenar cache para visitantes legitimos.</p>
+          <h4>Proximo passo</h4>
+          <p>No Burp, request com X-Internal: <payload> e checar X-Cache: response. Repetir sem o header e ver se HIT retorna body envenenado.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-011 — WebSocket aceita upgrade sem autenticacao (amizade777)</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>GET wss://ds.amizade777.com/websocket6 retorna HTTP 101 sem cookie/token. Frame inicial: {"msgtype":1,"msg":"<base64>"} com timestamp do servidor em ms (decodificado pelo ws_inspector). Em rainha777slots /websocket6 retorna 404 — path diferente.</blockquote>
+          <h4>Impacto</h4>
+          <p>Permite captura de timestamps, reverse-engineering do protocolo binario sem logar, fuzzing de frames invalidos, e DoS por consume.</p>
+          <h4>Proximo passo</h4>
+          <p>Autenticar no rainha777slots e capturar trafego WS para descobrir o path real. Aplicar mesma analise.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-001 — Bypass de captcha por ausencia de sessao</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>GET /japi/user/captcha/image retorna imagem JPG sem Set-Cookie nem token. 5 calls geram 5 captchas distintos sem nenhum identificador de sessao no response. Provavelmente afeta TODOS os tenants MEGASLOTS.</blockquote>
+          <h4>Impacto</h4>
+          <p>O captcha nao esta vinculado a uma sessao do servidor. Cliente decide qual captcha usar e o servidor aceita o ultimo gerado, abrindo brute-force de login sem fricao.</p>
+          <h4>Proximo passo</h4>
+          <p>Confirmar com POST /prod-api/player/sign-in: enviar 100 logins consecutivos com captcha 'qualquer' e medir taxa de aceitacao.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#e36209">ALTA</span>
+            <h3>V-2026-007 — IP interno exposto na resposta de login</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>POST /prod-api/player/sign-in retorna data.connection.api='http://172.16.0.245:3001/api'.</blockquote>
+          <h4>Impacto</h4>
+          <p>Exposicao da topologia interna. Possivel vetor de SSRF.</p>
+          <h4>Proximo passo</h4>
+          <p>No Burp, varrer /prod-api/* e /japi/* procurando parametros que aceitem URL/host. Toolkit ssrf check ja inclui esse IP.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#dbab09">MEDIA</span>
+            <h3>V-2026-020 — api.rainha777slots.com:80 expoe backend stub publico (sem CDN)</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>manual</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>api.rainha777slots.com (15.229.53.171) tem porta 80/tcp aberta sem CloudFront. Responde {"code":500,"msg":"404 NOT_FOUND"} para qualquer Host header. Pode ser stub legado, ou backend ainda nao migrado para o CDN.</blockquote>
+          <h4>Impacto</h4>
+          <p>Permite recon direto do backend, contornando o WAF do CloudFront. Mesmo que /japi/* nao retorne dados, o servidor existe e pode aceitar paths customizados ainda nao descobertos.</p>
+          <h4>Proximo passo</h4>
+          <p>Brute-force de paths em http://15.229.53.171/ sem o filtro do CDN. Testar /actuator/*, /admin/*, /api/v1/*, /openapi.json. Tambem testar verbos HTTP nao-padrao (TRACE, OPTIONS, PROPFIND).</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#dbab09">MEDIA</span>
+            <h3>V-2026-002 — Vazamento de configuracao de atividades sem autenticacao</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>GET /japi/activity/redPacketRain/redPacketRainActivityList retorna sem auth: dateRange=1-31, maxAmount=10000000, times=3, horarios 12h/18h/21h.</blockquote>
+          <h4>Impacto</h4>
+          <p>Atacante conhece de antemao janelas de premio e o limite maximo. Permite preparacao de bots e tentativa de overflow.</p>
+          <h4>Proximo passo</h4>
+          <p>Cruzar com /japi/activity/redPacketRain/getRedPacket; testar amount=maxAmount+1 e amount=Number.MAX_SAFE_INTEGER.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#dbab09">MEDIA</span>
+            <h3>V-2026-006 — S3 bucket com object listing potencialmente disponivel</h3>
+            <small>Confianca: <b>low</b> &middot; Status: <b>manual</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Listing direto bloqueado. Objetos com nome conhecido sao publicos.</blockquote>
+          <h4>Impacto</h4>
+          <p>Versoes anteriores do APK podem ser enumeradas por nome.</p>
+          <h4>Proximo passo</h4>
+          <p>Tentar nomes comuns: Amizade777-old.apk, Rainha777-old.apk, etc.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#dbab09">MEDIA</span>
+            <h3>V-2026-008 — Enumeracao de usuarios via mensagem de erro do login</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>confirmed</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>POST /prod-api/player/sign-in retorna 'Por favor, digite sua senha' para usuario inexistente e 'Conta ou senha incorreta' para usuario existente.</blockquote>
+          <h4>Impacto</h4>
+          <p>Permite descobrir quais numeros de telefone estao cadastrados.</p>
+          <h4>Proximo passo</h4>
+          <p>Validar com wordlist de DDDs.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#dbab09">MEDIA</span>
+            <h3>V-2026-009 — Headers de seguranca HTTP ausentes (todos os tenants)</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>confirmed</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Ausentes em ds./m./pa. de AMBOS os tenants (amizade777 e rainha777slots): CSP, X-Frame-Options, HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy.</blockquote>
+          <h4>Impacto</h4>
+          <p>Vulnerabilidade a clickjacking, MIME-sniffing, downgrade HTTPS, vazamento de Referer — em escala (todos os tenants MEGASLOTS).</p>
+          <h4>Proximo passo</h4>
+          <p>Configurar pelo CloudFront response-headers-policy. Patch de 5min.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#28a745">BAIXA</span>
+            <h3>V-2026-012 — Schema protobuf completo extraivel do bundle (282 mensagens em rainha, 276 em amizade)</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Bundle message.js IDENTICO entre amizade777 e rainha777slots (sha=3193efdd18ef07a1). ws_inspector extrai 282 mensagens no rainha (incluindo Push) e 276 no amizade. Inclui ABBetReq, BuyInReq, BuyInRangeReq, GameStartReq/Resp, GameTestReq/Resp, EnterRoomReq, GlobalNotice, IPlayerWinMsg, ServerAuth.</blockquote>
+          <h4>Impacto</h4>
+          <p>Catalog reconstroi o protocolo binario completo do operador MEGASLOTS sem precisar do app. Vale para todos os tenants.</p>
+          <h4>Proximo passo</h4>
+          <p>Escolher 5 messages de alto risco e fuzzar com valores fora-da-faixa apos auth via Burp WS proxy.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#28a745">BAIXA</span>
+            <h3>V-2026-013 — Reflexao de headers customizados (X-Forwarded-Proto, X-Internal, X-Debug)</h3>
+            <small>Confianca: <b>medium</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>Tres headers refletem o valor enviado de volta no body em AMBOS os tenants. Confirmado pelo cache-poison check do toolkit (V-2026-017 elevou X-Internal e X-Debug a finding medio/alto).</blockquote>
+          <h4>Impacto</h4>
+          <p>Vetor potencial pra cache poisoning se o CloudFront usar qualquer destes headers na chave de cache.</p>
+          <h4>Proximo passo</h4>
+          <p>Cobrir com V-2026-017 (cache poisoning manual no Burp).</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#28a745">BAIXA</span>
+            <h3>V-2026-003 — Vazamento de horarios de atividade ativa</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>GET /japi/activity/redPacketRain/currentRedPacketRainActivityList retorna 3 atividades hoje com startTime/endTime/status sem nenhuma auth.</blockquote>
+          <h4>Impacto</h4>
+          <p>Vazamento de business intelligence. Util para automacao de farming.</p>
+          <h4>Proximo passo</h4>
+          <p>Considerar requisitos de privacidade no relatorio final.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#28a745">BAIXA</span>
+            <h3>V-2026-004 — Mapeamento de endpoints autenticados expostos via /japi/</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>23 endpoints /japi/ no amizade777 retornam {"code":401,"msg":"token is empty"} ao inves de 404. Mesmo padrao em rainha777slots (17 endpoints). Inclui /japi/system/admin, /japi/system/log, /japi/system/config, /japi/user/info/{id}, /japi/user/list, /japi/user/all, /japi/user/search, /japi/invite/admin.</blockquote>
+          <h4>Impacto</h4>
+          <p>Acelera reconnaissance e revela superficie de ataque administrativo em todos os tenants.</p>
+          <h4>Proximo passo</h4>
+          <p>No Burp, com token valido, GET cada path. Cruzar achados entre tenants.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#28a745">BAIXA</span>
+            <h3>V-2026-010 — WebSocket com heartbeat e protocolo binario protobuf</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>research</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>wss://ds.amizade777.com/websocket6 envia msgtype=3 + sign a cada 10s. ServerAuth tem field sign vindo do servidor. Em rainha777slots o path eh diferente.</blockquote>
+          <h4>Impacto</h4>
+          <p>Protocolo binario complexo, sign vem do servidor.</p>
+          <h4>Proximo passo</h4>
+          <p>Capturar 10 conexoes em sequencia. Deobfuscar message.js. Testar ABBetReq sem auth.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#6f42c1">INFORMATIVA</span>
+            <h3>V-2026-021 — pa.megaslott.com — painel central do operador firewalled mas DNS publico</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>research</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>pa.megaslott.com -> 18.228.48.152 (AWS Sao Paulo). Portas 80/443 timeout (firewall blocking). Nao recusou conexao ativamente — apenas drop.</blockquote>
+          <h4>Impacto</h4>
+          <p>Vazamento de infra do operador central. Existencia confirmada do painel administrativo do MEGASLOTS, acessivel provavelmente via VPN/IP whitelist.</p>
+          <h4>Proximo passo</h4>
+          <p>Pivot: se conseguir acesso a algum tenant via SSRF (V-2026-007), tentar usar o servidor como proxy pra acessar pa.megaslott.com.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#6f42c1">INFORMATIVA</span>
+            <h3>V-2026-014 — Path traversal parcial no nginx (..%2f reescreve para raiz)</h3>
+            <small>Confianca: <b>medium</b> &middot; Status: <b>manual_burp</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>GET /japi/..%2factuator/health retorna o HTML da home, enquanto /japi/actuator/health retorna {"code":500,"msg":"404 NOT_FOUND"}. O nginx decodifica %2f e move o path pra raiz do try_files.</blockquote>
+          <h4>Impacto</h4>
+          <p>Sintoma de configuracao fraca de nginx que pode permitir bypass de location-based ACL.</p>
+          <h4>Proximo passo</h4>
+          <p>No Burp, tentar /japi/..%2fadmin/..%2flist e variantes URL-encoded duplas.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#6f42c1">INFORMATIVA</span>
+            <h3>V-2026-015 — S3 bucket sx.megaslott.com — somente APK acessivel, listing protegido</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>manual</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>13 variacoes de listing query retornam 403. Bucket SDK direto retorna 403 (existe). APK conhecido (Amizade777.apk) eh acessivel.</blockquote>
+          <h4>Impacto</h4>
+          <p>Bucket nao expoe listing, mas permite GET de objetos conhecidos por nome.</p>
+          <h4>Proximo passo</h4>
+          <p>Tentar nomes comuns: Amizade777-old.apk, Rainha777-old.apk, Amizade777-debug.apk, etc.</p>
+        </article>
+        <article class="finding">
+          <header>
+            <span class="badge" style="background:#6f42c1">INFORMATIVA</span>
+            <h3>V-2026-005 — Subdominios laterais expostos (megaslott.com)</h3>
+            <small>Confianca: <b>high</b> &middot; Status: <b>automatic</b></small>
+          </header>
+          <h4>Evidencia</h4>
+          <blockquote>/japi/invite/api/finger/download retorna {"url":"https://sx.megaslott.com/download/Amizade777.apk"}. Dominio megaslott.com tem 4 subdominios resolviveis: sx (S3 publico), api (firewall), test (firewall), pa (firewall, painel central).</blockquote>
+          <h4>Impacto</h4>
+          <p>Revela infraestrutura externa do operador (megaslott — operador white-label). pa.megaslott.com eh o painel central do operador.</p>
+          <h4>Proximo passo</h4>
+          <p>Pivot via SSRF: se algum tenant aceitar URL como input, tentar acessar pa.megaslott.com.</p>
+        </article>
+
+<h2>Descobertas Tecnicas Notaveis</h2>
+<ul>
+<li>STACK COMPARTILHADA: amizade777.com e rainha777slots.com compartilham message.js, finger.js e protobuf.js (mesmo SHA256). Operador central: megaslott.com.</li><li>23 endpoints reais /japi/ extraidos do bundle JavaScript do amizade777 (17 sao verificados em rainha777slots).</li><li>16 endpoints administrativos descobertos no bundle do pa.rainha777slots.com (painel de agentes/afiliados).</li><li>Nome interno do projeto: 'MEGASLOTS' (do <noscript> do painel de agentes).</li><li>4 endpoints /japi/activity/redPacketRain/* (chuvas de premios automatizadas).</li><li>Backend Java/Spring (formato de erro {code, msg, total}).</li><li>Captcha sem sessao — bypass trivial.</li><li>Configuracao de premio: maxAmount=10000000, 3 janelas diarias, dateRange=1-31.</li><li>APK Android (5.5 MB) hosteado em S3 publico (sx.megaslott.com).</li><li>4 subdominios de megaslott.com: sx (S3 publico), api (firewall), test (firewall), pa (firewall, painel central).</li><li>WebSocket usa protobuf — 282 mensagens identificadas (rainha) / 276 (amizade) — ws_inspector.</li><li>WebSocket aceita upgrade SEM auth no amizade777 (101 Switching Protocols sem cookie).</li><li>Frame inicial do WS: {msgtype:1, msg:base64} com timestamp do servidor em protobuf varint.</li><li>3 reflexoes de header confirmadas em AMBOS tenants: X-Forwarded-Proto, X-Internal, X-Debug.</li><li>CloudFront bloqueia VHost discovery (defesa em camada).</li><li>nginx /japi/..%2f reescreve para raiz (sintoma de config fraca).</li><li>Painel pa. usa vue-element-admin template (Vue 2 + ElementUI) — diferente do main app que eh Vue 3 + Vite.</li><li>Login dos agentes: POST /system/user/gsf/login (path custom 'gsf').</li><li>9 endpoints /invite/admin/invite/* no painel de agentes — gestao completa de comissoes.</li><li>Toolkit do projeto: 797 testes verdes, 11 modulos de check, integrado com governanca.</li>
+</ul>
+
+<h2>Itens Bloqueados (precisam Burp Suite)</h2>
+<ul>
+<li>V6 (amizade777): Deposito com amount negativo (POST /prod-api/pay-service/recharge)</li><li>V7 (amizade777): Saque com amount negativo (POST /prod-api/payment/balance-less)</li><li>V8 (amizade777): Race condition no saque (5 requests simultaneos)</li><li>V9 (amizade777): IDOR em /prod-api/player/info ou /japi/user/info/{id}</li><li>V11 (amizade777): Privilege escalation via POST /prod-api/player/update body com isAdmin=true</li><li>V12 (amizade777): Bypass de captcha em login real — 100 logins consecutivos com captcha aleatorio</li><li>V13 (amizade777): redPacket com amount=maxAmount+1 / overflow</li><li>V14 (amizade777): GET /japi/system/admin com token de usuario comum</li><li>V19a (rainha): Brute-force em pa.rainha777slots.com/system/user/gsf/login (wordlist de admin/admin, gsf/gsf, etc.)</li><li>V19b (rainha): Testar /invite/admin/invite/* via pa. com token de agente — confirmar IDOR (?subordinateId=outroAgente)</li><li>V19c (rainha): Brute-force de paths sem CDN em http://15.229.53.171/ (api.rainha777slots.com:80)</li><li>V19d (rainha): Validar V6/V7/V8/V11 tambem no rainha777slots.com (mesma stack)</li><li>V18a: Procurar mais tenants MEGASLOTS via Censys/Shodan (sha de message.js)</li><li>V18b: Tentar correcoes do amizade777 contra rainha777slots e vice-versa</li><li>V20a: Acessar test.megaslott.com em portas alternativas</li><li>V15: Enumerar versoes antigas em sx.megaslott.com (Amizade777-old.apk, Rainha777-old.apk)</li><li>V17a: Confirmar cacheabilidade do X-Internal/X-Debug (request com header, depois sem header e ver X-Cache: HIT)</li>
+</ul>
+
+</body>
+</html>

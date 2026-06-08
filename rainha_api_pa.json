@@ -1,0 +1,389 @@
+{
+  "api_direct": [
+    {
+      "path": "/japi/user/captcha/image",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/balance/querySimpleBalance",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/getDama",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/getExtraInfo",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/vip/getAllDisplayVo",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/api/signIn/customerSignConfig",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/api/signIn/signRecord",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/api/signIn/v2/signIn",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/info/1",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/user/all",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/system/admin",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/system/log",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/system/config",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/system/health",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/activity/redPacketRain/redPacketRainActivityList",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/activity/redPacketRain/currentRedPacketRainActivityList",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/activity/redPacketRain/getRedPacket",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/invite/api/finger/download?packageName=com.slots.big",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/invite/boxConfig/boxInfo",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/invite/userInvite/getInviteConfig",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/admin",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/admin/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/operator",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/operator/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/agent",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/agent/list",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/agent/login",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/agent/info",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/actuator",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/actuator/health",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/actuator/env",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/actuator/heapdump",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/actuator/mappings",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/japi/actuator/health",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/debug",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/error",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    },
+    {
+      "path": "/info",
+      "status": 200,
+      "size": 44,
+      "ctype": "application/json",
+      "body": "{\"code\":500,\"msg\":\"404 NOT_FOUND\",\"total\":0}",
+      "is_real": false,
+      "is_401": false
+    }
+  ],
+  "pa_bundle": {
+    "html_size": 4813,
+    "bundles": [],
+    "merged_size": 0,
+    "api_endpoints": [],
+    "keyword_hits": {
+      "agent": 0,
+      "agente": 0,
+      "operator": 0,
+      "operador": 0,
+      "afiliado": 0,
+      "affiliate": 0,
+      "commission": 0,
+      "comissao": 0,
+      "withdraw": 0,
+      "saque": 0,
+      "deposit": 0,
+      "deposito": 0,
+      "user": 0,
+      "player": 0,
+      "balance": 0,
+      "config": 0,
+      "manage": 0,
+      "backoffice": 0,
+      "admin": 0,
+      "login": 0
+    },
+    "base_urls": [],
+    "external_domains": [],
+    "external_urls_sample": []
+  },
+  "pa_endpoints": {
+    "error": "no pa bundles"
+  }
+}
