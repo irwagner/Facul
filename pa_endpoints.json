@@ -1,0 +1,25 @@
+{
+  "total": 20,
+  "all": [
+    "/admin-token",
+    "/authorization",
+    "/invite/admin/invite/getBindRewardRecord",
+    "/invite/admin/invite/getFirstRechargeRewardRecord",
+    "/invite/admin/invite/getInviteConfig",
+    "/invite/admin/invite/getRewardRecordList",
+    "/invite/admin/invite/getUserInviteList",
+    "/invite/admin/invite/queryInviteDayReportData",
+    "/invite/admin/invite/queryInviteRewardData",
+    "/invite/admin/invite/queryInviteRewardNoSettle",
+    "/invite/admin/invite/queryUnsettleInviteRewardData",
+    "/prod-api",
+    "/system/user/gsf/login",
+    "/system/user/gsf/logout",
+    "/user-agent",
+    "/user-avatar",
+    "/user-dropdown",
+    "/user/logout",
+    "/user/resetToken",
+    "/userAgent"
+  ]
+}

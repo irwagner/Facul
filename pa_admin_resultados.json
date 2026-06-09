@@ -1,0 +1,55 @@
+{
+  "/prod-api/invite/admin/invite/getInviteConfig": {
+    "code_anao": 200,
+    "code_sem": 401,
+    "data": [
+      {
+        "id": 1,
+        "proxyType": 0,
+        "firstRecharge": 0,
+        "bindReward": 0,
+        "level1FlowRate": 0,
+        "level2FlowRate": 0,
+        "level3FlowRate": 0,
+        "level1RewdRate": "",
+        "level2RewdRate": "",
+        "level3RewdRate": "",
+        "fbFlag": 0,
+        "googleFlag": 0,
+        "phoneFlag": 1,
+        "level1RewdRateDisplay": null,
+        "jobPeriod": 7,
+        "firstRechargeLevel": "[{\"num\":\"0\",\"reward\":\"2500\"},{\"num\":\"11\",\"reward\":\"3000\"},{\"num\":\"21\",\"reward\":\"3500\"}]",
+        "level1FlowRateDisplay": 10000,
+        "level2FlowRateDisplay": 10000,
+        "level3FlowRateDisplay": 10000,
+        "level2RewdRateDisplay": null,
+        "level3RewdRateDisplay": null
+      },
+      {
+        "id": 2,
+        "proxyType": 1,
+        "firstRecharge": 0,
+        "bindReward": 0,
+        "level1FlowRate": 5,
+        "level2FlowRate": 2,
+        "level3FlowRate": 1,
+        "level1RewdRate": "[{\"amount\":0,\"rate\":0},{\"amount\":500000,\"rate\":0},{\"amount\":2000000,\"rate\":0},{\"amount\":5000000,\"rate\":0},{\"amount\":10000000,\"rate\":0},{\"amount\":30000000,\"rate\":0},{\"amount\":100000000,\"rate\":0}]",
+        "level2RewdRate": "[{\"amount\":0,\"rate\":0},{\"amount\":500000,\"rate\":0},{\"amount\":2000000,\"rate\":0},{\"amount\":5000000,\"rate\":0},{\"amount\":10000000,\"rate\":0},{\"amount\":30000000,\"rate\":0},{\"amount\":100000000,\"rate\":0}]",
+        "level3RewdRate": "[{\"amount\":0,\"rate\":0},{\"amount\":500000,\"rate\":0},{\"amount\":2000000,\"rate\":0},{\"amount\":5000000,\"rate\":0},{\"amount\":10000000,\"rate\":0},{\"amount\":30000000,\"rate\":0},{\"amount\":100000000,\"rate\":0}]",
+        "fbFlag": 0,
+        "googleFlag": 0,
+        "phoneFlag": 1,
+        "level1RewdRateDisplay": "0%-0%",
+        "jobPeriod": 7,
+        "firstRechargeLevel": "[{\"num\":\"0\",\"reward\":\"2500\"},{\"num\":\"11\",\"reward\":\"3000\"},{\"num\":\"21\",\"reward\":\"3500\"}]",
+        "level1FlowRateDisplay": 10000,
+        "level2FlowRateDisplay": 10000,
+        "level3FlowRateDisplay": 10000,
+        "level2RewdRateDisplay": "0%-0%",
+        "level3RewdRateDisplay": "0%-0%"
+      }
+    ],
+    "sev": "🔴"
+  }
+}
