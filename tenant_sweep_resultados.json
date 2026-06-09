@@ -1,0 +1,4773 @@
+[
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/balance/querySimpleBalance",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "amount": 2447500,
+      "withdrawAmount": 447500,
+      "inviteAmount": 0
+    },
+    "severity": "critical",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/balance/querySimpleBalance",
+    "token": "137027",
+    "code": 200,
+    "data": {
+      "amount": 0,
+      "withdrawAmount": 0,
+      "inviteAmount": 0
+    },
+    "severity": "critical",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getExtraInfo",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "teleStatus": "1",
+      "rechargeStatus": "0"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getExtraInfo",
+    "token": "137027",
+    "code": 200,
+    "data": {
+      "teleStatus": "1",
+      "rechargeStatus": "0"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getDama",
+    "token": "1",
+    "code": 200,
+    "data": {},
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/vip/getAllDisplayVo",
+    "token": "1",
+    "code": 200,
+    "data": [
+      {
+        "level": 0,
+        "rechargeAmountLimit": 0,
+        "flowLimit": 0,
+        "withdrawAmountLimitDay": 10000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 1,
+        "rechargeAmountLimit": 2000,
+        "flowLimit": 20000,
+        "withdrawAmountLimitDay": 20000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 2,
+        "rechargeAmountLimit": 4000,
+        "flowLimit": 30000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 3,
+        "rechargeAmountLimit": 8000,
+        "flowLimit": 56000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 2,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 4,
+        "rechargeAmountLimit": 16000,
+        "flowLimit": 128000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 5,
+        "rechargeAmountLimit": 32000,
+        "flowLimit": 288000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100
+      },
+      {
+        "level": 6,
+        "rechargeAmountLimit": 64000,
+        "flowLimit": 640000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 600
+      },
+      {
+        "level": 7,
+        "rechargeAmountLimit": 128800,
+        "flowLimit": 1408000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1200
+      },
+      {
+        "level": 8,
+        "rechargeAmountLimit": 258800,
+        "flowLimit": 3072000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 2400
+      },
+      {
+        "level": 9,
+        "rechargeAmountLimit": 518800,
+        "flowLimit": 6656000,
+        "withdrawAmountLimitDay": 200000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 4800
+      },
+      {
+        "level": 10,
+        "rechargeAmountLimit": 1088800,
+        "flowLimit": 14336000,
+        "withdrawAmountLimitDay": 300000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 9600
+      },
+      {
+        "level": 11,
+        "rechargeAmountLimit": 2088800,
+        "flowLimit": 30720000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 19200
+      },
+      {
+        "level": 12,
+        "rechargeAmountLimit": 4088800,
+        "flowLimit": 65536000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 38400
+      },
+      {
+        "level": 13,
+        "rechargeAmountLimit": 8188800,
+        "flowLimit": 139264000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 76800
+      },
+      {
+        "level": 14,
+        "rechargeAmountLimit": 16888800,
+        "flowLimit": 294912000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 153600
+      },
+      {
+        "level": 15,
+        "rechargeAmountLimit": 32888800,
+        "flowLimit": 622592000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 307200
+      },
+      {
+        "level": 16,
+        "rechargeAmountLimit": 65555500,
+        "flowLimit": 1310720000,
+        "withdrawAmountLimitDay": 5000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 614400
+      },
+      {
+        "level": 17,
+        "rechargeAmountLimit": 132888800,
+        "flowLimit": 2641440000,
+        "withdrawAmountLimitDay": 10000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1228800
+      },
+      {
+        "level": 18,
+        "rechargeAmountLimit": 262888800,
+        "flowLimit": 5242880000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 2457600
+      },
+      {
+        "level": 19,
+        "rechargeAmountLimit": 524888800,
+        "flowLimit": 10485760000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 15,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 4915200
+      },
+      {
+        "level": 20,
+        "rechargeAmountLimit": 1048888800,
+        "flowLimit": 20971520000,
+        "withdrawAmountLimitDay": 50000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 9830400
+      },
+      {
+        "level": 21,
+        "rechargeAmountLimit": 2098888800,
+        "flowLimit": 41943040000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 19660800
+      },
+      {
+        "level": 22,
+        "rechargeAmountLimit": 4198888800,
+        "flowLimit": 83886080000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 25,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 39321600
+      },
+      {
+        "level": 23,
+        "rechargeAmountLimit": 8388888800,
+        "flowLimit": 167772160000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 78643200
+      },
+      {
+        "level": 24,
+        "rechargeAmountLimit": 16777888800,
+        "flowLimit": 335544320000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 157286400
+      },
+      {
+        "level": 25,
+        "rechargeAmountLimit": 33558888800,
+        "flowLimit": 671088640000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 314572800
+      }
+    ],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/vip/getAllDisplayVo",
+    "token": "137027",
+    "code": 200,
+    "data": [
+      {
+        "level": 0,
+        "rechargeAmountLimit": 0,
+        "flowLimit": 0,
+        "withdrawAmountLimitDay": 10000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 1,
+        "rechargeAmountLimit": 2000,
+        "flowLimit": 20000,
+        "withdrawAmountLimitDay": 20000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 2,
+        "rechargeAmountLimit": 4000,
+        "flowLimit": 30000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 3,
+        "rechargeAmountLimit": 8000,
+        "flowLimit": 56000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 2,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 4,
+        "rechargeAmountLimit": 16000,
+        "flowLimit": 128000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 5,
+        "rechargeAmountLimit": 32000,
+        "flowLimit": 288000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100
+      },
+      {
+        "level": 6,
+        "rechargeAmountLimit": 64000,
+        "flowLimit": 640000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 600
+      },
+      {
+        "level": 7,
+        "rechargeAmountLimit": 128800,
+        "flowLimit": 1408000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1200
+      },
+      {
+        "level": 8,
+        "rechargeAmountLimit": 258800,
+        "flowLimit": 3072000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 2400
+      },
+      {
+        "level": 9,
+        "rechargeAmountLimit": 518800,
+        "flowLimit": 6656000,
+        "withdrawAmountLimitDay": 200000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 4800
+      },
+      {
+        "level": 10,
+        "rechargeAmountLimit": 1088800,
+        "flowLimit": 14336000,
+        "withdrawAmountLimitDay": 300000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 9600
+      },
+      {
+        "level": 11,
+        "rechargeAmountLimit": 2088800,
+        "flowLimit": 30720000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 19200
+      },
+      {
+        "level": 12,
+        "rechargeAmountLimit": 4088800,
+        "flowLimit": 65536000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 38400
+      },
+      {
+        "level": 13,
+        "rechargeAmountLimit": 8188800,
+        "flowLimit": 139264000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 76800
+      },
+      {
+        "level": 14,
+        "rechargeAmountLimit": 16888800,
+        "flowLimit": 294912000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 153600
+      },
+      {
+        "level": 15,
+        "rechargeAmountLimit": 32888800,
+        "flowLimit": 622592000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 307200
+      },
+      {
+        "level": 16,
+        "rechargeAmountLimit": 65555500,
+        "flowLimit": 1310720000,
+        "withdrawAmountLimitDay": 5000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 614400
+      },
+      {
+        "level": 17,
+        "rechargeAmountLimit": 132888800,
+        "flowLimit": 2641440000,
+        "withdrawAmountLimitDay": 10000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1228800
+      },
+      {
+        "level": 18,
+        "rechargeAmountLimit": 262888800,
+        "flowLimit": 5242880000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 2457600
+      },
+      {
+        "level": 19,
+        "rechargeAmountLimit": 524888800,
+        "flowLimit": 10485760000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 15,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 4915200
+      },
+      {
+        "level": 20,
+        "rechargeAmountLimit": 1048888800,
+        "flowLimit": 20971520000,
+        "withdrawAmountLimitDay": 50000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 9830400
+      },
+      {
+        "level": 21,
+        "rechargeAmountLimit": 2098888800,
+        "flowLimit": 41943040000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 19660800
+      },
+      {
+        "level": 22,
+        "rechargeAmountLimit": 4198888800,
+        "flowLimit": 83886080000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 25,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 39321600
+      },
+      {
+        "level": 23,
+        "rechargeAmountLimit": 8388888800,
+        "flowLimit": 167772160000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 78643200
+      },
+      {
+        "level": 24,
+        "rechargeAmountLimit": 16777888800,
+        "flowLimit": 335544320000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 157286400
+      },
+      {
+        "level": 25,
+        "rechargeAmountLimit": 33558888800,
+        "flowLimit": 671088640000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 314572800
+      }
+    ],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/api/signIn/customerSignConfig",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "vipLevel": 0,
+      "todaySignFlag": true,
+      "signNum": 1,
+      "signConfigMapV2": {
+        "V21": {
+          "totalDays": 480,
+          "cashback": 500.0
+        },
+        "V20": {
+          "totalDays": 300,
+          "cashback": 400.0
+        },
+        "V23": {
+          "totalDays": 653,
+          "cashback": 1500.0
+        },
+        "V22": {
+          "totalDays": 480,
+          "cashback": 1000.0
+        },
+        "V25": {
+          "totalDays": 1830,
+          "cashback": 2500.0
+        },
+        "V24": {
+          "totalDays": 1530,
+          "cashback": 2000.0
+        },
+        "V0": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V1": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V2": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V3": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V4": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V5": {
+          "totalDays": 8,
+          "cashback": 2.0
+        },
+        "V6": {
+          "totalDays": 9,
+          "cashback": 2.0
+        },
+        "V7": {
+          "totalDays": 11,
+          "cashback": 3.0
+        },
+        "V8": {
+          "totalDays": 15,
+          "cashback": 4.0
+        },
+        "V9": {
+          "totalDays": 22,
+          "cashback": 6.0
+        },
+        "V10": {
+          "totalDays": 31,
+          "cashback": 8.0
+        },
+        "V12": {
+          "totalDays": 50,
+          "cashback": 10.0
+        },
+        "V11": {
+          "totalDays": 49,
+          "cashback": 10.0
+        },
+        "V14": {
+          "totalDays": 50,
+          "cashback": 20.0
+        },
+        "V13": {
+          "totalDays": 50,
+          "cashback": 10.0
+        },
+        "V16": {
+          "totalDays": 50,
+          "cashback": 100.0
+        },
+        "V15": {
+          "totalDays": 50,
+          "cashback": 40.0
+        },
+        "V18": {
+          "totalDays": 150,
+          "cashback": 200.0
+        },
+        "V17": {
+          "totalDays": 100,
+          "cashback": 200.0
+        },
+        "V19": {
+          "totalDays": 200,
+          "cashback": 300.0
+        }
+      }
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/api/signIn/customerSignConfig",
+    "token": "137027",
+    "code": 200,
+    "data": {
+      "vipLevel": 0,
+      "todaySignFlag": true,
+      "signNum": 1,
+      "signConfigMapV2": {
+        "V21": {
+          "totalDays": 480,
+          "cashback": 500.0
+        },
+        "V20": {
+          "totalDays": 300,
+          "cashback": 400.0
+        },
+        "V23": {
+          "totalDays": 653,
+          "cashback": 1500.0
+        },
+        "V22": {
+          "totalDays": 480,
+          "cashback": 1000.0
+        },
+        "V25": {
+          "totalDays": 1830,
+          "cashback": 2500.0
+        },
+        "V24": {
+          "totalDays": 1530,
+          "cashback": 2000.0
+        },
+        "V0": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V1": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V2": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V3": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V4": {
+          "totalDays": 0,
+          "cashback": 0.0
+        },
+        "V5": {
+          "totalDays": 8,
+          "cashback": 2.0
+        },
+        "V6": {
+          "totalDays": 9,
+          "cashback": 2.0
+        },
+        "V7": {
+          "totalDays": 11,
+          "cashback": 3.0
+        },
+        "V8": {
+          "totalDays": 15,
+          "cashback": 4.0
+        },
+        "V9": {
+          "totalDays": 22,
+          "cashback": 6.0
+        },
+        "V10": {
+          "totalDays": 31,
+          "cashback": 8.0
+        },
+        "V12": {
+          "totalDays": 50,
+          "cashback": 10.0
+        },
+        "V11": {
+          "totalDays": 49,
+          "cashback": 10.0
+        },
+        "V14": {
+          "totalDays": 50,
+          "cashback": 20.0
+        },
+        "V13": {
+          "totalDays": 50,
+          "cashback": 10.0
+        },
+        "V16": {
+          "totalDays": 50,
+          "cashback": 100.0
+        },
+        "V15": {
+          "totalDays": 50,
+          "cashback": 40.0
+        },
+        "V18": {
+          "totalDays": 150,
+          "cashback": 200.0
+        },
+        "V17": {
+          "totalDays": 100,
+          "cashback": 200.0
+        },
+        "V19": {
+          "totalDays": 200,
+          "cashback": 300.0
+        }
+      }
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/api/signIn/signRecord",
+    "token": "1",
+    "code": 200,
+    "data": [
+      {
+        "userId": 1,
+        "vipLevel": 0,
+        "days": 1,
+        "cashback": 0,
+        "createdAt": 1781038775,
+        "day": null,
+        "signDay": 20260609,
+        "signTime": "2026-06-09 17:59:35"
+      }
+    ],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/api/signIn/signRecord",
+    "token": "137027",
+    "code": 200,
+    "data": [
+      {
+        "userId": 137027,
+        "vipLevel": 0,
+        "days": 1,
+        "cashback": 0,
+        "createdAt": 1781038775,
+        "day": null,
+        "signDay": 20260609,
+        "signTime": "2026-06-09 17:59:35"
+      }
+    ],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/invite/boxConfig/boxReceiveRecord",
+    "token": "1",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "dwarf_token",
+    "path": "/japi/invite/boxConfig/boxReceiveRecord",
+    "token": "137027",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/get",
+    "token": "public",
+    "code": 200,
+    "data": {
+      "recharge_options": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_amount_min": 20,
+      "current": "1.0.1",
+      "forceUpdate": "1.0.0",
+      "url_download": "http://m.amizade777.com/",
+      "withdraw_fee": 0,
+      "withdraw_min": 10,
+      "withdraw_step": 100,
+      "maintenance": {
+        "flag": 0,
+        "start": "2024-08-22 11:30:00",
+        "end": "2024-08-22 11:50:00"
+      },
+      "practice_balance": 1000,
+      "device_user_limit": 2,
+      "recharge_options_default": 100,
+      "service_email": "support@penko.co.in",
+      "mgm_config": {
+        "switch": "1",
+        "register_reward": "6",
+        "first_charge_reward": "0",
+        "first_recharge_reward": "5",
+        "second_recharge_reward": "10",
+        "three_recharge_reward": "10",
+        "bind_invite_code_bonus_reward": "50",
+        "bind_invite_code_bonus_reward_validity": "72",
+        "recharge_bonus_reward": [
+          "50",
+          "50",
+          "50"
+        ],
+        "recharge_bonus_reward_validity": [
+          "72",
+          "72",
+          "72"
+        ],
+        "recharge_reminder_email_title": "MGM-Reminder from Your Friend",
+        "recharge_reminder_email_content": "Hey！You haven’t recharge yet? Come and get recharge bonus once complete your first deposit.",
+        "invite_excessive_email_title": "MGM-Notice",
+        "invite_excessive_email_content": "Dear Player, We are sorry to inform you that you cannot invite friends to join the Referral Billionaire Event temporarily due to your unusual invitation behavior.",
+        "reward_top_num": "8",
+        "reward_total_num": "8",
+        "recharge_amount_1": "15",
+        "recharge_amount_2": "100",
+        "recharge_amount_3": "200"
+      },
+      "payment_x": true,
+      "game_lobby": {
+        "hot": [
+          9,
+          10
+        ],
+        "new": [
+          14,
+          15
+        ]
+      },
+      "join_get_bonus": 10000,
+      "user_bind_phone_reward": {
+        "type": 1,
+        "amount": "0",
+        "bonus_finish": 72
+      },
+      "activity_text_config": {
+        "daily_gift": [
+          "130",
+          "130",
+          "200"
+        ],
+        "first_recharge": [
+          "100",
+          "100"
+        ],
+        "week_recharge": [
+          "40",
+          "20,000"
+        ],
+        "coupon": [
+          "50",
+          "50",
+          "1500"
+        ],
+        "mgm": [
+          "100"
+        ]
+      },
+      "game_version": {
+        "forest": "86ca2",
+        "wingo": "583e2",
+        "slotAZTEC": "2ea20",
+        "slotEgypt": "967b1",
+        "slotSJB": "ca795",
+        "slotFruit": "25148",
+        "truco": "711c2",
+        "crash": "05265",
+        "slotZeus": "a48c0"
+      },
+      "recharge_options_new": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "service_telegram_07:com.slots.big": "mega2support",
+      "service_whatsapp:com.slots.big": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "recharge_options_pay_1": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_options_pay_2": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "ab": 0,
+      "pix_config": {
+        "account_limit_size": 100,
+        "cpf_limit_size": 1
+      },
+      "hall_version": {
+        "sign": "1234"
+      },
+      "ab_condition": {
+        "openFlag": true,
+        "playOpenFlag": true,
+        "playTimes": 20,
+        "ipWhites": "15.229.81.27",
+        "ipFlag": true,
+        "timeZoneFlag": true,
+        "languageFlag": true
+      },
+      "device_bonus_times_limit": 1,
+      "recharge_amount_max": 999999,
+      "h5Url": "http://m.amizade777.com/",
+      "user_register_reward": 0,
+      "service_telegram_channel:com.slots.big": "Brasil_MEGA",
+      "recharge_rate": 0,
+      "withdraw_pay_rate": 0,
+      "withdraw_system_rate": 0,
+      "recharge_first_cashback_rate": "20%",
+      "recharge_cashback_rate": "10%",
+      "service_telegram_01:com.slots.big": "mega2support",
+      "service_telegram_broker01:com.slots.big": "mega2support",
+      "service_telegram_broker09:com.slots.big": "",
+      "service_telegram_broker08:com.slots.big": "",
+      "withdraw_begin": "21:30",
+      "withdraw_end": "00:30",
+      "ip_user_limit": 6,
+      "invite_hig_reward": 35,
+      "app_download_reward": 500,
+      "activity_config_reward": [
+        {
+          "level": 0,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 1,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 2,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 3,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 4,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 5,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 6,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 7,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 8,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 9,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 10,
+          "dayFlowBackRate": 1,
+          "weekFlowBackRate": 0,
+          "weekLoseBackRate": 0
+        },
+        {
+          "level": 11,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 12,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 13,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 14,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 15,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 16,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 17,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 18,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 19,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 20,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 21,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 22,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 23,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 24,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 25,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        }
+      ],
+      "invite_reward_distribute_time": "04:00",
+      "1service_whatsapp_business": "+971581537253,+601133124012",
+      "new_user_balance": 0,
+      "pay_callback": null,
+      "pay_gateway": 1,
+      "shopping": [],
+      "recharge_level": [
+        {
+          "amount_min": "20.00",
+          "amount_max": "29.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30.00",
+          "amount_max": "39.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "40.00",
+          "amount_max": "49.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "79.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "99999999.00",
+          "rate": "0.2000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80.00",
+          "amount_max": "99.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "100.00",
+          "amount_max": "199.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "200.00",
+          "amount_max": "299.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "300.00",
+          "amount_max": "499.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "500.00",
+          "amount_max": "799.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "800.00",
+          "amount_max": "999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "1000.00",
+          "amount_max": "1999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "2000.00",
+          "amount_max": "2999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "3000.00",
+          "amount_max": "4999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "5000.00",
+          "amount_max": "7999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "8000.00",
+          "amount_max": "9999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "10000.00",
+          "amount_max": "19999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "20000.00",
+          "amount_max": "29999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30000.00",
+          "amount_max": "49999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50000.00",
+          "amount_max": "79999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80000.00",
+          "amount_max": "99999999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        }
+      ],
+      "control_config": {
+        "is_review": 0,
+        "login": [
+          1,
+          2
+        ],
+        "withdraw_control": 0,
+        "withdraw_rounds": 0
+      },
+      "withdraw_config": {
+        "amount_day": "100.00",
+        "handle_count_day": 10000,
+        "count_user_day": 3,
+        "amount_user_day": "5000.00",
+        "always_amount": "10000.00"
+      },
+      "currentOnline": true
+    },
+    "severity": "critical",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/get",
+    "token": "public",
+    "code": 200,
+    "data": {
+      "recharge_options": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_amount_min": 20,
+      "current": "1.0.1",
+      "forceUpdate": "1.0.0",
+      "url_download": "http://m.amizade777.com/",
+      "withdraw_fee": 0,
+      "withdraw_min": 10,
+      "withdraw_step": 100,
+      "maintenance": {
+        "flag": 0,
+        "start": "2024-08-22 11:30:00",
+        "end": "2024-08-22 11:50:00"
+      },
+      "practice_balance": 1000,
+      "device_user_limit": 2,
+      "recharge_options_default": 100,
+      "service_email": "support@penko.co.in",
+      "mgm_config": {
+        "switch": "1",
+        "register_reward": "6",
+        "first_charge_reward": "0",
+        "first_recharge_reward": "5",
+        "second_recharge_reward": "10",
+        "three_recharge_reward": "10",
+        "bind_invite_code_bonus_reward": "50",
+        "bind_invite_code_bonus_reward_validity": "72",
+        "recharge_bonus_reward": [
+          "50",
+          "50",
+          "50"
+        ],
+        "recharge_bonus_reward_validity": [
+          "72",
+          "72",
+          "72"
+        ],
+        "recharge_reminder_email_title": "MGM-Reminder from Your Friend",
+        "recharge_reminder_email_content": "Hey！You haven’t recharge yet? Come and get recharge bonus once complete your first deposit.",
+        "invite_excessive_email_title": "MGM-Notice",
+        "invite_excessive_email_content": "Dear Player, We are sorry to inform you that you cannot invite friends to join the Referral Billionaire Event temporarily due to your unusual invitation behavior.",
+        "reward_top_num": "8",
+        "reward_total_num": "8",
+        "recharge_amount_1": "15",
+        "recharge_amount_2": "100",
+        "recharge_amount_3": "200"
+      },
+      "payment_x": true,
+      "game_lobby": {
+        "hot": [
+          9,
+          10
+        ],
+        "new": [
+          14,
+          15
+        ]
+      },
+      "join_get_bonus": 10000,
+      "user_bind_phone_reward": {
+        "type": 1,
+        "amount": "0",
+        "bonus_finish": 72
+      },
+      "activity_text_config": {
+        "daily_gift": [
+          "130",
+          "130",
+          "200"
+        ],
+        "first_recharge": [
+          "100",
+          "100"
+        ],
+        "week_recharge": [
+          "40",
+          "20,000"
+        ],
+        "coupon": [
+          "50",
+          "50",
+          "1500"
+        ],
+        "mgm": [
+          "100"
+        ]
+      },
+      "game_version": {
+        "forest": "86ca2",
+        "wingo": "583e2",
+        "slotAZTEC": "2ea20",
+        "slotEgypt": "967b1",
+        "slotSJB": "ca795",
+        "slotFruit": "25148",
+        "truco": "711c2",
+        "crash": "05265",
+        "slotZeus": "a48c0"
+      },
+      "recharge_options_new": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "service_telegram_07:com.slots.big": "mega2support",
+      "service_whatsapp:com.slots.big": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "recharge_options_pay_1": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_options_pay_2": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "ab": 0,
+      "pix_config": {
+        "account_limit_size": 100,
+        "cpf_limit_size": 1
+      },
+      "hall_version": {
+        "sign": "1234"
+      },
+      "ab_condition": {
+        "openFlag": true,
+        "playOpenFlag": true,
+        "playTimes": 20,
+        "ipWhites": "15.229.81.27",
+        "ipFlag": true,
+        "timeZoneFlag": true,
+        "languageFlag": true
+      },
+      "device_bonus_times_limit": 1,
+      "recharge_amount_max": 999999,
+      "h5Url": "http://m.amizade777.com/",
+      "user_register_reward": 0,
+      "service_telegram_channel:com.slots.big": "Brasil_MEGA",
+      "recharge_rate": 0,
+      "withdraw_pay_rate": 0,
+      "withdraw_system_rate": 0,
+      "recharge_first_cashback_rate": "20%",
+      "recharge_cashback_rate": "10%",
+      "service_telegram_01:com.slots.big": "mega2support",
+      "service_telegram_broker01:com.slots.big": "mega2support",
+      "service_telegram_broker09:com.slots.big": "",
+      "service_telegram_broker08:com.slots.big": "",
+      "withdraw_begin": "21:30",
+      "withdraw_end": "00:30",
+      "ip_user_limit": 6,
+      "invite_hig_reward": 35,
+      "app_download_reward": 500,
+      "activity_config_reward": [
+        {
+          "level": 0,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 1,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 2,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 3,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 4,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 5,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 6,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 7,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 8,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 9,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 10,
+          "dayFlowBackRate": 1,
+          "weekFlowBackRate": 0,
+          "weekLoseBackRate": 0
+        },
+        {
+          "level": 11,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 12,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 13,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 14,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 15,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 16,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 17,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 18,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 19,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 20,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 21,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 22,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 23,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 24,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        },
+        {
+          "level": 25,
+          "dayFlowBackRate": 50,
+          "weekFlowBackRate": 50,
+          "weekLoseBackRate": 100
+        }
+      ],
+      "invite_reward_distribute_time": "04:00",
+      "1service_whatsapp_business": "+971581537253,+601133124012",
+      "new_user_balance": 0,
+      "pay_callback": null,
+      "pay_gateway": 1,
+      "shopping": [],
+      "recharge_level": [
+        {
+          "amount_min": "20.00",
+          "amount_max": "29.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30.00",
+          "amount_max": "39.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "40.00",
+          "amount_max": "49.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "79.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "99999999.00",
+          "rate": "0.2000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80.00",
+          "amount_max": "99.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "100.00",
+          "amount_max": "199.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "200.00",
+          "amount_max": "299.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "300.00",
+          "amount_max": "499.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "500.00",
+          "amount_max": "799.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "800.00",
+          "amount_max": "999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "1000.00",
+          "amount_max": "1999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "2000.00",
+          "amount_max": "2999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "3000.00",
+          "amount_max": "4999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "5000.00",
+          "amount_max": "7999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "8000.00",
+          "amount_max": "9999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "10000.00",
+          "amount_max": "19999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "20000.00",
+          "amount_max": "29999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30000.00",
+          "amount_max": "49999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50000.00",
+          "amount_max": "79999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80000.00",
+          "amount_max": "99999999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        }
+      ],
+      "control_config": {
+        "is_review": 0,
+        "login": [
+          1,
+          2
+        ],
+        "withdraw_control": 0,
+        "withdraw_rounds": 0
+      },
+      "withdraw_config": {
+        "amount_day": "100.00",
+        "handle_count_day": 10000,
+        "count_user_day": 3,
+        "amount_user_day": "5000.00",
+        "always_amount": "10000.00"
+      },
+      "currentOnline": true
+    },
+    "severity": "critical",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/mains",
+    "token": "public",
+    "code": 200,
+    "data": "{\r\n    \"flag\": 0,\r\n    \"start\": \"2024-08-22 11:30:00\",\r\n    \"end\": \"2024-08-22 11:50:00\"\r\n}",
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/mains",
+    "token": "public",
+    "code": 200,
+    "data": "{\r\n    \"flag\": 0,\r\n    \"start\": \"2024-08-22 11:30:00\",\r\n    \"end\": \"2024-08-22 11:50:00\"\r\n}",
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/mail/getMailCount",
+    "token": "public",
+    "code": 200,
+    "data": null,
+    "severity": "info",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/mail/getMailCount",
+    "token": "public",
+    "code": 200,
+    "data": null,
+    "severity": "info",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/notice/list",
+    "token": "public",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/notice/list",
+    "token": "public",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/balance/querySimpleBalance",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "amount": -19997926,
+      "withdrawAmount": 74,
+      "inviteAmount": 0
+    },
+    "severity": "critical",
+    "extra": ""
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getExtraInfo",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "teleStatus": "1",
+      "rechargeStatus": "1"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getDama",
+    "token": "1",
+    "code": 200,
+    "data": {},
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/vip/getAllDisplayVo",
+    "token": "1",
+    "code": 200,
+    "data": [
+      {
+        "level": 0,
+        "rechargeAmountLimit": 0,
+        "flowLimit": 0,
+        "withdrawAmountLimitDay": 0,
+        "withdrawTimesLimitDay": 0,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 1,
+        "rechargeAmountLimit": 2000,
+        "flowLimit": 20000,
+        "withdrawAmountLimitDay": 20000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 2,
+        "rechargeAmountLimit": 4000,
+        "flowLimit": 30000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 6
+      },
+      {
+        "level": 3,
+        "rechargeAmountLimit": 8000,
+        "flowLimit": 56000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 2,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 8
+      },
+      {
+        "level": 4,
+        "rechargeAmountLimit": 16000,
+        "flowLimit": 128000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 50
+      },
+      {
+        "level": 5,
+        "rechargeAmountLimit": 32000,
+        "flowLimit": 288000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100
+      },
+      {
+        "level": 6,
+        "rechargeAmountLimit": 64000,
+        "flowLimit": 640000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1600
+      },
+      {
+        "level": 7,
+        "rechargeAmountLimit": 128800,
+        "flowLimit": 1408000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 3200
+      },
+      {
+        "level": 8,
+        "rechargeAmountLimit": 258800,
+        "flowLimit": 3072000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 6400
+      },
+      {
+        "level": 9,
+        "rechargeAmountLimit": 518800,
+        "flowLimit": 6656000,
+        "withdrawAmountLimitDay": 200000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 12800
+      },
+      {
+        "level": 10,
+        "rechargeAmountLimit": 1088800,
+        "flowLimit": 14336000,
+        "withdrawAmountLimitDay": 300000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 25800
+      },
+      {
+        "level": 11,
+        "rechargeAmountLimit": 2088800,
+        "flowLimit": 30720000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 50800
+      },
+      {
+        "level": 12,
+        "rechargeAmountLimit": 4088800,
+        "flowLimit": 65536000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100800
+      },
+      {
+        "level": 13,
+        "rechargeAmountLimit": 8188800,
+        "flowLimit": 139264000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 204800
+      },
+      {
+        "level": 14,
+        "rechargeAmountLimit": 16888800,
+        "flowLimit": 294912000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 408800
+      },
+      {
+        "level": 15,
+        "rechargeAmountLimit": 32888800,
+        "flowLimit": 622592000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 818800
+      },
+      {
+        "level": 16,
+        "rechargeAmountLimit": 65555500,
+        "flowLimit": 1310720000,
+        "withdrawAmountLimitDay": 5000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1608800
+      },
+      {
+        "level": 17,
+        "rechargeAmountLimit": 132888800,
+        "flowLimit": 2641440000,
+        "withdrawAmountLimitDay": 10000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 3388800
+      },
+      {
+        "level": 18,
+        "rechargeAmountLimit": 262888800,
+        "flowLimit": 5242880000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 6288800
+      },
+      {
+        "level": 19,
+        "rechargeAmountLimit": 524888800,
+        "flowLimit": 10485760000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 15,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 12888800
+      },
+      {
+        "level": 20,
+        "rechargeAmountLimit": 1048888800,
+        "flowLimit": 20971520000,
+        "withdrawAmountLimitDay": 50000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 26288800
+      },
+      {
+        "level": 21,
+        "rechargeAmountLimit": 2098888800,
+        "flowLimit": 41943040000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 52228800
+      },
+      {
+        "level": 22,
+        "rechargeAmountLimit": 4198888800,
+        "flowLimit": 83886080000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 25,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100000000
+      },
+      {
+        "level": 23,
+        "rechargeAmountLimit": 8388888800,
+        "flowLimit": 167772160000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 208888800
+      },
+      {
+        "level": 24,
+        "rechargeAmountLimit": 16777888800,
+        "flowLimit": 335544320000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 418888800
+      },
+      {
+        "level": 25,
+        "rechargeAmountLimit": 33558888800,
+        "flowLimit": 671088640000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 838888800
+      }
+    ],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "dwarf_token",
+    "path": "/japi/invite/boxConfig/boxReceiveRecord",
+    "token": "1",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/get",
+    "token": "public",
+    "code": 200,
+    "data": {
+      "recharge_options": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_amount_min": 20,
+      "current": "1.0.1",
+      "forceUpdate": "1.0.0",
+      "url_download": "http://m.rainha777slots.com/",
+      "withdraw_fee": 0.06,
+      "withdraw_min": 50,
+      "withdraw_step": 100,
+      "maintenance": {
+        "flag": 0,
+        "start": "2024-06-21 06:25:00",
+        "end": "2024-06-21 06:40:00"
+      },
+      "practice_balance": 1000,
+      "device_user_limit": 30,
+      "recharge_options_default": 100,
+      "service_email": "support@penko.co.in",
+      "mgm_config": {
+        "switch": "1",
+        "register_reward": "6",
+        "first_charge_reward": "0",
+        "first_recharge_reward": "5",
+        "second_recharge_reward": "10",
+        "three_recharge_reward": "10",
+        "bind_invite_code_bonus_reward": "50",
+        "bind_invite_code_bonus_reward_validity": "72",
+        "recharge_bonus_reward": [
+          "50",
+          "50",
+          "50"
+        ],
+        "recharge_bonus_reward_validity": [
+          "72",
+          "72",
+          "72"
+        ],
+        "recharge_reminder_email_title": "MGM-Reminder from Your Friend",
+        "recharge_reminder_email_content": "Hey！You haven’t recharge yet? Come and get recharge bonus once complete your first deposit.",
+        "invite_excessive_email_title": "MGM-Notice",
+        "invite_excessive_email_content": "Dear Player, We are sorry to inform you that you cannot invite friends to join the Referral Billionaire Event temporarily due to your unusual invitation behavior.",
+        "reward_top_num": "8",
+        "reward_total_num": "8",
+        "recharge_amount_1": "15",
+        "recharge_amount_2": "100",
+        "recharge_amount_3": "200"
+      },
+      "payment_x": true,
+      "game_lobby": {
+        "hot": [
+          9,
+          10
+        ],
+        "new": [
+          14,
+          15
+        ]
+      },
+      "join_get_bonus": 10000,
+      "user_bind_phone_reward": {
+        "type": 1,
+        "amount": "0",
+        "bonus_finish": 72
+      },
+      "activity_text_config": {
+        "daily_gift": [
+          "130",
+          "130",
+          "200"
+        ],
+        "first_recharge": [
+          "100",
+          "100"
+        ],
+        "week_recharge": [
+          "40",
+          "20,000"
+        ],
+        "coupon": [
+          "50",
+          "50",
+          "1500"
+        ],
+        "mgm": [
+          "100"
+        ]
+      },
+      "game_version": {
+        "forest": "86ca2",
+        "wingo": "583e2",
+        "slotAZTEC": "2ea20",
+        "slotEgypt": "967b1",
+        "slotSJB": "ca795",
+        "slotFruit": "25148",
+        "truco": "711c2",
+        "crash": "05265",
+        "slotZeus": "a48c0"
+      },
+      "recharge_options_new": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "service_telegram_07:com.rainha777slots.big": "mega3support",
+      "service_whatsapp:com.rainha777slots.big": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "recharge_options_pay_1": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_options_pay_2": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "ab": 0,
+      "pix_config": {
+        "account_limit_size": 100,
+        "cpf_limit_size": 1
+      },
+      "hall_version": {
+        "sign": "1234"
+      },
+      "ab_condition": {
+        "openFlag": true,
+        "playOpenFlag": true,
+        "playTimes": 20,
+        "ipWhites": "15.229.81.27",
+        "ipFlag": true,
+        "timeZoneFlag": true,
+        "languageFlag": true
+      },
+      "device_bonus_times_limit": 1,
+      "recharge_amount_max": 999999,
+      "h5Url": "https://m.rainha777slots.com/",
+      "user_register_reward": 0,
+      "service_telegram_channel:com.rainha777slots.big": "Brasil_MEGA",
+      "recharge_rate": 60,
+      "withdraw_pay_rate": 0,
+      "withdraw_system_rate": 600,
+      "recharge_first_cashback_rate": "20%",
+      "recharge_cashback_rate": "10%",
+      "service_telegram_19:com.rainha777slots.big": "mega3support",
+      "service_telegram_08:com.rainha777slots.big": "mega3support",
+      "service_telegram_06:com.rainha777slots.big": "mega3support",
+      "service_telegram_01:com.rainha777slots.big": "mega3support",
+      "service_telegram_broker01:com.rainha777slots.big": "mega3support",
+      "service_telegram_broker08:com.rainha777slots.big": "mega3support",
+      "service_telegram_broker09:com.rainha777slots.big": "mega3support",
+      "withdraw_begin": 22,
+      "withdraw_end": 1,
+      "ip_user_limit": 6,
+      "invite_hig_reward": 35,
+      "invite_reward_distribute_time": "04:00",
+      "11service_whatsapp_business": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "new_user_balance": 0,
+      "pay_callback": null,
+      "pay_gateway": 1,
+      "shopping": [],
+      "recharge_level": [
+        {
+          "amount_min": "20.00",
+          "amount_max": "29.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30.00",
+          "amount_max": "39.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "40.00",
+          "amount_max": "49.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "79.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "99999999.00",
+          "rate": "0.2000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80.00",
+          "amount_max": "99.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "100.00",
+          "amount_max": "199.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "200.00",
+          "amount_max": "299.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "300.00",
+          "amount_max": "499.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "500.00",
+          "amount_max": "799.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "800.00",
+          "amount_max": "999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "1000.00",
+          "amount_max": "1999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "2000.00",
+          "amount_max": "2999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "3000.00",
+          "amount_max": "4999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "5000.00",
+          "amount_max": "7999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "8000.00",
+          "amount_max": "9999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "10000.00",
+          "amount_max": "19999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "20000.00",
+          "amount_max": "29999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30000.00",
+          "amount_max": "49999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50000.00",
+          "amount_max": "79999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80000.00",
+          "amount_max": "99999999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        }
+      ],
+      "control_config": {
+        "is_review": 0,
+        "login": [
+          1,
+          2
+        ],
+        "withdraw_control": 0,
+        "withdraw_rounds": 0
+      },
+      "withdraw_config": {
+        "amount_day": "100000.00",
+        "handle_count_day": 100000,
+        "count_user_day": 300,
+        "amount_user_day": "500000.00",
+        "always_amount": "1000000.00"
+      },
+      "currentOnline": true
+    },
+    "severity": "critical",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/get",
+    "token": "public",
+    "code": 200,
+    "data": {
+      "recharge_options": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_amount_min": 20,
+      "current": "1.0.1",
+      "forceUpdate": "1.0.0",
+      "url_download": "http://m.rainha777slots.com/",
+      "withdraw_fee": 0.06,
+      "withdraw_min": 50,
+      "withdraw_step": 100,
+      "maintenance": {
+        "flag": 0,
+        "start": "2024-06-21 06:25:00",
+        "end": "2024-06-21 06:40:00"
+      },
+      "practice_balance": 1000,
+      "device_user_limit": 30,
+      "recharge_options_default": 100,
+      "service_email": "support@penko.co.in",
+      "mgm_config": {
+        "switch": "1",
+        "register_reward": "6",
+        "first_charge_reward": "0",
+        "first_recharge_reward": "5",
+        "second_recharge_reward": "10",
+        "three_recharge_reward": "10",
+        "bind_invite_code_bonus_reward": "50",
+        "bind_invite_code_bonus_reward_validity": "72",
+        "recharge_bonus_reward": [
+          "50",
+          "50",
+          "50"
+        ],
+        "recharge_bonus_reward_validity": [
+          "72",
+          "72",
+          "72"
+        ],
+        "recharge_reminder_email_title": "MGM-Reminder from Your Friend",
+        "recharge_reminder_email_content": "Hey！You haven’t recharge yet? Come and get recharge bonus once complete your first deposit.",
+        "invite_excessive_email_title": "MGM-Notice",
+        "invite_excessive_email_content": "Dear Player, We are sorry to inform you that you cannot invite friends to join the Referral Billionaire Event temporarily due to your unusual invitation behavior.",
+        "reward_top_num": "8",
+        "reward_total_num": "8",
+        "recharge_amount_1": "15",
+        "recharge_amount_2": "100",
+        "recharge_amount_3": "200"
+      },
+      "payment_x": true,
+      "game_lobby": {
+        "hot": [
+          9,
+          10
+        ],
+        "new": [
+          14,
+          15
+        ]
+      },
+      "join_get_bonus": 10000,
+      "user_bind_phone_reward": {
+        "type": 1,
+        "amount": "0",
+        "bonus_finish": 72
+      },
+      "activity_text_config": {
+        "daily_gift": [
+          "130",
+          "130",
+          "200"
+        ],
+        "first_recharge": [
+          "100",
+          "100"
+        ],
+        "week_recharge": [
+          "40",
+          "20,000"
+        ],
+        "coupon": [
+          "50",
+          "50",
+          "1500"
+        ],
+        "mgm": [
+          "100"
+        ]
+      },
+      "game_version": {
+        "forest": "86ca2",
+        "wingo": "583e2",
+        "slotAZTEC": "2ea20",
+        "slotEgypt": "967b1",
+        "slotSJB": "ca795",
+        "slotFruit": "25148",
+        "truco": "711c2",
+        "crash": "05265",
+        "slotZeus": "a48c0"
+      },
+      "recharge_options_new": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "service_telegram_07:com.rainha777slots.big": "mega3support",
+      "service_whatsapp:com.rainha777slots.big": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "recharge_options_pay_1": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_options_pay_2": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "ab": 0,
+      "pix_config": {
+        "account_limit_size": 100,
+        "cpf_limit_size": 1
+      },
+      "hall_version": {
+        "sign": "1234"
+      },
+      "ab_condition": {
+        "openFlag": true,
+        "playOpenFlag": true,
+        "playTimes": 20,
+        "ipWhites": "15.229.81.27",
+        "ipFlag": true,
+        "timeZoneFlag": true,
+        "languageFlag": true
+      },
+      "device_bonus_times_limit": 1,
+      "recharge_amount_max": 999999,
+      "h5Url": "https://m.rainha777slots.com/",
+      "user_register_reward": 0,
+      "service_telegram_channel:com.rainha777slots.big": "Brasil_MEGA",
+      "recharge_rate": 60,
+      "withdraw_pay_rate": 0,
+      "withdraw_system_rate": 600,
+      "recharge_first_cashback_rate": "20%",
+      "recharge_cashback_rate": "10%",
+      "service_telegram_19:com.rainha777slots.big": "mega3support",
+      "service_telegram_08:com.rainha777slots.big": "mega3support",
+      "service_telegram_06:com.rainha777slots.big": "mega3support",
+      "service_telegram_01:com.rainha777slots.big": "mega3support",
+      "service_telegram_broker01:com.rainha777slots.big": "mega3support",
+      "service_telegram_broker08:com.rainha777slots.big": "mega3support",
+      "service_telegram_broker09:com.rainha777slots.big": "mega3support",
+      "withdraw_begin": 22,
+      "withdraw_end": 1,
+      "ip_user_limit": 6,
+      "invite_hig_reward": 35,
+      "invite_reward_distribute_time": "04:00",
+      "11service_whatsapp_business": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "new_user_balance": 0,
+      "pay_callback": null,
+      "pay_gateway": 1,
+      "shopping": [],
+      "recharge_level": [
+        {
+          "amount_min": "20.00",
+          "amount_max": "29.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30.00",
+          "amount_max": "39.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "40.00",
+          "amount_max": "49.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "79.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "99999999.00",
+          "rate": "0.2000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80.00",
+          "amount_max": "99.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "100.00",
+          "amount_max": "199.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "200.00",
+          "amount_max": "299.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "300.00",
+          "amount_max": "499.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "500.00",
+          "amount_max": "799.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "800.00",
+          "amount_max": "999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "1000.00",
+          "amount_max": "1999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "2000.00",
+          "amount_max": "2999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "3000.00",
+          "amount_max": "4999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "5000.00",
+          "amount_max": "7999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "8000.00",
+          "amount_max": "9999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "10000.00",
+          "amount_max": "19999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "20000.00",
+          "amount_max": "29999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30000.00",
+          "amount_max": "49999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50000.00",
+          "amount_max": "79999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80000.00",
+          "amount_max": "99999999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        }
+      ],
+      "control_config": {
+        "is_review": 0,
+        "login": [
+          1,
+          2
+        ],
+        "withdraw_control": 0,
+        "withdraw_rounds": 0
+      },
+      "withdraw_config": {
+        "amount_day": "100000.00",
+        "handle_count_day": 100000,
+        "count_user_day": 300,
+        "amount_user_day": "500000.00",
+        "always_amount": "1000000.00"
+      },
+      "currentOnline": true
+    },
+    "severity": "critical",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/mains",
+    "token": "public",
+    "code": 200,
+    "data": "{\r\n    \"flag\": 0,\r\n    \"start\": \"2024-06-21 06:25:00\",\r\n    \"end\": \"2024-06-21 06:40:00\"\r\n}",
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/mains",
+    "token": "public",
+    "code": 200,
+    "data": "{\r\n    \"flag\": 0,\r\n    \"start\": \"2024-06-21 06:25:00\",\r\n    \"end\": \"2024-06-21 06:40:00\"\r\n}",
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/mail/getMailCount",
+    "token": "public",
+    "code": 200,
+    "data": null,
+    "severity": "info",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/mail/getMailCount",
+    "token": "public",
+    "code": 200,
+    "data": null,
+    "severity": "info",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/notice/list",
+    "token": "public",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/notice/list",
+    "token": "public",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/balance/querySimpleBalance",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "amount": -438450,
+      "withdrawAmount": 561550,
+      "inviteAmount": 0
+    },
+    "severity": "critical",
+    "extra": ""
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getExtraInfo",
+    "token": "1",
+    "code": 200,
+    "data": {
+      "teleStatus": "1",
+      "rechargeStatus": "0"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/getDama",
+    "token": "1",
+    "code": 200,
+    "data": {},
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "dwarf_token",
+    "path": "/japi/user/vip/getAllDisplayVo",
+    "token": "1",
+    "code": 200,
+    "data": [
+      {
+        "level": 0,
+        "rechargeAmountLimit": 0,
+        "flowLimit": 0,
+        "withdrawAmountLimitDay": 10000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 1,
+        "rechargeAmountLimit": 2000,
+        "flowLimit": 20000,
+        "withdrawAmountLimitDay": 20000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 0
+      },
+      {
+        "level": 2,
+        "rechargeAmountLimit": 4000,
+        "flowLimit": 30000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 1,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 6
+      },
+      {
+        "level": 3,
+        "rechargeAmountLimit": 8000,
+        "flowLimit": 56000,
+        "withdrawAmountLimitDay": 30000,
+        "withdrawTimesLimitDay": 2,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 8
+      },
+      {
+        "level": 4,
+        "rechargeAmountLimit": 16000,
+        "flowLimit": 128000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 50
+      },
+      {
+        "level": 5,
+        "rechargeAmountLimit": 32000,
+        "flowLimit": 288000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 3,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100
+      },
+      {
+        "level": 6,
+        "rechargeAmountLimit": 64000,
+        "flowLimit": 640000,
+        "withdrawAmountLimitDay": 50000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1600
+      },
+      {
+        "level": 7,
+        "rechargeAmountLimit": 128800,
+        "flowLimit": 1408000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 3200
+      },
+      {
+        "level": 8,
+        "rechargeAmountLimit": 258800,
+        "flowLimit": 3072000,
+        "withdrawAmountLimitDay": 100000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 6400
+      },
+      {
+        "level": 9,
+        "rechargeAmountLimit": 518800,
+        "flowLimit": 6656000,
+        "withdrawAmountLimitDay": 200000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 12800
+      },
+      {
+        "level": 10,
+        "rechargeAmountLimit": 1088800,
+        "flowLimit": 14336000,
+        "withdrawAmountLimitDay": 300000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 25800
+      },
+      {
+        "level": 11,
+        "rechargeAmountLimit": 2088800,
+        "flowLimit": 30720000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 4,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 50800
+      },
+      {
+        "level": 12,
+        "rechargeAmountLimit": 4088800,
+        "flowLimit": 65536000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100800
+      },
+      {
+        "level": 13,
+        "rechargeAmountLimit": 8188800,
+        "flowLimit": 139264000,
+        "withdrawAmountLimitDay": 500000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 204800
+      },
+      {
+        "level": 14,
+        "rechargeAmountLimit": 16888800,
+        "flowLimit": 294912000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 8,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 408800
+      },
+      {
+        "level": 15,
+        "rechargeAmountLimit": 32888800,
+        "flowLimit": 622592000,
+        "withdrawAmountLimitDay": 1000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 818800
+      },
+      {
+        "level": 16,
+        "rechargeAmountLimit": 65555500,
+        "flowLimit": 1310720000,
+        "withdrawAmountLimitDay": 5000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 1608800
+      },
+      {
+        "level": 17,
+        "rechargeAmountLimit": 132888800,
+        "flowLimit": 2641440000,
+        "withdrawAmountLimitDay": 10000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 3388800
+      },
+      {
+        "level": 18,
+        "rechargeAmountLimit": 262888800,
+        "flowLimit": 5242880000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 10,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 6288800
+      },
+      {
+        "level": 19,
+        "rechargeAmountLimit": 524888800,
+        "flowLimit": 10485760000,
+        "withdrawAmountLimitDay": 20000000,
+        "withdrawTimesLimitDay": 15,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 12888800
+      },
+      {
+        "level": 20,
+        "rechargeAmountLimit": 1048888800,
+        "flowLimit": 20971520000,
+        "withdrawAmountLimitDay": 50000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 26288800
+      },
+      {
+        "level": 21,
+        "rechargeAmountLimit": 2098888800,
+        "flowLimit": 41943040000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 20,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 52228800
+      },
+      {
+        "level": 22,
+        "rechargeAmountLimit": 4198888800,
+        "flowLimit": 83886080000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 25,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 100000000
+      },
+      {
+        "level": 23,
+        "rechargeAmountLimit": 8388888800,
+        "flowLimit": 167772160000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 208888800
+      },
+      {
+        "level": 24,
+        "rechargeAmountLimit": 16777888800,
+        "flowLimit": 335544320000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 418888800
+      },
+      {
+        "level": 25,
+        "rechargeAmountLimit": 33558888800,
+        "flowLimit": 671088640000,
+        "withdrawAmountLimitDay": 100000000,
+        "withdrawTimesLimitDay": 30,
+        "receiveAmountLimitDay": 0,
+        "display": 1,
+        "upRewardAmout": 838888800
+      }
+    ],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "dwarf_token",
+    "path": "/japi/invite/boxConfig/boxReceiveRecord",
+    "token": "1",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/get",
+    "token": "public",
+    "code": 200,
+    "data": {
+      "recharge_options": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_amount_min": 20,
+      "current": "1.0.1",
+      "forceUpdate": "1.0.0",
+      "url_download": "http://m.aphrodite777.com/",
+      "withdraw_fee": 0.06,
+      "withdraw_min": 50,
+      "withdraw_step": 100,
+      "maintenance": {
+        "flag": 0,
+        "start": "2024-06-28 01:30:00",
+        "end": "2024-06-28 02:10:00"
+      },
+      "practice_balance": 1000,
+      "device_user_limit": 2,
+      "recharge_options_default": 100,
+      "service_email": "support@penko.co.in",
+      "mgm_config": {
+        "switch": "1",
+        "register_reward": "6",
+        "first_charge_reward": "0",
+        "first_recharge_reward": "5",
+        "second_recharge_reward": "10",
+        "three_recharge_reward": "10",
+        "bind_invite_code_bonus_reward": "50",
+        "bind_invite_code_bonus_reward_validity": "72",
+        "recharge_bonus_reward": [
+          "50",
+          "50",
+          "50"
+        ],
+        "recharge_bonus_reward_validity": [
+          "72",
+          "72",
+          "72"
+        ],
+        "recharge_reminder_email_title": "MGM-Reminder from Your Friend",
+        "recharge_reminder_email_content": "Hey！You haven’t recharge yet? Come and get recharge bonus once complete your first deposit.",
+        "invite_excessive_email_title": "MGM-Notice",
+        "invite_excessive_email_content": "Dear Player, We are sorry to inform you that you cannot invite friends to join the Referral Billionaire Event temporarily due to your unusual invitation behavior.",
+        "reward_top_num": "8",
+        "reward_total_num": "8",
+        "recharge_amount_1": "15",
+        "recharge_amount_2": "100",
+        "recharge_amount_3": "200"
+      },
+      "payment_x": true,
+      "game_lobby": {
+        "hot": [
+          9,
+          10
+        ],
+        "new": [
+          14,
+          15
+        ]
+      },
+      "join_get_bonus": 10000,
+      "user_bind_phone_reward": {
+        "type": 1,
+        "amount": "0",
+        "bonus_finish": 72
+      },
+      "activity_text_config": {
+        "daily_gift": [
+          "130",
+          "130",
+          "200"
+        ],
+        "first_recharge": [
+          "100",
+          "100"
+        ],
+        "week_recharge": [
+          "40",
+          "20,000"
+        ],
+        "coupon": [
+          "50",
+          "50",
+          "1500"
+        ],
+        "mgm": [
+          "100"
+        ]
+      },
+      "game_version": {
+        "forest": "86ca2",
+        "wingo": "583e2",
+        "slotAZTEC": "2ea20",
+        "slotEgypt": "967b1",
+        "slotSJB": "ca795",
+        "slotFruit": "25148",
+        "truco": "711c2",
+        "crash": "05265",
+        "slotZeus": "a48c0"
+      },
+      "recharge_options_new": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "service_telegram_07:com.slots.big": "mega2support",
+      "service_whatsapp:com.slots.big": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "recharge_options_pay_1": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_options_pay_2": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "ab": 0,
+      "pix_config": {
+        "account_limit_size": 100,
+        "cpf_limit_size": 1
+      },
+      "hall_version": {
+        "sign": "1234"
+      },
+      "ab_condition": {
+        "openFlag": true,
+        "playOpenFlag": true,
+        "playTimes": 20,
+        "ipWhites": "15.229.81.27",
+        "ipFlag": true,
+        "timeZoneFlag": true,
+        "languageFlag": true
+      },
+      "device_bonus_times_limit": 1,
+      "recharge_amount_max": 999999,
+      "h5Url": "http://m.aphrodite777.com/",
+      "user_register_reward": 0,
+      "service_telegram_channel:com.slots.big": "Brasil_MEGA",
+      "recharge_rate": 60,
+      "withdraw_pay_rate": 0,
+      "withdraw_system_rate": 600,
+      "recharge_first_cashback_rate": "20%",
+      "recharge_cashback_rate": "10%",
+      "service_telegram_01:com.slots.big": "mega2support",
+      "service_telegram_broker01:com.slots.big": "mega2support",
+      "service_telegram_broker09:com.slots.big": "mega2support",
+      "service_telegram_broker08:com.slots.big": "mega2support",
+      "withdraw_begin": "21:30",
+      "withdraw_end": "00:30",
+      "ip_user_limit": 6,
+      "invite_hig_reward": 35,
+      "invite_reward_distribute_time": "04:00",
+      "1service_whatsapp_business": "+447492797520,+971583054874",
+      "new_user_balance": 0,
+      "pay_callback": null,
+      "pay_gateway": 1,
+      "shopping": [],
+      "recharge_level": [
+        {
+          "amount_min": "20.00",
+          "amount_max": "29.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30.00",
+          "amount_max": "39.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "40.00",
+          "amount_max": "49.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "79.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "99999999.00",
+          "rate": "0.2000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80.00",
+          "amount_max": "99.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "100.00",
+          "amount_max": "199.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "200.00",
+          "amount_max": "299.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "300.00",
+          "amount_max": "499.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "500.00",
+          "amount_max": "799.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "800.00",
+          "amount_max": "999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "1000.00",
+          "amount_max": "1999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "2000.00",
+          "amount_max": "2999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "3000.00",
+          "amount_max": "4999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "5000.00",
+          "amount_max": "7999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "8000.00",
+          "amount_max": "9999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "10000.00",
+          "amount_max": "19999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "20000.00",
+          "amount_max": "29999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30000.00",
+          "amount_max": "49999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50000.00",
+          "amount_max": "79999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80000.00",
+          "amount_max": "99999999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        }
+      ],
+      "control_config": {
+        "is_review": 0,
+        "login": [
+          1,
+          2
+        ],
+        "withdraw_control": 0,
+        "withdraw_rounds": 0
+      },
+      "withdraw_config": {
+        "amount_day": "100.00",
+        "handle_count_day": 10000,
+        "count_user_day": 3,
+        "amount_user_day": "5000.00",
+        "always_amount": "10000.00"
+      },
+      "currentOnline": true
+    },
+    "severity": "critical",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/get",
+    "token": "public",
+    "code": 200,
+    "data": {
+      "recharge_options": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_amount_min": 20,
+      "current": "1.0.1",
+      "forceUpdate": "1.0.0",
+      "url_download": "http://m.aphrodite777.com/",
+      "withdraw_fee": 0.06,
+      "withdraw_min": 50,
+      "withdraw_step": 100,
+      "maintenance": {
+        "flag": 0,
+        "start": "2024-06-28 01:30:00",
+        "end": "2024-06-28 02:10:00"
+      },
+      "practice_balance": 1000,
+      "device_user_limit": 2,
+      "recharge_options_default": 100,
+      "service_email": "support@penko.co.in",
+      "mgm_config": {
+        "switch": "1",
+        "register_reward": "6",
+        "first_charge_reward": "0",
+        "first_recharge_reward": "5",
+        "second_recharge_reward": "10",
+        "three_recharge_reward": "10",
+        "bind_invite_code_bonus_reward": "50",
+        "bind_invite_code_bonus_reward_validity": "72",
+        "recharge_bonus_reward": [
+          "50",
+          "50",
+          "50"
+        ],
+        "recharge_bonus_reward_validity": [
+          "72",
+          "72",
+          "72"
+        ],
+        "recharge_reminder_email_title": "MGM-Reminder from Your Friend",
+        "recharge_reminder_email_content": "Hey！You haven’t recharge yet? Come and get recharge bonus once complete your first deposit.",
+        "invite_excessive_email_title": "MGM-Notice",
+        "invite_excessive_email_content": "Dear Player, We are sorry to inform you that you cannot invite friends to join the Referral Billionaire Event temporarily due to your unusual invitation behavior.",
+        "reward_top_num": "8",
+        "reward_total_num": "8",
+        "recharge_amount_1": "15",
+        "recharge_amount_2": "100",
+        "recharge_amount_3": "200"
+      },
+      "payment_x": true,
+      "game_lobby": {
+        "hot": [
+          9,
+          10
+        ],
+        "new": [
+          14,
+          15
+        ]
+      },
+      "join_get_bonus": 10000,
+      "user_bind_phone_reward": {
+        "type": 1,
+        "amount": "0",
+        "bonus_finish": 72
+      },
+      "activity_text_config": {
+        "daily_gift": [
+          "130",
+          "130",
+          "200"
+        ],
+        "first_recharge": [
+          "100",
+          "100"
+        ],
+        "week_recharge": [
+          "40",
+          "20,000"
+        ],
+        "coupon": [
+          "50",
+          "50",
+          "1500"
+        ],
+        "mgm": [
+          "100"
+        ]
+      },
+      "game_version": {
+        "forest": "86ca2",
+        "wingo": "583e2",
+        "slotAZTEC": "2ea20",
+        "slotEgypt": "967b1",
+        "slotSJB": "ca795",
+        "slotFruit": "25148",
+        "truco": "711c2",
+        "crash": "05265",
+        "slotZeus": "a48c0"
+      },
+      "recharge_options_new": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "service_telegram_07:com.slots.big": "mega2support",
+      "service_whatsapp:com.slots.big": "https://whatsapp.com/channel/0029VbBbCRf3AzNY3Kevpv1W",
+      "recharge_options_pay_1": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "recharge_options_pay_2": [
+        20,
+        30,
+        40,
+        50,
+        80,
+        100,
+        200,
+        300,
+        500,
+        800,
+        1000,
+        2000,
+        3000,
+        5000,
+        8000,
+        10000,
+        20000,
+        30000,
+        50000,
+        80000
+      ],
+      "ab": 0,
+      "pix_config": {
+        "account_limit_size": 100,
+        "cpf_limit_size": 1
+      },
+      "hall_version": {
+        "sign": "1234"
+      },
+      "ab_condition": {
+        "openFlag": true,
+        "playOpenFlag": true,
+        "playTimes": 20,
+        "ipWhites": "15.229.81.27",
+        "ipFlag": true,
+        "timeZoneFlag": true,
+        "languageFlag": true
+      },
+      "device_bonus_times_limit": 1,
+      "recharge_amount_max": 999999,
+      "h5Url": "http://m.aphrodite777.com/",
+      "user_register_reward": 0,
+      "service_telegram_channel:com.slots.big": "Brasil_MEGA",
+      "recharge_rate": 60,
+      "withdraw_pay_rate": 0,
+      "withdraw_system_rate": 600,
+      "recharge_first_cashback_rate": "20%",
+      "recharge_cashback_rate": "10%",
+      "service_telegram_01:com.slots.big": "mega2support",
+      "service_telegram_broker01:com.slots.big": "mega2support",
+      "service_telegram_broker09:com.slots.big": "mega2support",
+      "service_telegram_broker08:com.slots.big": "mega2support",
+      "withdraw_begin": "21:30",
+      "withdraw_end": "00:30",
+      "ip_user_limit": 6,
+      "invite_hig_reward": 35,
+      "invite_reward_distribute_time": "04:00",
+      "1service_whatsapp_business": "+447492797520,+971583054874",
+      "new_user_balance": 0,
+      "pay_callback": null,
+      "pay_gateway": 1,
+      "shopping": [],
+      "recharge_level": [
+        {
+          "amount_min": "20.00",
+          "amount_max": "29.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30.00",
+          "amount_max": "39.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "40.00",
+          "amount_max": "49.00",
+          "rate": "0.0000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "79.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50.00",
+          "amount_max": "99999999.00",
+          "rate": "0.2000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80.00",
+          "amount_max": "99.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "100.00",
+          "amount_max": "199.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "200.00",
+          "amount_max": "299.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "300.00",
+          "amount_max": "499.00",
+          "rate": "0.0700",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "500.00",
+          "amount_max": "799.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "800.00",
+          "amount_max": "999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "1000.00",
+          "amount_max": "1999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "2000.00",
+          "amount_max": "2999.00",
+          "rate": "0.0800",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "3000.00",
+          "amount_max": "4999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "5000.00",
+          "amount_max": "7999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "8000.00",
+          "amount_max": "9999.00",
+          "rate": "0.0900",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "10000.00",
+          "amount_max": "19999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "20000.00",
+          "amount_max": "29999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "30000.00",
+          "amount_max": "49999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "50000.00",
+          "amount_max": "79999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        },
+        {
+          "amount_min": "80000.00",
+          "amount_max": "99999999.00",
+          "rate": "0.1000",
+          "bonus_rate": "0.0000",
+          "bonus_finish": 72
+        }
+      ],
+      "control_config": {
+        "is_review": 0,
+        "login": [
+          1,
+          2
+        ],
+        "withdraw_control": 0,
+        "withdraw_rounds": 0
+      },
+      "withdraw_config": {
+        "amount_day": "100.00",
+        "handle_count_day": 10000,
+        "count_user_day": 3,
+        "amount_user_day": "5000.00",
+        "always_amount": "10000.00"
+      },
+      "currentOnline": true
+    },
+    "severity": "critical",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/mains",
+    "token": "public",
+    "code": 200,
+    "data": "{\r\n    \"flag\": 0,\r\n    \"start\": \"2024-06-28 01:30:00\",\r\n    \"end\": \"2024-06-28 02:10:00\"\r\n}",
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/set/mains",
+    "token": "public",
+    "code": 200,
+    "data": "{\r\n    \"flag\": 0,\r\n    \"start\": \"2024-06-28 01:30:00\",\r\n    \"end\": \"2024-06-28 02:10:00\"\r\n}",
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/mail/getMailCount",
+    "token": "public",
+    "code": 200,
+    "data": null,
+    "severity": "info",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/mail/getMailCount",
+    "token": "public",
+    "code": 200,
+    "data": null,
+    "severity": "info",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/notice/list",
+    "token": "public",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "public_endpoint",
+    "path": "/prod-api/notice/list",
+    "token": "public",
+    "code": 200,
+    "data": [],
+    "severity": "high",
+    "extra": "Endpoint público (sem auth)"
+  },
+  {
+    "tenant": "amizade777",
+    "cat": "config_dump",
+    "path": "/prod-api/set/get",
+    "token": "no_auth",
+    "code": 200,
+    "data": {
+      "summary": {
+        "withdraw_min": 10,
+        "ip_user_limit": 6,
+        "device_user_limit": 2,
+        "recharge_amount_max": 999999,
+        "withdraw_pay_rate": 0
+      },
+      "ipWhites": "15.229.81.27"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "rainha777",
+    "cat": "config_dump",
+    "path": "/prod-api/set/get",
+    "token": "no_auth",
+    "code": 200,
+    "data": {
+      "summary": {
+        "withdraw_min": 50,
+        "ip_user_limit": 6,
+        "device_user_limit": 30,
+        "recharge_amount_max": 999999,
+        "withdraw_pay_rate": 0
+      },
+      "ipWhites": "15.229.81.27"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "aphrodite777",
+    "cat": "config_dump",
+    "path": "/prod-api/set/get",
+    "token": "no_auth",
+    "code": 200,
+    "data": {
+      "summary": {
+        "withdraw_min": 50,
+        "ip_user_limit": 6,
+        "device_user_limit": 2,
+        "recharge_amount_max": 999999,
+        "withdraw_pay_rate": 0
+      },
+      "ipWhites": "15.229.81.27"
+    },
+    "severity": "high",
+    "extra": ""
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=207587",
+    "code": 200,
+    "data": {
+      "id": 172929,
+      "userId": 207587,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": "2026-06-09T14:38:57.000-03:00",
+      "appPackageName": "com.slots.big",
+      "jiama": 0,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=aphrodite777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=207587",
+    "code": 200,
+    "data": {
+      "id": 291352,
+      "userId": 207587,
+      "day": 20260609,
+      "reward": 300,
+      "createTime": null,
+      "appPackageName": "com.rainha777slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 3,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=rainha777slots IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=137027",
+    "code": 200,
+    "data": {
+      "id": 173037,
+      "userId": 137027,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": null,
+      "appPackageName": "com.slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=aphrodite777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=137027",
+    "code": 200,
+    "data": {
+      "id": 103772,
+      "userId": 137027,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": null,
+      "appPackageName": "com.slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=amizade777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=137027",
+    "code": 200,
+    "data": {
+      "id": 291353,
+      "userId": 137027,
+      "day": 20260609,
+      "reward": 200,
+      "createTime": null,
+      "appPackageName": "com.rainha777slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 2,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=rainha777slots IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=137028",
+    "code": 200,
+    "data": {
+      "id": 173038,
+      "userId": 137028,
+      "day": 20260609,
+      "reward": 200,
+      "createTime": null,
+      "appPackageName": "com.slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 1,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=aphrodite777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=137028",
+    "code": 200,
+    "data": {
+      "id": 103773,
+      "userId": 137028,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": null,
+      "appPackageName": "com.slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=amizade777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=137028",
+    "code": 200,
+    "data": {
+      "id": 291354,
+      "userId": 137028,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": null,
+      "appPackageName": "com.rainha777slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 1
+    },
+    "severity": "high",
+    "extra": "Xutc=rainha777slots IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=1",
+    "code": 200,
+    "data": {
+      "id": 173039,
+      "userId": 1,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": null,
+      "appPackageName": "com.slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 2
+    },
+    "severity": "high",
+    "extra": "Xutc=aphrodite777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=1",
+    "code": 200,
+    "data": {
+      "id": 103774,
+      "userId": 1,
+      "day": 20260609,
+      "reward": 100,
+      "createTime": null,
+      "appPackageName": "com.slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 0,
+      "times": 2
+    },
+    "severity": "high",
+    "extra": "Xutc=amizade777 IDOR=False"
+  },
+  {
+    "tenant": "ccgamevip",
+    "cat": "nbcx_swap",
+    "path": "/yearRechargeReward",
+    "token": "Nbcx=1",
+    "code": 200,
+    "data": {
+      "id": 291355,
+      "userId": 1,
+      "day": 20260609,
+      "reward": 300,
+      "createTime": null,
+      "appPackageName": "com.rainha777slots.big",
+      "jiama": null,
+      "status": 0,
+      "yearNum": 4,
+      "vipLevel": 3,
+      "times": 2
+    },
+    "severity": "high",
+    "extra": "Xutc=rainha777slots IDOR=False"
+  }
+]
