@@ -32,15 +32,20 @@ Nbcx: 207587               ← userId (header redundante com o token)
 Xutc: aphrodite777         ← qual tenant emitiu o token
 ```
 
-Possíveis abusos (a confirmar com testes P2 e P3 em `B4_idor.md`):
+> **Importante:** essa request é **disparada pelo próprio site**
+> automaticamente após o registro/login. NÃO foi um teste manual.
+> Significa que `ccgamevip.com` é um microserviço compartilhado da
+> plataforma — comportamento legítimo, não é vuln por si só.
 
-1. **Forjar `Nbcx`** — se o backend confia no header em vez de extrair
-   userId do token, dá pra ler dados de qualquer user.
-2. **Forjar `Xutc`** — usar token de `aphrodite777` em endpoints de
-   `amizade777` permite cross-tenant. Atacante registra em um tenant
-   barato/fraco e ataca os outros.
-3. **Bypass de hash do token** — se o hash não inclui o tenant,
-   tokens de aphrodite777 são reutilizáveis em todos os tenants.
+Possíveis abusos (a confirmar com testes em `extras/cross_tenant_token.md`):
+
+1. **Forjar `Nbcx`** — se o microserviço confia no header em vez de
+   extrair userId do token, dá pra ler dados de qualquer user.
+2. **Forjar `Xutc`** — se o microserviço usa o header para escolher
+   qual tenant ler dados, atacante de `aphrodite777` consegue ler de
+   `amizade777`.
+3. **Bypass de hash do token** — token com userId trocado mas hash
+   original ainda aceito.
 
 ## Coleta recomendada
 

