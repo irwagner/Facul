@@ -1,0 +1,270 @@
+[
+  {
+    "ts": "2026-06-09T20:37:44.408653+00:00",
+    "tenant": "amizade777",
+    "category": "dwarf_map_deep",
+    "test": "/japi/user/balance/querySimpleBalance",
+    "request": {
+      "path": "/japi/user/balance/querySimpleBalance",
+      "uid_sonda": 1,
+      "uid_invalido": 999999999
+    },
+    "response": {
+      "code_sonda": 200,
+      "code_invalid": 401,
+      "data_keys": [
+        "amount",
+        "withdrawAmount",
+        "inviteAmount"
+      ],
+      "leaked_sensitive_fields": [],
+      "data_sample": "{\"amount\": 2447500, \"withdrawAmount\": 447500, \"inviteAmount\": 0}"
+    },
+    "interpretation": "Bypass de auth confirmado, sem PII visível neste endpoint.",
+    "severity": "high"
+  },
+  {
+    "ts": "2026-06-09T20:39:23.594573+00:00",
+    "tenant": "amizade777",
+    "category": "dwarf_idor",
+    "test": "/japi/user/balance/querySimpleBalance?userId={uid}",
+    "request": {
+      "path_template": "/japi/user/balance/querySimpleBalance?userId={uid}"
+    },
+    "response": {
+      "unique_responses": 1,
+      "data_sample": "{\"amount\": 2447500, \"inviteAmount\": 0, \"withdrawAmount\": 447500}"
+    },
+    "interpretation": "Query userId ignorado (backend usa só o token).",
+    "severity": "info"
+  },
+  {
+    "ts": "2026-06-09T20:40:03.790003+00:00",
+    "tenant": "amizade777",
+    "category": "replicate",
+    "test": "F01 token anão",
+    "request": {
+      "path": "/japi/user/balance/querySimpleBalance"
+    },
+    "response": {
+      "code_dwarf": 200,
+      "code_invalid": 401,
+      "data": {
+        "amount": 2447500,
+        "withdrawAmount": 447500,
+        "inviteAmount": 0
+      }
+    },
+    "interpretation": "F01 confirmado em amizade777 — bypass + vaza saldo.",
+    "severity": "critical"
+  },
+  {
+    "ts": "2026-06-09T20:40:03.825455+00:00",
+    "tenant": "amizade777",
+    "category": "replicate",
+    "test": "F03 security headers",
+    "request": {
+      "path": "/"
+    },
+    "response": {
+      "missing": [
+        "Strict-Transport-Security",
+        "Content-Security-Policy",
+        "X-Content-Type-Options",
+        "X-Frame-Options",
+        "Referrer-Policy",
+        "Permissions-Policy"
+      ],
+      "present": [
+        "Content-Type",
+        "Content-Length",
+        "Connection",
+        "Server",
+        "Date",
+        "Last-Modified",
+        "Accept-Ranges",
+        "Vary",
+        "ETag",
+        "X-Cache",
+        "Via",
+        "X-Amz-Cf-Pop",
+        "X-Amz-Cf-Id"
+      ]
+    },
+    "interpretation": "Faltam 6 headers.",
+    "severity": "medium"
+  },
+  {
+    "ts": "2026-06-09T20:40:05.377067+00:00",
+    "tenant": "amizade777",
+    "category": "replicate",
+    "test": "F03 CORS preflight",
+    "request": {
+      "origin": "https://attacker.com"
+    },
+    "response": {
+      "ACO": "*",
+      "ACC": ""
+    },
+    "interpretation": "ACO='*'",
+    "severity": "medium"
+  },
+  {
+    "ts": "2026-06-09T20:40:06.932997+00:00",
+    "tenant": "amizade777",
+    "category": "replicate",
+    "test": "I03 config dump (sem auth)",
+    "request": {
+      "path": "/prod-api/set/get"
+    },
+    "response": {
+      "http": 200,
+      "code": 200,
+      "leaked_keys": [
+        "ipWhites",
+        "device_user_limit",
+        "ip_user_limit",
+        "withdraw_min",
+        "recharge_amount_max",
+        "ab_condition"
+      ],
+      "ipWhites": "15.229.81.27"
+    },
+    "interpretation": "Config dump funciona SEM autenticação em amizade777.",
+    "severity": "medium"
+  },
+  {
+    "ts": "2026-06-09T20:40:14.554096+00:00",
+    "tenant": "rainha777slots",
+    "category": "dwarf_map_deep",
+    "test": "/japi/user/balance/querySimpleBalance",
+    "request": {
+      "path": "/japi/user/balance/querySimpleBalance",
+      "uid_sonda": 1,
+      "uid_invalido": 999999999
+    },
+    "response": {
+      "code_sonda": 200,
+      "code_invalid": 401,
+      "data_keys": [
+        "amount",
+        "withdrawAmount",
+        "inviteAmount"
+      ],
+      "leaked_sensitive_fields": [],
+      "data_sample": "{\"amount\": -19997926, \"withdrawAmount\": 74, \"inviteAmount\": 0}"
+    },
+    "interpretation": "Bypass de auth confirmado, sem PII visível neste endpoint.",
+    "severity": "high"
+  },
+  {
+    "ts": "2026-06-09T20:41:53.991734+00:00",
+    "tenant": "rainha777slots",
+    "category": "dwarf_idor",
+    "test": "/japi/user/balance/querySimpleBalance?userId={uid}",
+    "request": {
+      "path_template": "/japi/user/balance/querySimpleBalance?userId={uid}"
+    },
+    "response": {
+      "unique_responses": 1,
+      "data_sample": "{\"amount\": -19997926, \"inviteAmount\": 0, \"withdrawAmount\": 74}"
+    },
+    "interpretation": "Query userId ignorado (backend usa só o token).",
+    "severity": "info"
+  },
+  {
+    "ts": "2026-06-09T20:42:34.209767+00:00",
+    "tenant": "rainha777slots",
+    "category": "replicate",
+    "test": "F01 token anão",
+    "request": {
+      "path": "/japi/user/balance/querySimpleBalance"
+    },
+    "response": {
+      "code_dwarf": 200,
+      "code_invalid": 401,
+      "data": {
+        "amount": -19997926,
+        "withdrawAmount": 74,
+        "inviteAmount": 0
+      }
+    },
+    "interpretation": "F01 confirmado em rainha777slots — bypass + vaza saldo.",
+    "severity": "critical"
+  },
+  {
+    "ts": "2026-06-09T20:42:34.267648+00:00",
+    "tenant": "rainha777slots",
+    "category": "replicate",
+    "test": "F03 security headers",
+    "request": {
+      "path": "/"
+    },
+    "response": {
+      "missing": [
+        "Strict-Transport-Security",
+        "Content-Security-Policy",
+        "X-Content-Type-Options",
+        "X-Frame-Options",
+        "Referrer-Policy",
+        "Permissions-Policy"
+      ],
+      "present": [
+        "Content-Type",
+        "Content-Length",
+        "Connection",
+        "Server",
+        "Date",
+        "Last-Modified",
+        "Accept-Ranges",
+        "Vary",
+        "ETag",
+        "X-Cache",
+        "Via",
+        "X-Amz-Cf-Pop",
+        "X-Amz-Cf-Id"
+      ]
+    },
+    "interpretation": "Faltam 6 headers.",
+    "severity": "medium"
+  },
+  {
+    "ts": "2026-06-09T20:42:35.803693+00:00",
+    "tenant": "rainha777slots",
+    "category": "replicate",
+    "test": "F03 CORS preflight",
+    "request": {
+      "origin": "https://attacker.com"
+    },
+    "response": {
+      "ACO": "*",
+      "ACC": ""
+    },
+    "interpretation": "ACO='*'",
+    "severity": "medium"
+  },
+  {
+    "ts": "2026-06-09T20:42:37.356119+00:00",
+    "tenant": "rainha777slots",
+    "category": "replicate",
+    "test": "I03 config dump (sem auth)",
+    "request": {
+      "path": "/prod-api/set/get"
+    },
+    "response": {
+      "http": 200,
+      "code": 200,
+      "leaked_keys": [
+        "ipWhites",
+        "device_user_limit",
+        "ip_user_limit",
+        "withdraw_min",
+        "recharge_amount_max",
+        "ab_condition"
+      ],
+      "ipWhites": "15.229.81.27"
+    },
+    "interpretation": "Config dump funciona SEM autenticação em rainha777slots.",
+    "severity": "medium"
+  }
+]
