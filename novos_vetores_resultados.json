@@ -1,0 +1,372 @@
+[
+  {
+    "ts": "2026-06-09T22:22:38.852256+00:00",
+    "cat": "aphrodite_dwarf",
+    "test": "GET /japi/user/balance/querySimpleBalance",
+    "rq": {
+      "host": "aphrodite777",
+      "method": "GET",
+      "path": "/japi/user/balance/querySimpleBalance"
+    },
+    "rs": {
+      "code": 200,
+      "data": {
+        "amount": -438450,
+        "withdrawAmount": 561550,
+        "inviteAmount": 0
+      },
+      "data_keys": [
+        "amount",
+        "withdrawAmount",
+        "inviteAmount"
+      ],
+      "leaked_pii": [],
+      "sample": "{\"amount\": -438450, \"withdrawAmount\": 561550, \"inviteAmount\": 0}"
+    },
+    "interp": "Vulnerável. Dados: ['amount', 'withdrawAmount', 'inviteAmount']",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-09T22:22:40.603210+00:00",
+    "cat": "aphrodite_dwarf",
+    "test": "GET /japi/user/getExtraInfo",
+    "rq": {
+      "host": "aphrodite777",
+      "method": "GET",
+      "path": "/japi/user/getExtraInfo"
+    },
+    "rs": {
+      "code": 200,
+      "data": {
+        "teleStatus": "1",
+        "rechargeStatus": "0"
+      },
+      "data_keys": [
+        "teleStatus",
+        "rechargeStatus"
+      ],
+      "leaked_pii": [],
+      "sample": "{\"teleStatus\": \"1\", \"rechargeStatus\": \"0\"}"
+    },
+    "interp": "Vulnerável. Dados: ['teleStatus', 'rechargeStatus']",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-09T22:22:41.184030+00:00",
+    "cat": "aphrodite_dwarf",
+    "test": "GET /japi/user/getDama",
+    "rq": {
+      "host": "aphrodite777",
+      "method": "GET",
+      "path": "/japi/user/getDama"
+    },
+    "rs": {
+      "code": 200,
+      "data": {},
+      "data_keys": [],
+      "leaked_pii": [],
+      "sample": null
+    },
+    "interp": "Vulnerável. Dados: []",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-09T22:22:41.789476+00:00",
+    "cat": "aphrodite_dwarf",
+    "test": "GET /japi/user/vip/getAllDisplayVo",
+    "rq": {
+      "host": "aphrodite777",
+      "method": "GET",
+      "path": "/japi/user/vip/getAllDisplayVo"
+    },
+    "rs": {
+      "code": 200,
+      "data": [
+        {
+          "level": 0,
+          "rechargeAmountLimit": 0,
+          "flowLimit": 0,
+          "withdrawAmountLimitDay": 10000,
+          "withdrawTimesLimitDay": 1,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 0
+        },
+        {
+          "level": 1,
+          "rechargeAmountLimit": 2000,
+          "flowLimit": 20000,
+          "withdrawAmountLimitDay": 20000,
+          "withdrawTimesLimitDay": 1,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 0
+        },
+        {
+          "level": 2,
+          "rechargeAmountLimit": 4000,
+          "flowLimit": 30000,
+          "withdrawAmountLimitDay": 30000,
+          "withdrawTimesLimitDay": 1,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 6
+        },
+        {
+          "level": 3,
+          "rechargeAmountLimit": 8000,
+          "flowLimit": 56000,
+          "withdrawAmountLimitDay": 30000,
+          "withdrawTimesLimitDay": 2,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 8
+        },
+        {
+          "level": 4,
+          "rechargeAmountLimit": 16000,
+          "flowLimit": 128000,
+          "withdrawAmountLimitDay": 50000,
+          "withdrawTimesLimitDay": 3,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 50
+        },
+        {
+          "level": 5,
+          "rechargeAmountLimit": 32000,
+          "flowLimit": 288000,
+          "withdrawAmountLimitDay": 50000,
+          "withdrawTimesLimitDay": 3,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 100
+        },
+        {
+          "level": 6,
+          "rechargeAmountLimit": 64000,
+          "flowLimit": 640000,
+          "withdrawAmountLimitDay": 50000,
+          "withdrawTimesLimitDay": 4,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 1600
+        },
+        {
+          "level": 7,
+          "rechargeAmountLimit": 128800,
+          "flowLimit": 1408000,
+          "withdrawAmountLimitDay": 100000,
+          "withdrawTimesLimitDay": 4,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 3200
+        },
+        {
+          "level": 8,
+          "rechargeAmountLimit": 258800,
+          "flowLimit": 3072000,
+          "withdrawAmountLimitDay": 100000,
+          "withdrawTimesLimitDay": 4,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 6400
+        },
+        {
+          "level": 9,
+          "rechargeAmountLimit": 518800,
+          "flowLimit": 6656000,
+          "withdrawAmountLimitDay": 200000,
+          "withdrawTimesLimitDay": 4,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 12800
+        },
+        {
+          "level": 10,
+          "rechargeAmountLimit": 1088800,
+          "flowLimit": 14336000,
+          "withdrawAmountLimitDay": 300000,
+          "withdrawTimesLimitDay": 4,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 25800
+        },
+        {
+          "level": 11,
+          "rechargeAmountLimit": 2088800,
+          "flowLimit": 30720000,
+          "withdrawAmountLimitDay": 500000,
+          "withdrawTimesLimitDay": 4,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 50800
+        },
+        {
+          "level": 12,
+          "rechargeAmountLimit": 4088800,
+          "flowLimit": 65536000,
+          "withdrawAmountLimitDay": 500000,
+          "withdrawTimesLimitDay": 8,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 100800
+        },
+        {
+          "level": 13,
+          "rechargeAmountLimit": 8188800,
+          "flowLimit": 139264000,
+          "withdrawAmountLimitDay": 500000,
+          "withdrawTimesLimitDay": 8,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 204800
+        },
+        {
+          "level": 14,
+          "rechargeAmountLimit": 16888800,
+          "flowLimit": 294912000,
+          "withdrawAmountLimitDay": 1000000,
+          "withdrawTimesLimitDay": 8,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 408800
+        },
+        {
+          "level": 15,
+          "rechargeAmountLimit": 32888800,
+          "flowLimit": 622592000,
+          "withdrawAmountLimitDay": 1000000,
+          "withdrawTimesLimitDay": 10,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 818800
+        },
+        {
+          "level": 16,
+          "rechargeAmountLimit": 65555500,
+          "flowLimit": 1310720000,
+          "withdrawAmountLimitDay": 5000000,
+          "withdrawTimesLimitDay": 10,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 1608800
+        },
+        {
+          "level": 17,
+          "rechargeAmountLimit": 132888800,
+          "flowLimit": 2641440000,
+          "withdrawAmountLimitDay": 10000000,
+          "withdrawTimesLimitDay": 10,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 3388800
+        },
+        {
+          "level": 18,
+          "rechargeAmountLimit": 262888800,
+          "flowLimit": 5242880000,
+          "withdrawAmountLimitDay": 20000000,
+          "withdrawTimesLimitDay": 10,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 6288800
+        },
+        {
+          "level": 19,
+          "rechargeAmountLimit": 524888800,
+          "flowLimit": 10485760000,
+          "withdrawAmountLimitDay": 20000000,
+          "withdrawTimesLimitDay": 15,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 12888800
+        },
+        {
+          "level": 20,
+          "rechargeAmountLimit": 1048888800,
+          "flowLimit": 20971520000,
+          "withdrawAmountLimitDay": 50000000,
+          "withdrawTimesLimitDay": 20,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 26288800
+        },
+        {
+          "level": 21,
+          "rechargeAmountLimit": 2098888800,
+          "flowLimit": 41943040000,
+          "withdrawAmountLimitDay": 100000000,
+          "withdrawTimesLimitDay": 20,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 52228800
+        },
+        {
+          "level": 22,
+          "rechargeAmountLimit": 4198888800,
+          "flowLimit": 83886080000,
+          "withdrawAmountLimitDay": 100000000,
+          "withdrawTimesLimitDay": 25,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 100000000
+        },
+        {
+          "level": 23,
+          "rechargeAmountLimit": 8388888800,
+          "flowLimit": 167772160000,
+          "withdrawAmountLimitDay": 100000000,
+          "withdrawTimesLimitDay": 30,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 208888800
+        },
+        {
+          "level": 24,
+          "rechargeAmountLimit": 16777888800,
+          "flowLimit": 335544320000,
+          "withdrawAmountLimitDay": 100000000,
+          "withdrawTimesLimitDay": 30,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 418888800
+        },
+        {
+          "level": 25,
+          "rechargeAmountLimit": 33558888800,
+          "flowLimit": 671088640000,
+          "withdrawAmountLimitDay": 100000000,
+          "withdrawTimesLimitDay": 30,
+          "receiveAmountLimitDay": 0,
+          "display": 1,
+          "upRewardAmout": 838888800
+        }
+      ],
+      "data_keys": null,
+      "leaked_pii": [],
+      "sample": "[{\"level\": 0, \"rechargeAmountLimit\": 0, \"flowLimit\": 0, \"withdrawAmountLimitDay\": 10000, \"withdrawTimesLimitDay\": 1, \"receiveAmountLimitDay\": 0, \"display\": 1, \"upRewardAmout\": 0}, {\"level\": 1, \"rechargeAmountLimit\": 2000, \"flowLimit\": 20000, \"withdrawAmountLimitDay\": 20000, \"withdrawTimesLimitDay\": 1, \"receiveAmountLimitDay\": 0, \"display\": 1, \"upRewardAmout\": 0}, {\"level\": 2, \"rechargeAmountLimit\""
+    },
+    "interp": "Vulnerável. Dados: [{'level': 0, 'rechargeAmountLimit': 0, 'flowLimit': 0, 'withdrawAmountLimitDay': 10000, 'withdrawTimesLimitDay': 1, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 0}, {'level': 1, 'rechargeAmountLimit': 2000, 'flowLimit': 20000, 'withdrawAmountLimitDay': 20000, 'withdrawTimesLimitDay': 1, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 0}, {'level': 2, 'rechargeAmountLimit': 4000, 'flowLimit': 30000, 'withdrawAmountLimitDay': 30000, 'withdrawTimesLimitDay': 1, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 6}, {'level': 3, 'rechargeAmountLimit': 8000, 'flowLimit': 56000, 'withdrawAmountLimitDay': 30000, 'withdrawTimesLimitDay': 2, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 8}, {'level': 4, 'rechargeAmountLimit': 16000, 'flowLimit': 128000, 'withdrawAmountLimitDay': 50000, 'withdrawTimesLimitDay': 3, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 50}, {'level': 5, 'rechargeAmountLimit': 32000, 'flowLimit': 288000, 'withdrawAmountLimitDay': 50000, 'withdrawTimesLimitDay': 3, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 100}, {'level': 6, 'rechargeAmountLimit': 64000, 'flowLimit': 640000, 'withdrawAmountLimitDay': 50000, 'withdrawTimesLimitDay': 4, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 1600}, {'level': 7, 'rechargeAmountLimit': 128800, 'flowLimit': 1408000, 'withdrawAmountLimitDay': 100000, 'withdrawTimesLimitDay': 4, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 3200}, {'level': 8, 'rechargeAmountLimit': 258800, 'flowLimit': 3072000, 'withdrawAmountLimitDay': 100000, 'withdrawTimesLimitDay': 4, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 6400}, {'level': 9, 'rechargeAmountLimit': 518800, 'flowLimit': 6656000, 'withdrawAmountLimitDay': 200000, 'withdrawTimesLimitDay': 4, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 12800}, {'level': 10, 'rechargeAmountLimit': 1088800, 'flowLimit': 14336000, 'withdrawAmountLimitDay': 300000, 'withdrawTimesLimitDay': 4, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 25800}, {'level': 11, 'rechargeAmountLimit': 2088800, 'flowLimit': 30720000, 'withdrawAmountLimitDay': 500000, 'withdrawTimesLimitDay': 4, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 50800}, {'level': 12, 'rechargeAmountLimit': 4088800, 'flowLimit': 65536000, 'withdrawAmountLimitDay': 500000, 'withdrawTimesLimitDay': 8, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 100800}, {'level': 13, 'rechargeAmountLimit': 8188800, 'flowLimit': 139264000, 'withdrawAmountLimitDay': 500000, 'withdrawTimesLimitDay': 8, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 204800}, {'level': 14, 'rechargeAmountLimit': 16888800, 'flowLimit': 294912000, 'withdrawAmountLimitDay': 1000000, 'withdrawTimesLimitDay': 8, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 408800}, {'level': 15, 'rechargeAmountLimit': 32888800, 'flowLimit': 622592000, 'withdrawAmountLimitDay': 1000000, 'withdrawTimesLimitDay': 10, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 818800}, {'level': 16, 'rechargeAmountLimit': 65555500, 'flowLimit': 1310720000, 'withdrawAmountLimitDay': 5000000, 'withdrawTimesLimitDay': 10, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 1608800}, {'level': 17, 'rechargeAmountLimit': 132888800, 'flowLimit': 2641440000, 'withdrawAmountLimitDay': 10000000, 'withdrawTimesLimitDay': 10, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 3388800}, {'level': 18, 'rechargeAmountLimit': 262888800, 'flowLimit': 5242880000, 'withdrawAmountLimitDay': 20000000, 'withdrawTimesLimitDay': 10, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 6288800}, {'level': 19, 'rechargeAmountLimit': 524888800, 'flowLimit': 10485760000, 'withdrawAmountLimitDay': 20000000, 'withdrawTimesLimitDay': 15, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 12888800}, {'level': 20, 'rechargeAmountLimit': 1048888800, 'flowLimit': 20971520000, 'withdrawAmountLimitDay': 50000000, 'withdrawTimesLimitDay': 20, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 26288800}, {'level': 21, 'rechargeAmountLimit': 2098888800, 'flowLimit': 41943040000, 'withdrawAmountLimitDay': 100000000, 'withdrawTimesLimitDay': 20, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 52228800}, {'level': 22, 'rechargeAmountLimit': 4198888800, 'flowLimit': 83886080000, 'withdrawAmountLimitDay': 100000000, 'withdrawTimesLimitDay': 25, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 100000000}, {'level': 23, 'rechargeAmountLimit': 8388888800, 'flowLimit': 167772160000, 'withdrawAmountLimitDay': 100000000, 'withdrawTimesLimitDay': 30, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 208888800}, {'level': 24, 'rechargeAmountLimit': 16777888800, 'flowLimit': 335544320000, 'withdrawAmountLimitDay': 100000000, 'withdrawTimesLimitDay': 30, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 418888800}, {'level': 25, 'rechargeAmountLimit': 33558888800, 'flowLimit': 671088640000, 'withdrawAmountLimitDay': 100000000, 'withdrawTimesLimitDay': 30, 'receiveAmountLimitDay': 0, 'display': 1, 'upRewardAmout': 838888800}]",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-09T22:22:42.383449+00:00",
+    "cat": "aphrodite_dwarf",
+    "test": "GET /japi/invite/boxConfig/boxReceiveRecord",
+    "rq": {
+      "host": "aphrodite777",
+      "method": "GET",
+      "path": "/japi/invite/boxConfig/boxReceiveRecord"
+    },
+    "rs": {
+      "code": 200,
+      "data": [],
+      "data_keys": null,
+      "leaked_pii": [],
+      "sample": null
+    },
+    "interp": "Vulnerável. Dados: []",
+    "sev": "high"
+  }
+]

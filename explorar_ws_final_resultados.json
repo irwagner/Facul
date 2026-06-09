@@ -1,0 +1,18 @@
+[
+  {
+    "ts": "2026-06-09T22:24:28.453857+00:00",
+    "cat": "websocket",
+    "test": "wss://ds.amizade777.com/websocket6",
+    "rq": {
+      "host": "ds.amizade777.com",
+      "path": "/websocket6"
+    },
+    "rs": {
+      "msgtype": 1,
+      "msg": "CO7u8vPqMw==",
+      "errcode": null
+    },
+    "interp": "WS conectou SEM auth e recebeu frame!",
+    "sev": "high"
+  }
+]
