@@ -1,0 +1,833 @@
+[
+  {
+    "ts": "2026-06-11T14:00:23.092434+00:00",
+    "cat": "recharge",
+    "test": "configId=vazio",
+    "rq": {
+      "configId": ""
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "45DEDD41C527ECF8",
+        "payChannel": "goldenpay",
+        "paySerialNo": "45DEDD41C527ECF8",
+        "channelTradeNo": "P20650716537749708821781186424",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226870014br.gov.bcb.pix2565qrcode.e2epay.com.br/dynamic/0add8372-af51-4e9e-89da-a387e8f1ca515204000053039865802BR5910BANKS LTDA6009Sao Paulo62070503***6304031A",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='vazio' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:24.187309+00:00",
+    "cat": "recharge",
+    "test": "configId=zero",
+    "rq": {
+      "configId": "0"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "9E75029CA767D3E0",
+        "payChannel": "goldenpay",
+        "paySerialNo": "9E75029CA767D3E0",
+        "channelTradeNo": "P20650716577771028501781186425",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226820014br.gov.bcb.pix2560qrcode.a55scd.com.br/v1/180150e0-962e-478e-8322-162c8f86f81a5204000053039865802BR5912PROJETOAMORE6008SAOPAULO62070503***6304BE47",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='zero' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:24.919827+00:00",
+    "cat": "recharge",
+    "test": "configId=um",
+    "rq": {
+      "configId": "1"
+    },
+    "rs": {
+      "code": 103029,
+      "msg": "O evento terminou ou a compra ultrapassou o limite",
+      "data": null
+    },
+    "interp": "configId='um' → code=103029",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:25.861786+00:00",
+    "cat": "recharge",
+    "test": "configId=dois",
+    "rq": {
+      "configId": "2"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "F1993D061F91EB8F",
+        "payChannel": "goldenpay",
+        "paySerialNo": "F1993D061F91EB8F",
+        "channelTradeNo": "P20650716655113994251781186426",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226870014br.gov.bcb.pix2565qrcode.e2epay.com.br/dynamic/d71299f8-49a3-485d-b579-0b28f737112c5204000053039865802BR5910BANKS LTDA6009Sao Paulo62070503***6304B744",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='dois' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:26.967377+00:00",
+    "cat": "recharge",
+    "test": "configId=admin",
+    "rq": {
+      "configId": "admin"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "D0673E860DB9CD01",
+        "payChannel": "goldenpay",
+        "paySerialNo": "D0673E860DB9CD01",
+        "channelTradeNo": "P20650716694792110091781186427",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226820014br.gov.bcb.pix2560qrcode.a55scd.com.br/v1/9bc9eb0e-c946-4904-be78-5b1f8eb91a9b5204000053039865802BR5912PROJETOAMORE6008SAOPAULO62070503***6304558D",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='admin' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:27.917029+00:00",
+    "cat": "recharge",
+    "test": "configId=minus_1",
+    "rq": {
+      "configId": "-1"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "940E2654998FCF06",
+        "payChannel": "goldenpay",
+        "paySerialNo": "940E2654998FCF06",
+        "channelTradeNo": "P20650716740342251541781186428",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226870014br.gov.bcb.pix2565qrcode.e2epay.com.br/dynamic/f09072e1-c838-4b5e-ab26-c1acb20475ca5204000053039865802BR5910BANKS LTDA6009Sao Paulo62070503***630422F4",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='minus_1' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:29.882619+00:00",
+    "cat": "recharge",
+    "test": "configId=null_str",
+    "rq": {
+      "configId": "null"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "AFB3DF09EF3F9E83",
+        "payChannel": "goldenpay",
+        "paySerialNo": "AFB3DF09EF3F9E83",
+        "channelTradeNo": "P20650716822606479381781186430",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226920014br.gov.bcb.pix2570qrcode.staterpay.com.br/v2/qr/cob/681c9017-40ac-4df6-af0f-73280ce712305204000053039865802BR5914PAG AGORA LTDA6009SAO PAULO62070503***63045743",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='null_str' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:30.567188+00:00",
+    "cat": "recharge",
+    "test": "configId=nosql",
+    "rq": {
+      "configId": "{'$ne': ''}"
+    },
+    "rs": {
+      "code": null,
+      "msg": "",
+      "data": null
+    },
+    "interp": "configId='nosql' → code=None",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:31.289057+00:00",
+    "cat": "recharge",
+    "test": "configId=array",
+    "rq": {
+      "configId": "['1', '2']"
+    },
+    "rs": {
+      "code": null,
+      "msg": "",
+      "data": null
+    },
+    "interp": "configId='array' → code=None",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:32.222896+00:00",
+    "cat": "recharge",
+    "test": "configId=longo",
+    "rq": {
+      "configId": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "54080CE6477D7C44",
+        "payChannel": "goldenpay",
+        "paySerialNo": "54080CE6477D7C44",
+        "channelTradeNo": "P20650716921444638741781186433",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226920014br.gov.bcb.pix2570qrcode.staterpay.com.br/v2/qr/cob/40fae32c-44ae-45b0-bda8-bd1f325d73af5204000053039865802BR5914PAG AGORA LTDA6009SAO PAULO62070503***6304A1B3",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='longo' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:33.353495+00:00",
+    "cat": "recharge",
+    "test": "configId=path_traversal",
+    "rq": {
+      "configId": "../admin"
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "amount": 2000,
+        "orderId": "E3A2150DCCCC0C8B",
+        "payChannel": "goldenpay",
+        "paySerialNo": "E3A2150DCCCC0C8B",
+        "channelTradeNo": "P20650716961382072341781186434",
+        "productName": "GAME CHIPS",
+        "channelData": {
+          "paymentLink": "00020101021226820014br.gov.bcb.pix2560qrcode.a55scd.com.br/v1/b5c577d0-3b96-49f4-8c1d-e9d7ebb1b1025204000053039865802BR5912PROJETOAMORE6008SAOPAULO62070503***6304238E",
+          "openType": 2
+        }
+      }
+    },
+    "interp": "configId='path_traversal' → code=200",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:34.042221+00:00",
+    "cat": "recharge",
+    "test": "configId=sql_injection",
+    "rq": {
+      "configId": "1' OR '1'='1"
+    },
+    "rs": {
+      "code": 103029,
+      "msg": "O evento terminou ou a compra ultrapassou o limite",
+      "data": null
+    },
+    "interp": "configId='sql_injection' → code=103029",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:34.966440+00:00",
+    "cat": "recharge",
+    "test": "extra_amount_string",
+    "rq": {
+      "extra": {
+        "amount": "20"
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "26C137F443D7B0EC"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:35.658762+00:00",
+    "cat": "recharge",
+    "test": "extra_amount_float",
+    "rq": {
+      "extra": {
+        "amount": 20.5
+      }
+    },
+    "rs": {
+      "code": 103012,
+      "msg": "Valor de recarga errado, por favor verifique",
+      "orderId": null
+    },
+    "interp": "Comportamento diferente do baseline! code=103012 (baseline=200)",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:36.377307+00:00",
+    "cat": "recharge",
+    "test": "extra_amount_neg_frac",
+    "rq": {
+      "extra": {
+        "amount": -0.01
+      }
+    },
+    "rs": {
+      "code": 103012,
+      "msg": "Valor de recarga errado, por favor verifique",
+      "orderId": null
+    },
+    "interp": "Comportamento diferente do baseline! code=103012 (baseline=200)",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:37.349024+00:00",
+    "cat": "recharge",
+    "test": "extra_qr_zero",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 0
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "3D2A9C64956E77E7"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:38.290081+00:00",
+    "cat": "recharge",
+    "test": "extra_qr_dois",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 2
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "D4D94C549D868C1F"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:39.243646+00:00",
+    "cat": "recharge",
+    "test": "extra_type_pix",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "type": "PIX"
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "0A4B57D5F7A132A5"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:40.244025+00:00",
+    "cat": "recharge",
+    "test": "extra_type_transfer",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "type": "transfer"
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "27C3BB19E1A6C25C"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:42.214971+00:00",
+    "cat": "recharge",
+    "test": "extra_channel_fake",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "channel": "fake_channel"
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "F02CBA3780AA8DC8"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:43.141084+00:00",
+    "cat": "recharge",
+    "test": "extra_bank_code",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "bankCode": "001"
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "35A7741E6163B3A6"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:44.071669+00:00",
+    "cat": "recharge",
+    "test": "extra_user_id_1",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "user_id": 1
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "D4CD8B72F3CD0706"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:45.000808+00:00",
+    "cat": "recharge",
+    "test": "extra_promo_code",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "promoCode": "HACK100"
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "4CA52A87877FC2CD"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:45.935693+00:00",
+    "cat": "recharge",
+    "test": "extra_bonus_flag",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "bonusFlag": 1
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "06E6B34C4D249AA1"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:47.176551+00:00",
+    "cat": "recharge",
+    "test": "extra_no_verify",
+    "rq": {
+      "extra": {
+        "amount": 20,
+        "qr": 1,
+        "skipVerify": true
+      }
+    },
+    "rs": {
+      "code": 200,
+      "msg": "success",
+      "orderId": "9EDADD32CA6C3F51"
+    },
+    "interp": "Comportamento diferente do baseline! code=200 (baseline=200)",
+    "sev": "high"
+  },
+  {
+    "ts": "2026-06-11T14:00:48.311767+00:00",
+    "cat": "withdraw",
+    "test": "amount_neg",
+    "rq": {
+      "payload_extra": {
+        "amount": -50
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:49.040331+00:00",
+    "cat": "withdraw",
+    "test": "amount_zero",
+    "rq": {
+      "payload_extra": {
+        "amount": 0
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:49.751956+00:00",
+    "cat": "withdraw",
+    "test": "amount_frac",
+    "rq": {
+      "payload_extra": {
+        "amount": 0.01
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:50.465990+00:00",
+    "cat": "withdraw",
+    "test": "amount_frac2",
+    "rq": {
+      "payload_extra": {
+        "amount": 49.99
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:51.189965+00:00",
+    "cat": "withdraw",
+    "test": "amount_max",
+    "rq": {
+      "payload_extra": {
+        "amount": 999999
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:51.899933+00:00",
+    "cat": "withdraw",
+    "test": "amount_neg_frac",
+    "rq": {
+      "payload_extra": {
+        "amount": -0.01
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:52.586543+00:00",
+    "cat": "withdraw",
+    "test": "amount_string",
+    "rq": {
+      "payload_extra": {
+        "amount": "50"
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:53.311122+00:00",
+    "cat": "withdraw",
+    "test": "amount_array",
+    "rq": {
+      "payload_extra": {
+        "amount": [
+          -50,
+          50
+        ]
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:54.028715+00:00",
+    "cat": "withdraw",
+    "test": "amount_nosql",
+    "rq": {
+      "payload_extra": {
+        "amount": {
+          "$ne": 0
+        }
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:54.726236+00:00",
+    "cat": "withdraw",
+    "test": "amount_null",
+    "rq": {
+      "payload_extra": {
+        "amount": null
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:55.449470+00:00",
+    "cat": "withdraw",
+    "test": "user_id_1_idor",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "user_id": 1
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:56.146513+00:00",
+    "cat": "withdraw",
+    "test": "toUserId",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "toUserId": 1
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:56.875686+00:00",
+    "cat": "withdraw",
+    "test": "bank_idor",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "bankId": 1
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:57.606970+00:00",
+    "cat": "withdraw",
+    "test": "bank_account_fake",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "bankAccount": "00000000000",
+        "bankName": "Banco Fake",
+        "accountType": "cpf"
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:58.336484+00:00",
+    "cat": "withdraw",
+    "test": "skip_rounds",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "skipRounds": true,
+        "total_rounds": 999
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:59.057392+00:00",
+    "cat": "withdraw",
+    "test": "force_withdraw",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "force": true,
+        "admin": true
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:00:59.740232+00:00",
+    "cat": "withdraw",
+    "test": "type_transfer",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "type": "transfer",
+        "targetAccount": "21998498419"
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  },
+  {
+    "ts": "2026-06-11T14:01:00.462951+00:00",
+    "cat": "withdraw",
+    "test": "withdraw_control_bypass",
+    "rq": {
+      "payload_extra": {
+        "amount": 50,
+        "withdraw_control": 1
+      }
+    },
+    "rs": {
+      "code": 103007,
+      "msg": "A conta bancária não pode ser adicionada, por favor tente no",
+      "data": null
+    },
+    "interp": "Código NOVO: 103007!",
+    "sev": "medium"
+  }
+]
